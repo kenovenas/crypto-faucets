@@ -1,0 +1,36 @@
+/* Estiliza o banner do Telegram no canto superior direito */.banner-telegram {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: blue;
+    color: yellow;
+    padding: 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Estiliza o link no banner do Telegram */.banner-link {
+    color: yellow;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estiliza o banner do autor no canto superior esquerdo */.banner-author {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: blue;
+    color: yellow;
+    padding: 20px;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Estiliza o texto do autor */.author-text {
+    font-size: 24px;
+    color: yellow;
+}

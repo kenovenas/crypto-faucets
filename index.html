@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Faucets</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #FFFFFF; /* Fundo branco da página */
+            color: #000000; /* Texto preto */
+        }
+        header {
+            background-color: #4CAF50; /* Cor verde para o cabeçalho */
+            color: #FFFFFF; /* Texto branco no cabeçalho */
+            padding: 1em;
+            text-align: center;
+            position: relative;
+        }
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .header-box {
+            background-color: #007BFF; /* Cor azul */
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: #FFFFFF; /* Texto branco */
+            font-size: 1em;
+        }
+        .welcome-message {
+            margin-top: 10px;
+            font-size: 1em;
+            color: #FFFFFF;
+        }
+        .tabs {
+            display: flex;
+            background-color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+        }
+        .tab-button {
+            background-color: #007BFF; /* Cor azul */
+            border: 1px solid #0056b3;
+            border-bottom: none;
+            cursor: pointer;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            width: 25%; /* Ajustado para 4 seções */
+            box-sizing: border-box;
+        }
+        .tab-button:hover {
+            background-color: #0056b3;
+        }
+        .tab-button.active {
+            background-color: #0056b3;
+            font-weight: bold;
+        }
+        .tab-content {
+            display: none;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-top: none;
+            background-color: #FFFFFF; /* Fundo branco para as seções */
+        }
+        .active-tab {
+            display: block;
+        }
+        #banner-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 10px;
+        }
+        .banner {
+            flex: 1 1 calc(25% - 10px); /* 4 banners por linha */
+            min-width: 200px;
+            max-width: 300px;
+            background-color: #FFFFFF; /* Fundo branco para os banners */
+            color: black;
+            border: 1px solid #0056b3;
+            box-sizing: border-box;
+            padding: 10px;
+            margin-bottom: 10px; /* Espaço abaixo dos banners */
+        }
+        .banner-title {
+            background-color: #4CAF50; /* Cor verde para o título */
+            color: #FFFFFF; /* Texto branco */
+            padding: 5px;
+            margin: -10px -10px 10px; /* Ajuste para que o fundo verde se estenda por todo o banner */
+            font-size: 1.2em; /* Tamanho maior para o título */
+            font-weight: bold;
+        }
+        .banner-message {
+            font-size: 0.9em; /* Texto menor */
+            margin-bottom: 10px;
+            text-align: left; /* Alinha o texto à esquerda */
+            line-height: 1.4; /* Ajusta o espaçamento entre linhas para melhor legibilidade */
+        }
+        /* Correção específica para a seção "Scripts" */
+        #scripts .banner-message {
+            text-align: left; /* Garante que o texto esteja alinhado à esquerda */
+        }
+        /* Correção específica para a seção "Ferramentas" */
+        #tools .banner-message {
+            text-align: left; /* Garante que o texto esteja alinhado à esquerda */
+        }
+        footer {
+            background-color: #f1f1f1;
+            padding: 0.1em;
+            text-align: rigt;
+            position: fixed;
+            width: auto;
+            bottom: 0;
+        }
+        .video-container iframe {
+            width: 100%;
+            max-width: 300px;
+            height: 200px;
+        }
+        .btn-obtain-key, .btn-site {
+            background-color: #007BFF; /* Cor azul */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn-obtain-key:hover, .btn-site:hover {
+            background-color: #0056b3;
+        }
+        .btn-site {
+            background-color: #28a745; /* Cor verde para o botão do site */
+        }
+        .btn-site:hover {
+            background-color: #218838;
+        }
+    </style>
+    <script>
+        function openTab(tabName) {
+            var i, tabContent, tabButtons;
+            tabContent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabContent.length; i++) {
+                tabContent[i].style.display = "none";
+            }
+            tabButtons = document.getElementsByClassName("tab-button");
+            for (i = 0; i < tabButtons.length; i++) {
+                tabButtons[i].className = tabButtons[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            event.currentTarget.className += " active";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-box">Keno Venas</div>
+            <div class="header-box">
+                <a href="https://t.me/+Mns6IsONSxliZDkx" target="_blank" style="color: #FFFFFF;">Grupo do Telegram</a>
+            </div>
+        </div>
+        <h1>"Crypto Faucets"</h1>
+        <p class="welcome-message">
+            <p>Olá seja bem vindo ao nosso site de ferramentas para automação!</p>
+            <p>Aqui você encontará soluções incríveis para maximizar seus ganhos</p>
+            <p>e automatizar suas faucets aumentando sua renda extra.</p>
+            <p>Estamos aqui para tornar sua jornada mais eficiente e lucrativa.</p>
+            <p>Aproveite!!!!</p>
+        </p>
+    </header>
+
+    <div class="tabs">
+        <div class="tab-button active" onclick="openTab('scripts')">Scripts</div>
+        <div class="tab-button" onclick="openTab('tools')">Ferramentas</div>
+        <div class="tab-button" onclick="openTab('videos')">Vídeos</div>
+        <div class="tab-button" onclick="openTab('outros')">Em Breve</div> <!-- Adicionado a seção Outros -->
+    </div>
+
+    <!-- SEÇÃO SCRIPT -->
+    <div id="scripts" class="tab-content active-tab">
+        <h2>Scripts</h2>
+        <section id="banner-container">
+            <!-- Exemplo de banner para Scripts -->
+
+		<div class="banner">
+                <div class="banner-title">Ourocoincash (Adicionado em 27/09)</div>
+                <p class="banner-message">
+                    Obs:
+                    <ol>
+                        <li>Editar linhas 24 e 25 para login.</li>
+                        <li>Tipo de captcha = Recaptcha</li>
+                        <li>Executar usando o Violentmonkey</li>
+                        <li>Requer uma chave para desbloquear as funções do script</li>
+                        <li>Como ter a chave?</li>
+		        <li>Clicar em "obter key", após obter, inserir, confirmar e recarregar a página.</li>
+                    </ol>
+                    Função do script: PTC e Manual Faucet.
+                </p>
+                <!-- Botão para obter o script -->
+                <a href="https://exe.io/YeuWz" class="btn-obtain-key" target="_blank">Obter Script</a>
+                <!-- Botão para visitar o site -->
+                <a href="https://ourcoincash.xyz/?r=20153" class="btn-site" target="_blank">Visitar Site</a>
+            </div>
+
+		<div class="banner">
+                <div class="banner-title">Earncryptowrs Rotator (Adicionado em 20/09)</div>
+                <p class="banner-message">
+                    Obs:
+                    <ol>
+                        <li>Editar linha 21 com email faucetpay para login.</li>
+                        <li>Tipo de captcha = CloudFlare</li>
+		        <li>Extensão CloudFlare na seção ferramentas.</li>
+                        <li>Executar usando o Violentmonkey</li>
+                        <li>Requer uma chave para desbloquear as funções do script</li>
+                        <li>Como ter a chave?</li>
+		        <li>Clicar em "obter key", após obter, inserir, confirmar e recarregar a página.</li>
+                    </ol>
+                    Função do script: Rotacionar e Coletar as faucets.
+                </p>
+                <!-- Botão para obter o script -->
+                <a href="https://exe.io/3skIer" class="btn-obtain-key" target="_blank">Obter Script</a>
+                <!-- Botão para visitar o site -->
+                <a href="https://earncryptowrs.in/?r=2914" class="btn-site" target="_blank">Visitar Site</a>
+            </div>
+
+		<div class="banner">
+                <div class="banner-title">99Faucet (Adicionado em 20/09)</div>
+                <p class="banner-message">
+                    Obs:
+                    <ol>
+                        <li>Editar linhas 20 e 21 para login</li>
+                        <li>Tipo de captcha = GpCaptcha</li>
+		        <li>Não há necessidade de usar o script GpCaptcha</li>
+                        <li>Executar usando o Violentmonkey</li>
+                        <li>Requer uma chave para desbloquear as funções do script</li>
+                        <li>Como ter a chave? Clicar em "obter key", após obter, inserir, confirmar e recarregar a página</li>
+                    </ol>
+                    Função do script: Coletar Manual Faucet Ilimitadamente
+                </p>
+                <!-- Botão para obter o script -->
+                <a href="https://exe.io/PGoCqP1L" class="btn-obtain-key" target="_blank">Obter Script</a>
+                <!-- Botão para visitar o site -->
+                <a href="https://99faucet.com/?r=7427" class="btn-site" target="_blank">Visitar Site</a>
+            </div>
+
+		<div class="banner">
+                <div class="banner-title">Faucetpayz (Adicionado em 19/09)</div>
+                <p class="banner-message">
+                    Obs:
+                    <ol>
+                        <li>Editar linhas 20 e 21 para login</li>
+                        <li>Tipo de captcha = CloudFlare</li>
+		        <li>Extensão para CloudFlare na seção ferramentas</li>
+                        <li>Executar usando o Violentmonkey</li>
+                        <li>Requer uma chave para desbloquear as funções do script</li>
+                        <li>Como ter a chave? Clicar em "obter key", após obter, inserir, confirmar e recarregar a página</li>
+                    </ol>
+                    Função do script: Shortlinks e PTC
+                </p>
+                <!-- Botão para obter o script -->
+                <a href="https://exe.io/VkpDI6LL" class="btn-obtain-key" target="_blank">Obter Script</a>
+                <!-- Botão para visitar o site -->
+                <a href="https://faucetpayz.com/ref/kenovenas" class="btn-site" target="_blank">Visitar Site</a>
+            </div>
+
+		<div class="banner">
+                <div class="banner-title">Liteonion Manual Faucet (Adicionado em 18/09)</div>
+                <p class="banner-message">
+                    Obs:
+                    <ol>
+                        <li>Editar linhas 19 e 20 para login</li>
+                        <li>Tipo de captcha = Recaptcha</li>
+		        <li>Extensão para recaptcha na seção ferramentas</li>
+                        <li>Executar usando o Violentmonkey</li>
+                        <li>Requer uma chave para desbloquear as funções do script</li>
+                        <li>Como ter a chave? Clicar em "obter key", após obter, inserir, confirmar e recarregar a página</li>
+                    </ol>
+                    Função do script: Auto Login e Redirecionar para Autofaucet
+                </p>
+                <!-- Botão para obter o script -->
+                <a href="https://exe.io/JSZDm" class="btn-obtain-key" target="_blank">Obter Script</a>
+                <!-- Botão para visitar o site -->
+                <a href="https://liteonion.online/?r=1480." class="btn-site" target="_blank">Visitar Site</a>
+            </div>
+
+		<div class="banner">
+                <div class="banner-title">Umasa (Adicionado em 16/09)</div>
+                <p class="banner-message">
+                    Obs:
+                    <ol>
+                        <li>Editar linhas 21 e 22 para login</li>
+                        <li>Tipo de captcha = sem captcha</li>
+                        <li>Executar usando o Violentmonkey</li>
+                        <li>Requer uma chave para desbloquear as funções do script</li>
+                        <li>Como ter a chave? Clicar em "obter key", após obter, inserir, confirmar e recarregar a página</li>
+                    </ol>
+                    Função do script: Auto Login e Redirecionar para Autofaucet
+                </p>
+                <!-- Botão para obter o script -->
+                <a href="https://exe.io/G5ziE0" class="btn-obtain-key" target="_blank">Obter Script</a>
+                <!-- Botão para visitar o site -->
+                <a href="http://umasa.xyz/?r=740" class="btn-site" target="_blank">Visitar Site</a>
+            </div>
+
+		<div class="banner">
+                <div class="banner-title">Litoshipay Rotator (Adicionado em 13/09)</div>
+                <p class="banner-message">
+                    Obs:
+                    <ol>
+                        <li>Editar linha 22 com email faucetpay</li>
+                        <li>Tipo de captcha = incocaptcha v4</li>
+			<li>Inserir o filtro para o site que estar na seção ferramentas</li>
+                        <li>Executar usando o Violentmonkey</li>
+                        <li>Requer uma chave para desbloquear as funções do script</li>
+                        <li>Como ter a chave? Clicar em "obter key", após obter, inserir, confirmar e recarregar a página</li>
+                    </ol>
+                    Função do script: Rotacionas nas Faucets
+                </p>
+                <!-- Botão para obter o script -->
+                <a href="https://exe.io/4j3e1Qa" class="btn-obtain-key" target="_blank">Obter Script</a>
+                <!-- Botão para visitar o site -->
+                <a href="https://litoshipay.com/?r=888" class="btn-site" target="_blank">Visitar Site</a>
+            </div>
+
+		<div class="banner">
+                <div class="banner-title">ChillFaucet (Atualizado em 20/09)</div>
+                <p class="banner-message">
+                    Obs:
+                    <ol>
+                        <li>Editar linha 20 com email faucetpay ou cwallet para login</li>
+                        <li>Tipo de captcha: V4 InconCaptcha Solver Lite</li>
+                        <li>Executar usando o Violentmonkey</li>
+                        <li>Requer uma chave para desbloquear as funções do script</li>
+                        <li>Como ter a chave? Clicar em "obter key", após obter, inserir, confirmar e recarregar a página</li>
+                    </ol>
+                    Função do script: Rotacionas nas Faucets
+                </p>
+                <!-- Botão para obter o script -->
+                <a href="https://exe.io/mSxdZOg" class="btn-obtain-key" target="_blank">Obter Script</a>
+                <!-- Botão para visitar o site -->
+                <a href="https://chillfaucet.in/?r=9935" class="btn-site" target="_blank">Visitar Site</a>
+            </div>
+
+		<div class="banner">
+                <div class="banner-title">MegaClaimer (Adicionado em 31/08)</div>
+                <p class="banner-message">
+                    Obs:
+                    <ol>
+                        <li>Editar linhas 19 e 20 para login</li>
+                        <li>Removendo ou incluindo shorts na  linha 21 remove ou inclui shorts idensejados no site</li>
+                        <li>Tipo de captcha: Recaptcha, V4 InconCaptcha Solver Lite, Hcaptcha</li>
+                        <li>Executar usando o Violentmonkey</li>
+                        <li>Requer uma chave para desbloquear as funções do script</li>
+                        <li>Como ter a chave? Clicar em "obter key", após obter, inserir, confirmar e recarregar a página</li>
+                    </ol>
+                    Função do script: ShortLinks
+                </p>
+                <!-- Botão para obter o script -->
+                <a href="https://exe.io/mbYJl" class="btn-obtain-key" target="_blank">Obter Script</a>
+                <!-- Botão para visitar o site -->
+                <a href="https://megaclaimer.com/?ref=kenovenas" class="btn-site" target="_blank">Visitar Site</a>
+            </div>
+		
+		<div class="banner">
+                <div class="banner-title">Paybits (Atualizado  em 27/09)</div>
+                <p class="banner-message">
+                    Obs:
+                    <ol>
+                        <li>Login manual</li>
+                        <li>Removendo ou incluindo shorts na  linha 22 remove ou inclui shorts idensejados no site</li>
+                        <li>Tipo de captcha: sem captcha</li>
+                        <li>Executar usando o Violentmonkey</li>
+                        <li>Requer uma chave para desbloquear as funções do script</li>
+                        <li>Como ter a chave? Clicar em "obter key", após obter, inserir, confirmar e recarregar a página</li>
+                    </ol>
+                    Função do script: ShortLinks E Manual Faucet
+                </p>
+                <!-- Botão para obter o script -->
+                <a href="https://exe.io/RwALd" class="btn-obtain-key" target="_blank">Obter Script</a>
+                <!-- Botão para visitar o site -->
+                <a href="https://paybits.xyz/?r=ss6oVNOblY" class="btn-site" target="_blank">Visitar Site</a>
+            </div>
+
+		<div class="banner">
+                <div class="banner-title">Proinfinity.fun (Adicionado em 28/08)</div>
+                <p class="banner-message">
+                    Obs:
+                    <ol>
+                        <li>Login manual</li>
+                        <li>Removendo ou incluindo shorts na  linha 20 remove ou inclui shorts idensejados no site</li>
+			<li>Em caso de erro o script recarregará a pagina</li>
+                        <li>Tipo de captcha: sem captcha</li>
+                        <li>Executar usando o Violentmonkey</li>
+			<li>Para fazer os demais shorts além dos fly, usar o bypass, caso nao tenha confere o link na seção ferramentas</li>
+                        <li>Requer uma chave para desbloquear as funções do script</li>
+                        <li>Como ter a chave? Clicar em "obter key", após obter, inserir, confirmar e recarregar a página</li>
+                    </ol>
+                    Função do script: ShortLinks
+                </p>
+                <!-- Botão para obter o script -->
+                <a href="https://exe.io/UlvDhwk" class="btn-obtain-key" target="_blank">Obter Script</a>
+                <!-- Botão para visitar o site -->
+                <a href="https://proinfinity.fun/?r=sDnBpGW3qt" class="btn-site" target="_blank">Visitar Site</a>
+            </div>
+
+                 <div class="banner">
+                <div class="banner-title">TeaserFast (Adicionado em 28/08)</div>
+                <p class="banner-message">
+                    Obs:
+                    <ol>
+                        <li>Inatalar o script deixar rodando em segundo plano aparecerá um captcha a cada 3 horas</li>
+                        
+                    </ol>
+                   
+                <!-- Botão para obter o script -->
+                <a href="https://exe.io/Q2ZLw6J" class="btn-obtain-key" target="_blank">Obter Script</a>
+                <!-- Botão para visitar o site -->
+                <a href="https://teaserfast.ru/u/kenovenas" class="btn-site" target="_blank">Visitar Site</a>
+            </div>
+                 
+                <div class="banner">
+                <div class="banner-title">Fundsreward (Adicionado em 23/08)</div>
+                <p class="banner-message">
+                    Obs:
+                    <ol>
+                        <li>Editar email e senha linhas 20 e 21</li>
+                        <li>Removendo ou incluindo shorts na  linha 22 remove ou inclui shorts idensejados no site</li>
+                        <li>Tipo de captcha: Recaptcha e Antibot</li>
+                        <li>Usar multibot disponivel na seção ferramentas</li>
+                        <li>Executar usando o Violentmonkey</li>
+                        <li>Requer uma chave para desbloquear as funções do script</li>
+                        <li>Como ter a chave? Clicar em "obter key", após obter, inserir, confirmar e recarregar a página</li>
+                    </ol>
+                    Funções do script: ShortLinks
+                </p>
+                <!-- Botão para obter o script -->
+                <a href="https://exe.io/vZOLBIUs" class="btn-obtain-key" target="_blank">Obter Script</a>
+                <!-- Botão para visitar o site -->
+                <a href="https://fundsreward.com/?r=49554" class="btn-site" target="_blank">Visitar Site</a>
+            </div>
+
+                <div class="banner">
+                <div class="banner-title">Tronpayz (Adicionado em 21/08)</div>
+                <p class="banner-message">
+                    Obs:
+                    <ol>
+                        <li>Login manual</li>
+                        <li>Removendo ou incluindo shorts apartir da  linha 19 remove ou inclui shorts idensejados no site</li>
+                        <li>Tipo de captcha: Sem captcha</li>
+                        <li>Executar usando o Violentmonkey</li>
+                        <li>Requer uma chave para desbloquear as funções do script</li>
+                        <li>Como ter a chave? Clicar em "obter key", após obter, inserir, confirmar e recarregar a página</li>
+                    </ol>
+                    Funções do script:PTC e ShortLinks
+                </p>
+                <!-- Botão para obter o script -->
+                <a href="https://exe.io/cTSTv5" class="btn-obtain-key" target="_blank">Obter Script</a>
+                <!-- Botão para visitar o site -->
+                <a href=" https://tronpayz.com/?r=1915" class="btn-site" target="_blank">Visitar Site</a>
+            </div>
+                 
+                  <div class="banner">
+                <div class="banner-title">fire faucet (Adicionado em 20/08)</div>
+                <p class="banner-message">
+                    Obs:
+                    <ol>
+                        <li>Login manual</li>
+                        <li>Removendo ou incluindo shorts apartir da  linha 22 remove ou inclui shorts idensejados no site</li>
+                        <li>Tipo de captcha: Cpacha premium na seção ferramenats.</li>
+                        <li>Executar usando o Violentmonkey</li>
+                        <li>Verificar seção ferramentas</li>
+                        <li>Não criei apenas repassando.</li>
+                        <li>Caso precise de video explicativo sobre o script basta pedir no grupo do telegram.</li>
+                    </ol>
+                    Funções do script: Dayli Bonus, Faucet, Level Reward, PTC e ShortLinks
+                </p>
+                <!-- Botão para obter o script -->
+                <a href="https://exe.io/zdDqZUgW" class="btn-obtain-key" target="_blank">Obter Script</a>
+                <!-- Botão para visitar o site -->
+                <a href="https://firefaucet.win/ref/1122368" class="btn-site" target="_blank">Visitar Site</a>
+            </div>
+            
+            <div class="banner">
+                <div class="banner-title">BitHub (Adicionado em 18/08)</div>
+                <p class="banner-message">
+                    Obs:
+                    <ol>
+                         <li>Editar linhas 19 e 20 com email e senha</li>
+                          <li>Removendo ou incluindo shorts apartir da  linha 22 remove ou inclui shorts idensejados no site</li>
+                          <li>Requer uma chave para desbloquear as funções do script</li>
+                          <li>Como ter a chave? Clicar em "obter key", após obter, inserir, confirmar e recarregar a página</li>
+                          <li>Tipo de captcha: RScaptcha</li>
+                <li>Executar usando o Violentmonkey</li>
+                <li>Usar extensao Cors</li>
+                <li>Material necessário na seção ferramentas</li>
+                <li>Verificar seção ferramentas</li>
+                    </ol>
+                    Funções do script: Dayli Bonus, Faucet, Level Reward, PTC e ShortLinks
+                </p>
+                <!-- Botão para obter o script -->
+                <a href="https://exe.io/61VFT" class="btn-obtain-key" target="_blank">Obter Script</a>
+                <!-- Botão para visitar o site -->
+                <a href="https://bithub.win/?r=373106" class="btn-site" target="_blank">Visitar Site</a>
+            </div>
+            
+            <div class="banner">
+                <div class="banner-title">CoinMaster (Adicionado em 17/08)</div>
+                <p class="banner-message">
+                    Obs:
+                    <ol>
+                        <li>Editar linhas 19 e 20 com email e senha</li>
+                <li>Requer uma chave para desbloquear as funções do script</li>
+                <li>Como ter a chave? Clicar em "obter key", após obter, inserir, confirmar e recarregar a página</li>
+                <li>Tipo de captcha: recaptcha</li>
+                <li>Executar usando o Violentmonkey</li>
+                <li>Assistir o vídeo para entender como converter saldo e ter lucro</li>
+                    </ol>
+                    Funções do script: PTC e Sortlinks</p>
+                </p>
+                <!-- Botão para obter o script -->
+                <a href="https://exe.io/uAbnQqY" class="btn-obtain-key" target="_blank">Obter Script</a>
+                <!-- Botão para visitar o site -->
+                <a href="https://coinmasters.online/?r=7873" class="btn-site" target="_blank">Visitar Site</a>
+            </div>
+
+            <div class="banner">
+                <div class="banner-title">Viefaucet (Adicionado em 20/08)</div>
+                <p class="banner-message">
+                    Obs:
+                    <ol>
+                        <li>Login manual</li>
+                <li>Removendo ou incluindo shorts apartir da  linha 22 remove ou inclui shorts idensejados no site</li>
+                <li>Requer uma chave para desbloquear as funções do script</li>
+                <li>Como ter a chave? Clicar em "obter key", após obter, inserir, confirmar e recarregar a página</li>
+                <li>Tipo de captcha: Upside-Down</li>
+                <li>Executar usando o Violentmonkey</li>
+                    </ol>
+                    Funções do script: PTC e Sortlinks
+                </p>
+                <!-- Botão para obter o script -->
+                <a href="https://exe.io/aFpwDkp" class="btn-obtain-key" target="_blank">Obter Script</a>
+                <!-- Botão para visitar o site -->
+                <a href="https://viefaucet.com?r=639b5541044da56661e2b7b9" class="btn-site" target="_blank">Visitar Site</a>
+            </div>
+            
+            <div class="banner">
+                <div class="banner-title">Coinpayz (Adicionado em 18/08)</div>
+                <p class="banner-message">
+                    Obs:
+                    <ol>
+                         <li>Editar email e senha linhas 20 e 21</li>
+                <li>Removendo ou incluindo shorts apartir da  linha 22 remove ou inclui shorts idensejados no site</li>
+                <li>Requer uma chave para desbloquear as funções do script</li>
+                <li>Como ter a chave? Clicar em "obter key", após obter, inserir, confirmar e recarregar a página</li>
+                <li>Tipo de captcha: hcptcha Upside-Down</li>
+                <li>Usar MultiBot</li>
+                <li>Executar usando o Violentmonkey</li>
+                    </ol>
+                    Funções do script: PTC e Sortlinks
+                </p>
+                <!-- Botão para obter o script -->
+                <a href="https://exe.io/vmZaVkJ" class="btn-obtain-key" target="_blank">Obter Script</a>
+                <!-- Botão para visitar o site -->
+                <a href="https://coinpayz.xyz/?r=605941" class="btn-site" target="_blank">Visitar Site</a>
+            </div>
+
+             <div class="banner">
+                <div class="banner-title">ClaimBits (Adicionado em 17/08)</div>
+                <p class="banner-message">
+                    Obs:
+                    <ol>
+                    <li>Editar linhas 19 e 20</li>
+                <li>Removendo ou incluindo shorts apartir da  linha 20 remove ou inclui shorts idensejados no site</li>
+                <li>Requer uma chave para desbloquear as funções do script</li>
+                <li>Como ter a chave? Clicar em "obter key", após obter, inserir, confirmar e recarregar a página</li>
+                <li>Tipo de captcha: incocaptcha</li>
+                <li>Executar usando o Violentmonkey</li>
+                    </ol>
+                    Funções do script: PTC e Sortlinks</p>
+                </p>
+                <!-- Botão para obter o script -->
+                <a href="https://exe.io/TaUuY" class="btn-obtain-key" target="_blank">Obter Script</a>
+                <!-- Botão para visitar o site -->
+                <a href="https://claimbits.net/?ref=302900" class="btn-site" target="_blank">Visitar Site</a>
+            </div>
+
+		<div class="banner">
+                <div class="banner-title">Coinymate (Adicionado em 17/08)</div>
+                <p class="banner-message">
+                    Obs:
+                    <ol>
+                     <li>Login manual</li>
+                <li>Removendo ou incluindo shorts apartir da  linha 20 remove ou inclui shorts idensejados no site</li>
+                <li>Requer uma chave para desbloquear as funções do script</li>
+                <li>Como ter a chave? Clicar em "obter key", após obter, inserir, confirmar e recarregar a página</li>
+                <li>Tipo de captcha: sem captcha</li>
+                <li>Executar usando o Violentmonkey</li>
+                    </ol>
+                    Funções do script: PTC e Sortlinks</p>
+                </p>
+                <!-- Botão para obter o script -->
+                <a href="https://exe.io/3Od0Cgd" class="btn-obtain-key" target="_blank">Obter Script</a>
+                <!-- Botão para visitar o site -->
+                <a href="https://coinymate.com/?r=4730" class="btn-site" target="_blank">Visitar Site</a>
+            </div>
+            
+            <div class="banner">
+                <div class="banner-title">FreeBonk (Adicionado em 18/08)</div>
+                <p class="banner-message">
+                    Obs:
+                    <ol>
+                         <li>Login manual</li>
+                <li>Removendo ou incluindo shorts apartir da  linha 20 remove ou inclui shorts idensejados no site</li>
+                <li>Requer uma chave para desbloquear as funções do script</li>
+                <li>Como ter a chave? Clicar em "obter key", após obter, inserir, confirmar e recarregar a página</li>
+                <li>Tipo de captcha: recaptcha, incocaptcha e antibot</li>
+                <li>Executar usando o Violentmonkey</li>
+                    </ol>
+                    Funções do script: PTC, Sortlinks e faucet
+                </p>
+                <!-- Botão para obter o script -->
+                <a href="https://exe.io/q8cThC" class="btn-obtain-key" target="_blank">Obter Script</a>
+                <!-- Botão para obter o script -->
+                <a href="https://exe.io/1748D" class="btn-obtain-key" target="_blank">Adicional Bonk</a>
+                <!-- Botão para visitar o site -->
+                <a href="https://free-bonk.com/?r=57612" class="btn-site" target="_blank">Visitar Site</a>
+            </div>
+            
+            <div class="banner">
+                <div class="banner-title">Claimcoin (Atualizado em 28/09)</div>
+                <p class="banner-message">
+                    Obs:
+                    <ol>
+                        <li>Editar linhas 18 e 19</li>
+                <li>Removendo ou incluindo shorts apartir da  linha 20 remove ou inclui shorts idensejados no site</li>
+                <li>Requer uma chave para desbloquear as funções do script</li>
+                <li>Como ter a chave? Clicar em "obter key", após obter, inserir, confirmar e recarregar a página</li>
+                <li>Tipo de captcha: recaptcha</li>
+                <li>Executar usando o Violentmonkey</li>
+                    </ol>
+                    Funções do script: PTC e Sortlinks</p>
+                </p>
+                <!-- Botão para obter o script -->
+                <a href="https://exe.io/XDFF8" class="btn-obtain-key" target="_blank">Obter Script</a>
+                <!-- Botão para visitar o site -->
+                <a href="https://coinmasters.online/?r=7873" class="btn-site" target="_blank">Visitar Site</a>
+            </div>
+
+            <div class="banner">
+                <div class="banner-title">EarnPepe (Adicionado em 20/08)</div>
+                <p class="banner-message">
+                    Obs:
+                    <ol>
+                      <li>Editar linhas 20 e 21 com email e senha</li>
+                <li>Removendo ou incluindo shorts apartir da  linha 20 remove ou inclui shorts idensejados no site</li>
+                <li>Requer uma chave para desbloquear as funções do script</li>
+                <li>Como ter a chave? Clicar em "obter key", após obter, inserir, confirmar e recarregar a página</li>
+                <li>Tipo de captcha: cloudflare</li>
+                <li>Executar usando o Violentmonkey</li>
+                    </ol>
+                    Funções do script: Sortlinks
+                </p>
+                <!-- Botão para obter o script -->
+                <a href="https://exe.io/eHaaUP" class="btn-obtain-key" target="_blank">Obter Script</a>
+                <!-- Botão para visitar o site -->
+                <a href="https://earn-pepe.com/?ref=pf4Em" class="btn-site" target="_blank">Visitar Site</a>
+            </div>
+            
+            <div class="banner">
+                <div class="banner-title">Freebnbcoin (Adicionado em 18/08)</div>
+                <p class="banner-message">
+                    Obs:
+                    <ol>
+                         <li>Editar linhas 20 e 21 com email e senha</li>
+                <li>Requer uma chave para desbloquear as funções do script</li>
+                <li>Como ter a chave? Clicar em "obter key", após obter, inserir, confirmar e recarregar a página</li>
+                <li>Tipo de captcha: recaptcha</li>
+                <li>Executar usando o Violentmonkey</li>
+                    </ol>
+                    Funções do script: PTC e Sortlinks
+                </p>
+                <!-- Botão para obter o script -->
+                <a href="https://exe.io/MWozdXa" class="btn-obtain-key" target="_blank">Obter Script</a>
+                <!-- Botão para visitar o site -->
+                <a href="https://www.freebnbcoin.com/?r=198251" class="btn-site" target="_blank">Visitar Site</a>
+            </div>
+            
+            <div class="banner">
+                <div class="banner-title">Feyorra Site (Adicionado em 17/08)</div>
+                <p class="banner-message">
+                    Obs:
+                    <ol>
+                     <li>Editar linhas 20 e 21 com email e senha</li>
+                <li>Requer uma chave para desbloquear as funções do script</li>
+                <li>Como ter a chave? Clicar em "obter key", após obter, inserir, confirmar e recarregar a página</li>
+                <li>Tipo de captcha: cloudflare</li>
+                <li>Executar usando o Violentmonkey</li>
+                    </ol>
+                    Funções do script: PTC e Sortlinks</p>
+                </p>
+                <!-- Botão para obter o script -->
+                <a href="https://exe.io/WPHma" class="btn-obtain-key" target="_blank">Obter Script</a>
+                <!-- Botão para visitar o site -->
+                <a href="https://feyorra.site/?ref=wAXyhT" class="btn-site" target="_blank">Visitar Site</a>
+            </div>
+
+            <div class="banner">
+                <div class="banner-title">Lite faucet (Adicionado em 17/08)</div>
+                <p class="banner-message">
+                    Obs:
+                    <ol>
+                      <li>Editar linhas 20 e 21 com email e senha</li>
+                <li>Requer uma chave para desbloquear as funções do script</li>
+                <li>Como ter a chave? Clicar em "obter key", após obter, inserir, confirmar e recarregar a página</li>
+                <li>Tipo de captcha: cloudflare</li>
+                <li>Executar usando o Violentmonkey</li>
+                    </ol>
+                    Funções do script: PTC e Sortlinks</p>
+                </p>
+                <!-- Botão para obter o script -->
+                <a href="https://exe.io/wDrI2mZT" class="btn-obtain-key" target="_blank">Obter Script</a>
+                <!-- Botão para visitar o site -->
+                <a href="https://litefaucet.in/?r=37967" class="btn-site" target="_blank">Visitar Site</a>
+            </div>
+
+            <div class="banner">
+                <div class="banner-title">PepyMonster (Adicionado em 20/08)</div>
+                <p class="banner-message">
+                    Obs:
+                    <ol>
+                      <li>Editar linhas 20 e 21 com email e senha</li>
+                <li>Requer uma chave para desbloquear as funções do script</li>
+                <li>Como ter a chave? Clicar em "obter key", após obter, inserir, confirmar e recarregar a página</li>
+                <li>Tipo de captcha: recaptcha</li>
+                <li>Executar usando o Violentmonkey</li>
+                    </ol>
+                    Funções do script: Sortlinks
+                </p>
+                <!-- Botão para obter o script -->
+                <a href="https://exe.io/HzgPY" class="btn-obtain-key" target="_blank">Obter Script</a>
+                <!-- Botão para visitar o site -->
+                <a href="https://pepy.monster/?r=2428" class="btn-site" target="_blank">Visitar Site</a>
+            </div>
+            
+            <div class="banner">
+                <div class="banner-title">BananoFaucet (Adicionado em 18/08)</div>
+                <p class="banner-message">
+                    Obs:
+                    <ol>
+                         <li>Editar linhas 20 e 21 com email e senha</li>
+                <li>Requer uma chave para desbloquear as funções do script</li>
+                <li>Como ter a chave? Clicar em "obter key", após obter, inserir, confirmar e recarregar a página</li>
+                <li>Tipo de captcha: cloudflare</li>
+                <li>Executar usando o Violentmonkey</li>
+                    </ol>
+                    Funções do script: PTC e Sortlinks
+                </p>
+                <!-- Botão para obter o script -->
+                <a href="https://exe.io/yxriPZ" class="btn-obtain-key" target="_blank">Obter Script</a>
+                <!-- Botão para visitar o site -->
+                <a href="https://banfaucet.com/?r=186656" class="btn-site" target="_blank">Visitar Site</a>
+            </div>
+            
+            <div class="banner">
+                <div class="banner-title">AutoFaucet (Adicionado em 17/08)</div>
+                <p class="banner-message">
+                    Obs:
+                    <ol>
+                     <li>fazer login manual</li>
+                <li> favoritar os shorts que deseja fazer</li>
+                <li>Requer uma chave para desbloquear as funções do script</li>
+                <li>Como ter a chave? Clicar em "obter key", após obter, inserir, confirmar e recarregar a página</li>
+                <li>Executar usando o Violentmonkey</li>
+                    </ol>
+                    Funções do script: Sortlinks</p>
+                </p>
+                <!-- Botão para obter o script -->
+                <a href="https://exe.io/Z5sFy" class="btn-obtain-key" target="_blank">Obter Script</a>
+                <!-- Botão para visitar o site -->
+                <a href="https://autofaucet.org/r/elemesmo" class="btn-site" target="_blank">Visitar Site</a>
+            </div>
+            
+        </section>
+    </div>
+
+    <!-- SEÇÃO FERRAMENTAS -->
+    <div id="tools" class="tab-content">
+        <h2>Ferramentas</h2>
+        <section id="banner-container">
+            <!-- Exemplo de banner para Ferramentas -->
+
+		<div class="banner">
+                <div class="banner-title">Adicional Fly</div>
+                <!-- Botão para obter uma ferramenta -->
+                <a href="https://exe.io/PgHkJlx" class="btn-obtain-key" target="_blank">Obter</a>
+            </div>
+
+		<div class="banner">
+                <div class="banner-title">Extensão CloudFlare</div>
+                <!-- Botão para obter uma ferramenta -->
+                <a href="https://exe.io/KOasY" class="btn-obtain-key" target="_blank">Obter</a>
+            </div>
+
+		<div class="banner">
+                <div class="banner-title">Extensão para Recaptcha</div>
+                <!-- Botão para obter uma ferramenta -->
+                <a href="https://exe.io/KP3tJF8s" class="btn-obtain-key" target="_blank">Obter</a>
+            </div>
+
+		<div class="banner">
+                <div class="banner-title">Filtro Litoshipay</div>
+                <!-- Botão para obter uma ferramenta -->
+                <a href="https://exe.io/RK18RU" class="btn-obtain-key" target="_blank">Obter</a>
+            </div>
+
+		<div class="banner">
+                <div class="banner-title">Gp Captcha</div>
+                <!-- Botão para obter uma ferramenta -->
+                <a href="https://exe.io/Ggv7pug8" class="btn-obtain-key" target="_blank">Obter</a>
+            </div>
+
+		<div class="banner">
+                <div class="banner-title">Filtros clks e fly (nada é 100%)</div>
+                <!-- Botão para obter uma ferramenta -->
+                <a href="https://exe.io/u6S4" class="btn-obtain-key" target="_blank">Obter</a>
+            </div>
+
+		<div class="banner">
+                <div class="banner-title">uBlock Origin development build</div>
+                <!-- Botão para obter uma ferramenta -->
+                <a href="https://exe.io/xhmhK" class="btn-obtain-key" target="_blank">Obter</a>
+            </div>
+
+		<div class="banner">
+                <div class="banner-title">Icon Captcha Solver</div>
+                <!-- Botão para obter uma ferramenta -->
+                <a href="https://exe.io/11MeKOT" class="btn-obtain-key" target="_blank">Obter</a>
+            </div>
+
+		<div class="banner">
+                <div class="banner-title">Bypass todos os links</div>
+                <!-- Botão para obter uma ferramenta -->
+                <a href="https://exe.io/nb7va" class="btn-obtain-key" target="_blank">Obter</a>
+            </div>
+
+		<div class="banner">
+                <div class="banner-title">Multi Abas</div>
+                <!-- Botão para obter uma ferramenta -->
+                <a href="https://exe.io/FWd4ccpc" class="btn-obtain-key" target="_blank">Obter</a>
+            </div>
+            
+		 <div class="banner">
+                <div class="banner-title">Premium Captchasolver</div>
+                <!-- Botão para obter uma ferramenta -->
+                <a href="https://exe.io/IUVA8l" class="btn-obtain-key" target="_blank">Obter</a>
+            </div>
+		
+            <div class="banner">
+                <div class="banner-title">RScaptcha</div>
+                </p>
+                <!-- Botão para obter uma ferramenta -->
+                <a href="https://exe.io/vQXLw" class="btn-obtain-key" target="_blank">Obter</a>
+            </div>
+
+            <div class="banner">
+                <div class="banner-title">Cors</div>
+                <!-- Botão para obter uma ferramenta -->
+                <a href="https://exe.io/mjp0N" class="btn-obtain-key" target="_blank">Obter</a>
+            </div>
+            
+            <div class="banner">
+                <div class="banner-title">Multibot 2.6.2</div>
+                </p>
+                <!-- Botão para obter uma ferramenta -->
+                <a href="https://exe.io/nNFMrS6" class="btn-obtain-key" target="_blank">Obter</a>
+            </div>
+
+             <div class="banner">
+                <div class="banner-title">Filtros atualizado 26/08</div>
+                <!-- Botão para obter uma ferramenta -->
+                <a href="https://exe.io/iIISBHqM" class="btn-obtain-key" target="_blank">Obter</a>
+            </div>
+            
+            <div class="banner">
+                <div class="banner-title">fly inc 2.1</div>
+                </p>
+                <!-- Botão para obter uma ferramenta -->
+                <a href="https://exe.io/vNWI2D" class="btn-obtain-key" target="_blank">Obter</a>
+            </div>
+
+            <div class="banner">
+                <div class="banner-title">Violentmonkey</div>
+                <!-- Botão para obter uma ferramenta -->
+                <a href="https://exe.io/mZwwc" class="btn-obtain-key" target="_blank">Obter</a>
+            </div>
+            
+            <div class="banner">
+                <div class="banner-title">Incocaptcha v4</div>
+                </p>
+                <!-- Botão para obter uma ferramenta -->
+                <a href="https://exe.io/DRm1bKc" class="btn-obtain-key" target="_blank">Obter</a>
+            </div>
+
+             <div class="banner">
+                <div class="banner-title">Icon Captcha Solver new lite</div>
+                <!-- Botão para obter uma ferramenta -->
+                <a href="https://exe.io/PwR3KuO" class="btn-obtain-key" target="_blank">Obter</a>
+            </div>
+            
+            <div class="banner">
+                <div class="banner-title">Urban vpn mais de 50 ips</div>
+                </p>
+                <!-- Botão para obter uma ferramenta -->
+                <a href="https://exe.io/DPEg0" class="btn-obtain-key" target="_blank">Obter</a>
+            </div>
+            
+        </section>
+    </div>
+
+    <!-- SEÇÃO VÍDEOS -->
+    <div id="videos" class="tab-content">
+        <h2>Vídeos</h2>
+        <section id="banner-container">
+            <!-- Exemplo de banner para Vídeos -->
+
+		<div class="banner">
+                <div class="banner-title">Faucet pagando em 18 criptomoedas diretamente na faucetpay ou cwallet!</div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/ur_AjtWlGTM" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="banner-message">1800 claim no automatico com pagamentos instataneos!</div>
+            </div>
+
+		 <div class="banner">
+                <div class="banner-title">Descubra a Faucet que Paga em 12 Criptomoedas: Incluindo Bitcoin (BTC)!</div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/ssvbMxe0-Xw" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="banner-message">Ganhe em 12 Criptomoedas com a Melhor Faucet do Mercado: Bitcoin e Muito Mais!</div>
+            </div>
+
+		 <div class="banner">
+                <div class="banner-title">Maximize Seus Lucros com Proinfinity: Estratégias e Dicas Essenciais.</div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/Lm8GnyU25HY" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="banner-message">Proinfinity Faucet: A Melhor Forma de Renda Extra. Veja Como Funciona! </div>
+            </div>
+
+                <div class="banner">
+                <div class="banner-title">Faucet Imperdível.</div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/nwrbUk_t56w" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="banner-message">Pagando muito bem. </div>
+            </div>
+
+            <div class="banner">
+                <div class="banner-title">Prova de pagamento.</div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/sDUN1fHOq9o" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="banner-message">4 dolares no automatico. </div>
+            </div>
+            
+            <div class="banner">
+                <div class="banner-title">Uma das melhores faucets.</div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/NtXtvuWRyu4" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="banner-message">Faucet pagando em varias cripto moedas no automatico</div>
+            </div>
+            
+            <div class="banner">
+                <div class="banner-title">Mienração totalmente free.</div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/flpWRi7CqFQ" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="banner-message">Faucet com ganhos de mineração totalmente free no automatico</div>
+            </div>
+
+             <div class="banner">
+                <div class="banner-title">Tudo pronto para lucrar.</div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/XJ9DanfE_F4" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="banner-message">Configurando navegador para automação de faucets !!!</div>
+            </div>
+        </section>
+    </div>
+
+    <!-- SEÇÃO OUTROS -->
+    <div id="outros" class="tab-content">
+        <h2>Outros</h2>
+        <section id="banner-container">
+            <!-- Exemplo de banner para Outros -->
+            <div class="banner">
+                <div class="banner-title"></div>
+                <p class="banner-message">
+                    
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p> © 2024 Faucet Crypto. Todos os direitos reservados.</p>
+    </footer>
+	
+    <!-- ANUNCIOS -->
+   <script type="text/javascript">
+	atOptions = {
+		'key' : 'bea0e44317e903d5830ed9bd6ac66bd2',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//spiceoptimistic.com/bea0e44317e903d5830ed9bd6ac66bd2/invoke.js"></script>
+	<script type="text/javascript">
+	atOptions = {
+		'key' : 'a94736b5f9dee93d2a329e62e4108e38',
+		'format' : 'iframe',
+		'height' : 60,
+		'width' : 468,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//spiceoptimistic.com/a94736b5f9dee93d2a329e62e4108e38/invoke.js"></script>
+	<script type="text/javascript">
+	atOptions = {
+		'key' : '014e46993289c234e39b627fc637109a',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//spiceoptimistic.com/014e46993289c234e39b627fc637109a/invoke.js"></script>
+	
+   
+    <!-- HYDRO -->
+    <script id="hydro_config" type="text/javascript">
+        window.Hydro_tagId = "53edc452-f898-48fd-95f2-75141a991de6";
+    </script>
+    <script id="hydro_script" src="https://track.hydro.online/" async></script>
+	<!-- ADBLOCK -->
+	<script>//<![CDATA[ 
+/* Place this code snippet near the footer of your page before the close of the /body tag */
+/* LEGAL NOTICE: The content of this website and all associated program code are protected under the Digital Millennium Copyright Act. Intentionally circumventing this code may constitute a violation of the DMCA.*/
+const AdblockRegixFinder = { class : [/\[\[\[\[(.*)\]\]\]\]/gm, /\[\[\[(.*)\]\]\]/gm, /\[\[(.*)\]\]/gm], squarebracket : /[\[\]']+/g, settings : /\{\{(.*)\}\}/gm, curlbrackets : /[{}]/g, classfind : (className) => new RegExp('(\\s|^)' + className + '(\\s|$)'), linebreak : /(?:\r\n|\r|\n)/g, whitespace : /\s+/g };
+var _0xc88e=["","split","0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ+/","slice","indexOf","","",".","pow","reduce","reverse","0"];function _0xe3c(d,e,f){var g=_0xc88e[2][_0xc88e[1]](_0xc88e[0]);var h=g[_0xc88e[3]](0,e);var i=g[_0xc88e[3]](0,f);var j=d[_0xc88e[1]](_0xc88e[0])[_0xc88e[10]]()[_0xc88e[9]](function(a,b,c){if(h[_0xc88e[4]](b)!==-1)return a+=h[_0xc88e[4]](b)*(Math[_0xc88e[8]](e,c))},0);var k=_0xc88e[0];while(j>0){k=i[j%f]+k;j=(j-(j%f))/f}return k||_0xc88e[11]}eval(function(h,u,n,t,e,r){r="";for(var i=0,len=h.length;i<len;i++){var s="";while(h[i]!==n[e]){s+=h[i];i++}for(var j=0;j<n.length;j++)s=s.replace(new RegExp(n[j],"g"),j);r+=String.fromCharCode(_0xe3c(s,e,10)-t)}return decodeURIComponent(escape(r))}("seoeqssssoqssoooqssoosqsoeseqsoessqoeesqseeosqsssoeqseeooqssosoqssoooqssssoqssossqsssesqsessoqsssosqssosoqsoeeeqsssosqsoeeoqoeesqseeseqoeesqsoseoqoeesqssoeoqsoeseqsssesqssssoqssoooqssoosqssoosqsssosqssssoqsoessqsssosqsssoeqseeeeqoeesqoseeqosesqoeesqseeseqseessqoeesqsoseoqoeesqsoessqsoeeoqsoseeqoeesqsoseoqoeesqsoeeoqsssosqsoessqsoesoqsoeeoqssoosqoeesqsoeosqssoeoqssoosqsssoeqssoooqsoeosqosoeqssoosqsssseqsoeoeqssoeoqssoeeqsssseqsoessqssoooqsoeeoqosoeqssoooqssoosqseoeeqssoeoqssoosqsssosqseeesqoeesqsosssqoeesqssssoqsssseqsoessqssssoqssoesqoeesqoseeqsssosqsoeeoqsoeeoqssoooqsoeeoqosesqoeesqsoseoqoeesqsoeeoqsssosqsoessqsoesoqsoeeoqssoosqoeesqsoessqsoeeoqsoesoqsssosqseeesqoeesqsosssqoeesqsosssqosssqoeesqssoesqsssseqsoeseqseseeqssosoqsssseqsoeseqsoeseqseeeeqoeesqoseeqsssosqssosoqosssqoeesqssssoqssosoqsssseqsoeseqsoeseqseoeoqsssseqssooeqsssosqosesqoeesqseeseqseessqoeesqsoseoqoeesqssoeoqsssooqoeesqoseeqsssosqssosoqosesqoeesqsoseoqoeesqssoeoqsssooqoeesqoseeqsssosqssosoqosoeqssssoqssosoqsssseqsoeseqsoeseqseoeeqssoeoqsoeseqsoessqosesqsoseoqoeesqsoeeoqsssosqsoessqsoesoqsoeeoqssoosqoeesqsssosqssosoqosoeqssssoqssosoqsssseqsoeseqsoeseqseoeeqssoeoqsoeseqsoessqosoeqssssoqssoooqssoosqsoessqsssseqssoeoqssoosqsoeseqoseeqssssoqssosoqsssseqsoeseqsoeseqseoeoqsssseqssooeqsssosqosesqoeesqsosssqsssosqssosoqsoeseqsssosqsoseoqoeesqsoeeoqsssosqsoessqsoesoqsoeeoqssoosqoeesqoeeoqoeeoqsssosqssosoqosoeqssssoqssosoqsssseqsoeseqsoeseqseoeoqsssseqssooeqsssosqosoeqssooeqsssseqsoessqssssoqssoesqoseeqseeosqsssoeqsssssqssosoqssoooqssssoqssossqseooeqsssosqssoeeqssoeoqsoeooqsesseqssoeoqssoosqsssoeqsssosqsoeeoqosoeqssssoqssosoqsssseqsoeseqsoeseqsssooqssoeoqssoosqsssoeqoseeqssssoqssosoqsssseqsoeseqsoeseqseoeoqsssseqssooeqsssosqosesqosesqseeesqoeesqsosssqoeesqsosssqoeesqsoeeoqsssosqsoessqsoesoqsoeeoqssoosqoeesqsssooqsssseqssosoqsoeseqsssosqseeesqoeesqsosssqosssqoeesqsssseqsssoeqsssoeqseseeqssosoqsssseqsoeseqsoeseqseeeeqoeesqoseeqsssosqssosoqosssqoeesqssssoqssosoqsssseqsoeseqsoeseqseoeoqsssseqssooeqsssosqosesqoeesqseeseqseessqoeesqsoseoqoeesqssoeoqsssooqoeesqoseeqsssosqssosoqosesqoeesqsoseoqoeesqssoeoqsssooqoeesqoseeqsssosqssosoqosoeqssssoqssosoqsssseqsoeseqsoeseqseoeeqssoeoqsoeseqsoessqosesqsoseoqoeesqsssosqssosoqosoeqssssoqssosoqsssseqsoeseqsoeseqseoeeqssoeoqsoeseqsoessqosoeqsssseqsssoeqsssoeqoseeqssssoqssosoqsssseqsoeseqsoeseqseoeoqsssseqssooeqsssosqosesqseeesqoeesqsosssqsssosqssosoqsoeseqsssosqoeesqssoeoqsssooqoeesqoseeqoeeoqseeosqsssoeqseeooqssosoqssoooqssssoqssossqsssesqsessoqsssosqssosoqsoeeeqsssosqsoeeoqosoeqssoesqsssseqsoeseqseseeqssosoqsssseqsoeseqsoeseqoseeqsssosqssosoqosssqoeesqssssoqssosoqsssseqsoeseqsoeseqseoeoqsssseqssooeqsssosqosesqosesqsoseoqoeesqsssosqssosoqosoeqssssoqssosoqsssseqsoeseqsoeseqseoeoqsssseqssooeqsssosqoeesqosseqseeseqoeesqoeooqoeesqoeooqoeesqosseqoeesqssssoqssosoqsssseqsoeseqsoeseqseoeoqsssseqssooeqsssosqseeesqoeesqsosssqoeesqsosssqoeesqsoeeoqsssosqsoessqsoesoqsoeeoqssoosqoeesqsssooqsssseqssosoqsoeseqsssosqseeesqoeesqsosssqosssqoeesqsoeeoqsssosqssooeqssoooqsoeoeqsssosqseseeqssosoqsssseqsoeseqsoeseqseeeeqoeesqoseeqsssosqssosoqosssqoeesqssssoqssosoqsssseqsoeseqsoeseqseoeoqsssseqssooeqsssosqosesqoeesqseeseqseessqoeesqsoseoqoeesqssoeoqsssooqoeesqoseeqsssosqssosoqosesqoeesqsoseoqoeesqssoeoqsssooqoeesqoseeqseeosqsssoeqseeooqssosoqssoooqssssoqssossqsssesqsessoqsssosqssosoqsoeeeqsssosqsoeeoqosoeqssoesqsssseqsoeseqseseeqssosoqsssseqsoeseqsoeseqoseeqsssosqssosoqosssqoeesqssssoqssosoqsssseqsoeseqsoeseqseoeoqsssseqssooeqsssosqosesqosesqoeesqsoseoqoeesqsssosqssosoqosoeqssssoqssosoqsssseqsoeseqsoeseqseoeoqsssseqssooeqsssosqoeesqseeseqoeesqsssosqssosoqosoeqssssoqssosoqsssseqsoeseqsoeseqseoeoqsssseqssooeqsssosqosoeqsoeeoqsssosqsoeeeqssosoqsssseqssssoqsssosqoseeqseeosqsssoeqsssssqssosoqssoooqssssoqssossqseooeqsssosqssoeeqssoeoqsoeooqsesseqssoeoqssoosqsssoeqsssosqsoeeoqosoeqssssoqssosoqsssseqsoeseqsoeseqsssooqssoeoqssoosqsssoeqoseeqssssoqssosoqsssseqsoeseqsoeseqseoeoqsssseqssooeqsssosqosesqosssqoeesqoeooqoeesqoeooqosesqseeesqoeesqsosssqoeesqsssosqssosoqsoeseqsssosqoeesqssoeoqsssooqoeesqoseeqsssosqssosoqosoeqssssoqssosoqsssseqsoeseqsoeseqseoeeqssoeoqsoeseqsoessqosesqoeesqsoseoqoeesqsssosqssosoqosoeqssssoqssosoqsssseqsoeseqsoeseqseoeeqssoeoqsoeseqsoessqosoeqsoeeoqsssosqssooeqssoooqsoeoeqsssosqoseeqssssoqssosoqsssseqsoeseqsoeseqseoeoqsssseqssooeqsssosqosesqseeesqoeesqsosssqoeesqsosssqoeesqsoeeoqsssosqsoessqsoesoqsoeeoqssoosqoeesqsssooqsssseqssosoqsoeseqsssosqseeesqoeesqsosssqosssqoeesqssoeeqsssosqssoosqsssosqsoeeoqsssseqsoessqsssosqsoeeoqsssseqssoosqsssoeqseeeeqoeesqoseeqssosoqsssosqssoosqssoeeqsoessqssoesqoeesqseeseqoeesqooeoqosooqosesqoeesqseeseqseessqoeesqsoseoqoeesqssosoqsssosqsoessqoeesqsoeeoqsssosqsoeseqsoesoqssosoqsoessqoeesqseeseqoeesqoeooqoeooqseeesqoeesqssssoqssoooqssoosqsoeseqsoessqoeesqssssoqssoesqsssseqsoeeoqsssseqssssoqsoessqsssosqsoeeoqsoeseqoeesqseeseqoeesqoeooqseeosqseeooqseseeqsesesqseseoqsesseqsesssqsessoqsesoeqsesosqsesooqseoeeqseoesqseoeoqseoseqseossqseosoqseooeqseoosqseoooqsseeeqsseesqsseeoqsseseqssessqssesoqsssseqsssssqssssoqsssoeqsssosqsssooqssoeeqssoesqssoeoqssoseqssossqssosoqssooeqssoosqssoooqsoeeeqsoeesqsoeeoqsoeseqsoessqsoesoqsoeoeqsoeosqsoeooqsoseeqsosesqoeooqseeesqoeesqssssoqssoooqssoosqsoeseqsoessqoeesqssssoqssoesqsssseqsoeeoqsssseqssssoqsoessqsssosqsoeeoqsoeseqseoeeqsssosqssoosqssoeeqsoessqssoesqoeesqseeseqoeesqssssoqssoesqsssseqsoeeoqsssseqssssoqsoessqsssosqsoeeoqsoeseqosoeqssosoqsssosqssoosqssoeeqsoessqssoesqseeesqoeesqsssooqssoooqsoeeoqoeesqoseeqssosoqsssosqsoessqoeesqssoeoqoeesqseeseqoeesqosooqseeesqoeesqssoeoqoeesqseeeoqoeesqssosoqsssosqssoosqssoeeqsoessqssoesqseeesqoeesqssoeoqosseqosseqosesqoeesqsoseoqoeesqsoeeoqsssosqsoeseqsoesoqssosoqsoessqoeesqosseqseeseqoeesqssssoqssoesqsssseqsoeeoqsssseqssssoqsoessqsssosqsoeeoqsoeseqosoeqssssoqssoesqsssseqsoeeoqseeosqsoessqoseeqseoesqsssseqsoessqssoesqosoeqsssooqssosoqssoooqssoooqsoeeoqoseeqseoesqsssseqsoessqssoesqosoeqsoeeoqsssseqssoosqsssoeqssoooqssooeqoseeqosesqoeesqoseoqoeesqssssoqssoesqsssseqsoeeoqsssseqssssoqsoessqsssosqsoeeoqsoeseqseoeeqsssosqssoosqssoeeqsoessqssoesqosesqosesqseeesqoeesqsosssqoeesqsoeeoqsssosqsoessqsoesoqsoeeoqssoosqoeesqsoeeoqsssosqsoeseqsoesoqssosoqsoessqseeesqoeesqsosssqosssqoeesqsssosqssoosqssssoqssoooqsssoeqsssosqseeeeqoeesqsssooqsoesoqssoosqssssoqsoessqssoeoqssoooqssoosqoeesqoseeqsoeseqsoessqsoeeoqssoeoqssoosqssoeeqosesqoeesqsoseoqoeesqssosoqsssosqsoessqoeesqsssosqssoosqssssoqssoooqsssoeqsssosqsssoeqoeesqseeseqoeesqoeooqoeooqseeesqoeesqssoeoqsssooqoseeqoeesqsoeseqsoessqsoeeoqssoeoqssoosqssoeeqoeesqoeosqoeosqoeesqsoeseqsoessqsoeeoqssoeoqssoosqssoeeqosoeqssosoqsssosqssoosqssoeeqsoessqssoesqoeesqseessqoeesqosooqoeesqosesqsoseoqoeesqssosoqsssosqsoessqoeesqsssosqsoeoeqsssseqsoeeoqoeesqseeseqoeesqoeooqoeooqseeesqoeesqsssooqssoooqsoeeoqoseeqssosoqsssosqsoessqoeesqssoooqoeesqseeseqoeesqosooqseeesqoeesqssoooqoeesqseeeoqoeesqsoeseqsoessqsoeeoqssoeoqssoosqssoeeqosoeqssosoqsssosqssoosqssoeeqsoessqssoesqseeesqoeesqssoooqosseqosseqosesqsoseoqoeesqsssosqsoeoeqsssseqsoeeoqoeesqseeseqoeesqseoesqsssseqsoessqssoesqosoeqsoeeoqssoooqsoesoqssoosqsssoeqoseeqoseeqsoeseqsoessqsoeeoqssoeoqssoosqssoeeqosoeqssssoqssoesqsssseqsoeeoqseseeqssoooqsssoeqsssosqseeosqsoessqoseeqssoooqosesqoeesqosseqoeesqooeeqooesqooeoqosesqoeesqososqoeesqooesqosesqseeesqoeesqssoeoqsssooqoseeqoeesqoseeqsssosqsoeoeqsssseqsoeeoqoeesqseessqseeseqoeesqooooqoooeqoeesqoeosqoeosqoeesqsssosqsoeoeqsssseqsoeeoqoeesqseeeoqseeseqoeesqooeeqooesqooesqosesqoeesqsosseqsosseqoeesqoseeqsssosqsoeoeqsssseqsoeeoqoeesqseessqseeseqoeesqoosoqoossqoeesqoeosqoeosqoeesqsssosqsoeoeqsssseqsoeeoqoeesqseeeoqseeseqoeesqooooqosooqosesqoeesqosesqsoseoqoeesqsssosqssoosqssssoqssoooqsssoeqsssosqsssoeqoeesqosseqseeseqoeesqseoosqsoessqsoeeoqssoeoqssoosqssoeeqosoeqsssooqsoeeoqssoooqssooeqseseeqssoesqsssseqsoeeoqseseeqssoooqsssoeqsssosqoseeqsssosqsoeoeqsssseqsoeeoqosesqseeesqoeesqsosssqsssosqssosoqsoeseqsssosqsoseoqoeesqsssosqssoosqssssoqssoooqsssoeqsssosqsssoeqoeesqosseqseeseqoeesqoeooqsoeseqssossqsssooqssoseqssoesqsoeseqssoseqssossqsssoeqsssooqssoesqoeooqseeesqoeesqsosssqoeesqsosssqoeesqsoeeoqsssosqsoessqsoesoqsoeeoqssoosqoeesqsssosqssoosqssssoqssoooqsssoeqsssosqsssoeqseeesqoeesqsosssqoeesqsoeeoqsssosqsoessqsoesoqsoeeoqssoosqoeesqsoeseqsoessqsoeeoqssoeoqssoosqssoeeqseeesqoeesqsosssqseoeqsosssqseeesqseoeqssssoqssosoqsssseqsoeseqsoeseqoeesqseeosqsssoeqsssssqssosoqssoooqssssoqssossqsssesqsessoqseoooqseoesqseoeeqseoooqsssosqssooeqsoeeeqssosoqsssseqsoessqsssosqoeesqsoseoqoeesqsoeseqsssosqsoessqsoessqssoeoqssoosqssoeeqsoeseqoeesqseeseqoeesqsoseoqsosssqseeesqoeesqsssoeqsssosqsssooqsssseqsoesoqssosoqsoessqsoeseqoeesqseeseqoeesqsoseoqoeesqssssoqssoooqssoosqsoessqsssosqssoosqsoessqseeeeqoeesqoeooqseeeoqsoeeeqseessqsseeoqsssosqoeesqssoesqsssseqsoeoeqsssosqoeesqsssoeqsssosqsoessqsssosqssssoqsoessqsssosqsssoeqoeesqsoessqssoesqsssseqsoessqoeesqsoseeqssoooqsoesoqoeesqsssseqsoeeoqsssosqoeesqsoesoqsoeseqssoeoqssoosqssoeeqoeesqsssosqsoeooqsoessqsssosqssoosqsoeseqssoeoqssoooqssoosqsoeseqoeesqsoessqssoooqoeesqsssssqssosoqssoooqssssoqssossqoeesqsssseqsssoeqsoeseqosoeqoeesqseossqssosoqsssosqsssseqsoeseqsssosqoeesqsoeseqsoesoqsoeeeqsoeeeqssoooqsoeeoqsoessqoeesqsoesoqsoeseqoeesqsssssqsoseeqoeesqsssoeqssoeoqsoeseqsssseqsssssqssosoqssoeoqssoosqssoeeqoeesqsoessqssoesqsssosqsoeseqsssosqoeesqsssseqsssoeqsoeseqoeesqsssssqssosoqssoooqssssoqssossqsssosqsoeeoqosoeqseeeoqososqsoeeeqseessqoeooqosssqoeesqsoessqssoeoqsoessqssosoqsssosqseeeeqoeesqoeooqseeosqsssoeqsoeseqoeesqseeooqssosoqssoooqssssoqssossqsssosqsoeeoqoeesqsesesqsssosqsoessqsssosqssssoqsoessqsssosqsssoeqoeeoqoeeoqoeeoqoeooqosssqoeesqsoeosqssoeoqsssoeqsoessqssoesqseeeeqoeesqooeoqoossqosssqoeesqsoessqssoooqsoeeeqseeeeqoeesqosooqosssqoeesqsssssqsoessqssoosqooeeqsssesqsoeseqssoesqssoooqsoeosqseeeeqoeesqsoessqsoeeoqsoesoqsssosqosssqoeesqsssssqsoessqssoosqooeeqsssesqsoessqsssosqsoeooqsoessqseeeeqoeesqoeseqsesoeqoeooqsoeoeqsssosqoeesqsssoeqssoeoqsoeseqsssseqsssssqssosoqsssosqoeesqseeosqsssoeqsssssqssosoqssoooqssssoqssossqoeseqosssqoeesqsssssqsoessqssoosqooesqsssesqsoeseqssoesqssoooqsoeosqseeeeqoeesqsssooqsssseqssosoqsoeseqsssosqosssqoeesqsssssqsoessqssoosqooesqsssesqsoessqsssosqsoeooqsoessqseeeeqoeesqoeooqseseeqssosoqssoooqsoeseqsssosqoeooqosssqoeesqsssssqssoooqsoeeoqsssoeqsssosqsoeeoqsoeeoqsssseqsssoeqssoeoqsoesoqsoeseqseeeeqoeesqoossqosssqoeesqssssoqssosoqsssseqsoeseqsoeseqsssosqsoeseqoeesqseeeeqoeesqoeooqssoosqsssseqsoeoeqsssseqsssoeqoeesqsssoeqsssosqssosoqsssseqsoseeqsssosqsssoeqsssseqsssoeqoeesqsssseqsssoeqsoeseqsoessqsoeooqoeesqsssseqsssoeqsoeseqsssesqssosoqssoooqsssseqsssoeqsssosqsoeeoqoeesqsoeseqsoseeqsoeseqsoessqsssosqssooeqsssesqsssseqsssoeqoeesqsoeeoqsssoeqssooeqsssseqsssoeqsssooqsssosqsssosqsssoeqoeesqsssseqsssoeqsoeoeqsssesqsoeoeqsssosqsoeeoqsoessqoeesqsssseqsssoeqsoeseqsssesqsoeseqsoeeeqsoeeoqssoooqsoesoqsoessqoeesqssoooqssooeqsssssqsssseqsssoeqoeesqsssseqsssoeqossoqssooeqsssseqsoeeoqssossqsssosqsoeeoqoeesqsoessqsssosqsoeooqsoessqsssseqsssoeqsoeseqoeesqsoeseqssssoqsssseqssoosqsoeseqssssoqssoooqsoesoqsoessqoeesqsoessqsoeeoqssoeoqsssssqsssseqssosoqsssseqsssoeqoeesqsssoeqsoseeqssoosqsssesqsssssqsssseqssoosqssoosqsssosqsoeeoqoeesqsssseqssoosqssoosqssoooqssoosqsoeseqsssosqsoeeoqoeesqsssseqsssoeqsoeseqsssosqssssoqsoessqssoeoqssoooqssoosqoeesqsssseqsssoeqsoeseqssssoqsoeeoqssoeoqsoeeeqsoessqoeesqsoessqsoeeoqsssseqsssooqsssooqssoeoqssssoqsssosqsoeooqssssoqssoesqsssseqssoosqssoeeqsssosqossoqssoseqsoeseqoeesqsssseqsssoeqssosoqssoooqssoeeqoeesqsssssqsssseqssoosqssoosqsssosqsoeeoqsoeseqsssseqsssoeqsoeseqoeesqsoeeeqsssseqssoeeqsssosqsssseqsssoeqsoeseqoeesqssoooqsoeeeqsssosqssoosqsssseqsssoeqsoeseqoeesqsoeeeqsssosqsoeeoqsssooqsssseqsssoeqsoeseqoeesqssosoqsssseqsoseeqsssosqsoeeoqsssseqsssoeqsoeseqoeesqsssseqsssoeqssoeeqsoeeeqsoessqoeesqsoeeeqssoooqsoeeeqsoesoqssoosqsssoeqsssosqsoeeoqoeesqsssseqsssoeqsoeoeqossoqsssseqsoeseqsoeeeqoeesqssoooqsoeeeqsssosqssoosqsoeooqoeesqsssooqssoooqssoooqsoessqsssosqsoeeoqsssseqsssoeqsoeseqoeesqsssseqsssoeqsoeseqsoeeeqsssooqoeesqssooeqsoeseqssoosqsoeeeqssoooqsoeeeqsoesoqsoeeeqoeesqsssssqsssosqsoessqsssseqsssseqsssoeqoeesqsoeseqssssoqsoeeoqsoeeeqsssseqsssoeqsoeseqoeesqsssseqsssoeqsoeseqsssesqsssoeqsssosqsoessqsssosqssssoqsoessqoeesqssosoqsssosqsssseqsssoeqsssosqsoeeoqsssssqssoooqsssseqsoeeoqsssoeqsssesqsssseqsssoeqoeesqsssoeqsssseqsoeeoqsoessqsssesqssoeoqssoosqsoessqsssosqsoeeoqsoeseqsoessqssoeoqsoessqssoeoqsssseqssosoqoeesqsssseqsssoeqsoeeoqssoooqsoessqsssseqsoessqoeesqsssseqsssoeqsoessqssoooqsoeeeqssosoqsssosqsssooqsoessqoeesqsoeoeqssoeoqsssoeqsssosqssoooqssoseqsoeseqossoqsssseqsssoeqsoeseqoeesqsssseqsssoeqsoeeoqsssosqsssseqsssoeqsoseeqsoessqsoeeoqsssseqssssoqsoessqssoeoqssoooqssoosqsoeseqoeooqosssqoeesqsssoeqsssosqsssssqsoesoqssoeeqoeesqseeeeqoeesqsssooqsssseqssosoqsoeseqsssosqoeesqsosssqseeesqoeesqsoessqssoesqsssosqssooeqsssosqseseoqssosoqsssosqoeesqseeseqoeesqsoseoqoeesqsoessqssoesqsssosqssooeqsssosqseeeeqoeesqssoosqsoesoqssosoqssosoqosssqoeesqssssoqssosoqssoooqsoeseqsssosqsssssqsoessqssoosqseeeeqoeesqssoosqsoesoqssosoqssosoqosssqoeesqsssssqsoesoqsoessqsoessqssoooqssoosqooeeqseeeeqoeesqssoosqsoesoqssosoqssosoqosssqoeesqsssssqsoesoqsoessqsoessqssoooqssoosqooesqseeeeqoeesqssoosqsoesoqssosoqssosoqoeesqsosssqseeesqoeesqsssoeqsssosqsssssqsoesoqssoeeqoeesqseeseqoeesqsssooqsssseqssosoqsoeseqsssosqseeesqoeesqssssoqssoooqssoosqsoeseqsoessqsoeeoqsoesoqssssoqsoessqssoooqsoeeoqoseeqsoeseqsssosqsoessqsoessqssoeoqssoosqssoeeqsoeseqoeesqseeseqoeesqsoseoqsosssqosesqoeesqsoseoqoeesqsoessqssoesqssoeoqsoeseqosoeqsoeseqsssosqsoessqsoessqssoeoqssoosqssoeeqsoeseqoeesqseeseqoeesqsoseoqoeesqosoeqosoeqosoeqsoessqssoesqssoeoqsoeseqosoeqsssoeqsssosqsssooqsssseqsoesoqssosoqsoessqsoeseqosssqoeesqosoeqosoeqosoeqsoeseqsssosqsoessqsoessqssoeoqssoosqssoeeqsoeseqoeesqsosssqseeesqoeesqsoessqssoesqssoeoqsoeseqosoeqsssoeqsssosqsssssqsoesoqssoeeqoeesqseeseqoeesqsoessqssoesqssoeoqsoeseqosoeqsoeseqsssosqsoessqsoessqssoeoqssoosqssoeeqsoeseqosoeqsssoeqsssosqsssssqsoesoqssoeeqoeesqsosseqsosseqoeesqsssooqsssseqssosoqsoeseqsssosqseeesqoeesqsoessqssoesqssoeoqsoeseqosoeqsoeeoqsssseqssoosqsssoeqsoeseqsoessqsoeeoqssoeoqssoosqssoeeqoeesqseeseqoeesqseeosqsssoeqseeooqssosoqssoooqssssoqssossqsssesqsessoqsssosqssosoqsoeeeqsssosqsoeeoqosoeqssoeeqsssosqssoosqsssosqsoeeoqsssseqsoessqsssosqsoeeoqsssseqssoosqsssoeqoseeqooeeqoossqosesqseeesqoeesqsosssqseeesqoeesqsoeeoqssssoqssosoqsssseqsoeseqsoeseqoeesqseeseqoeesqsoeseqsoessqsoeeoqssoeoqssoosqssoeeqoeesqseeseqseessqoeesqsoseoqoeesqsoeeoqsssosqsoessqsoesoqsoeeoqssoosqoeesqseeosqsssoeqseeooqssosoqssoooqssssoqssossqsssesqsessoqsssosqssosoqsoeeeqsssosqsoeeoqosoeqsssosqssoosqssssoqssoooqsssoeqsssosqoseeqsoessqssoesqssoeoqsoeseqosoeqsoeeoqsssseqssoosqsssoeqsoeseqsoessqsoeeoqssoeoqssoosqssoeeqoeesqosseqoeesqoeooqsssesqsssesqoeooqoeesqosseqoeesqsoeseqsoessqsoeeoqssoeoqssoosqssoeeqoeesqosseqoeesqoeooqsssesqsssesqoeooqoeesqosseqoeesqsoessqssoesqssoeoqsoeseqosoeqsoeeoqsssseqssoosqsssoeqsoeseqsoessqsoeeoqssoeoqssoosqssoeeqosesqseeesqoeesqsosssqseeesqoeesqsssssqsoeeoqsssseqssoosqsssoeqssoeoqssoosqssoeeqoeesqseeseqoeesqoseeqosesqoeesqseeseqseessqoeesqsoseoqoeesqssosoqsssosqsoessqoeesqsssssqsoeeoqsssseqssoosqsssoeqssoeoqssoosqssoeeqoeesqseeseqoeesqsssoeqssoooqssssoqsoesoqssooeqsssosqssoosqsoessqosoeqssssoqsoeeoqsssosqsssseqsoessqsssosqseseoqssosoqsssosqssooeqsssosqssoosqsoessqoseeqoeooqsssoeqssoeoqsoeoeqoeooqosesqseeesqoeesqsssssqsoeeoqsssseqssoosqsssoeqssoeoqssoosqssoeeqosoeqsoeseqsssosqsoessqseeosqsoessqsoessqsoeeoqssoeoqsssssqsoesoqsoessqsssosqoseeqoeooqssssoqssosoqsssseqsoeseqsoeseqoeooqosssqoeesqsoessqssoesqssoeoqsoeseqosoeqsoeeoqssssoqssosoqsssseqsoeseqsoeseqoseeqoeooqssssoqssoesqsoeeeqsssesqsssssqsoeeoqsssseqssoosqsssoeqssoeoqssoosqssoeeqoeooqosesqosesqseeesqoeesqssosoqsssosqsoessqoeesqsssseqsoeosqsoeeoqsssseqsoeeeqoeesqseeseqoeesqsssoeqssoooqssssoqsoesoqssooeqsssosqssoosqsoessqosoeqssssoqsoeeoqsssosqsssseqsoessqsssosqseseoqssosoqsssosqssooeqsssosqssoosqsoessqoseeqoeooqsssseqoeooqosesqseeesqoeesqsssseqsoeosqsoeeoqsssseqsoeeeqosoeqsoeseqsssosqsoessqseeosqsoessqsoessqsoeeoqssoeoqsssssqsoesoqsoessqsssosqoseeqoeooqssoeoqsssoeqoeooqosssqoeesqsoessqssoesqssoeoqsoeseqosoeqsoeeoqssssoqssosoqsssseqsoeseqsoeseqoseeqoeooqssssoqssoesqsoeeeqsssesqsssssqsoeeoqsssseqssoosqsssoeqssoeoqssoosqssoeeqoeooqosesqosesqseeesqoeesqsssseqsoeosqsoeeoqsssseqsoeeeqosoeqsoeseqsssosqsoessqseeosqsoessqsoessqsoeeoqssoeoqsssssqsoesoqsoessqsssosqoseeqoeooqssoesqsoeeoqsssosqsssooqoeooqosssqoeesqoeooqssoesqsoessqsoessqsoeeeqsoeseqseeeeqososqososqssssoqssoesqsoeeeqsssseqsssoeqsssssqssosoqssoooqssssoqssossqosoeqssssoqssoooqssooeqososqsoeeeqsoeeoqssoeoqssssoqssoeoqssoosqssoeeqososqoeooqosesqseeesqoeesqsssseqsoeosqsoeeoqsssseqsoeeeqosoeqsoeseqsssosqsoessqseeosqsoessqsoessqsoeeoqssoeoqsssssqsoesoqsoessqsssosqoseeqoeooqsoessqsssseqsoeeoqssoeeqsssosqsoessqoeooqosssqoeesqoeooqsssesqsssssqssosoqsssseqssoosqssossqoeooqosesqseeesqoeesqsssseqsoeosqsoeeoqsssseqsoeeeqosoeqsoeseqsssosqsoessqseeosqsoessqsoessqsoeeoqssoeoqsssssqsoesoqsoessqsssosqoseeqoeooqsoeeoqsssosqssosoqoeooqosssqoeesqoeooqssoosqssoooqssoooqsoeeeqsssosqssoosqsssosqsoeeoqoeesqssoosqssoooqsoeeoqsssosqsssooqsssosqsoeeoqsoeeoqsssosqsoeeoqoeooqosesqseeesqoeesqsssseqsoeosqsoeeoqsssseqsoeeeqosoeqssoeoqssoosqssoosqsssosqsoeeoqsessoqseoooqseoesqseoeeqoeesqseeseqoeesqoeooqseeeoqsoeseqsoeeeqsssseqssoosqoeesqssssoqssosoqsssseqsoeseqsoeseqseeseqoeseqoeooqosseqsoessqssoesqssoeoqsoeseqosoeqsoeeoqssssoqssosoqsssseqsoeseqsoeseqoseeqoeseqsoeeeqssoooqsoeosqsssosqsoeeoqsssosqsssoeqsssesqsssssqsoseeqoeseqosesqosseqoeooqoeseqoeesqsoeseqsoessqsoseeqssosoqsssosqseeseqoeseqssssoqssoooqssosoqssoooqsoeeoqseeeeqoeesqsoeeoqssoeeqsssssqoseeqooooqosssqoeesqooeeqooeoqosssqoeesqooesqooesqosesqseeesqoeseqseessqseossqssoooqsoeosqsssosqsoeeoqsssosqsssoeqoeesqseeooqsoseeqseeeoqososqsoeseqsoeeeqsssseqssoosqseessqoeesqseeeoqsssoeqssoeoqsoeoeqoeesqssssoqssosoqsssseqsoeseqsoeseqseeseqoeseqoeooqosseqsoessqssoesqssoeoqsoeseqosoeqsoeeoqssssoqssosoqsssseqsoeseqsoeseqoseeqoeseqssssoqssoesqsoeeeqsssesqsssssqsoeeoqsssseqsssoeqssoeoqssoosqssoeeqsssesqsoeseqsoeoeqssoeeqoeseqosesqosseqoeooqoeseqseessqseeeoqssoeoqssooeqssoeeqoeesqsoeseqsoeeoqssssoqseeseqoeseqssoesqsoessqsoessqsoeeeqsoeseqseeeeqososqososqssssoqssoesqsoeeeqsssseqsssoeqsssssqssosoqssoooqssssoqssossqosoeqssssoqssoooqssooeqososqsoeosqsoeeeqossoqssssoqssoooqssoosqsoessqsssosqssoosqsoessqososqsoesoqsoeeeqssosoqssoooqsssseqsssoeqsoeseqososqooesqosooqooesqooeoqososqosooqooseqososqsssoeqosoeqsoeseqsoeoeqssoeeqoeseqoeesqsssseqssosoqsoessqseeseqoeseqseeooqsssosqsoeseqsoessqoeesqsseeoqssoooqsoeeoqsssoeqsoeeeqsoeeoqsssosqsoeseqsoeseqoeesqseeosqsssoeqsssssqssosoqssoooqssssoqssossqoeesqsesesqsssosqsoessqsssosqssssoqsoessqssoeoqssoosqssoeeqoeesqseossqssosoqsoesoqssoeeqssoeoqssoosqoeesqsosseqoeesqseseeqsessoqseossqoeesqseeosqsssoeqsssssqssosoqssoooqssssoqssossqoeseqoeesqososqseessqseeeoqososqsssoeqssoeoqsoeoeqseessqoeooqseeesqoeesqsssssqsoeeoqsssseqssoosqsssoeqssoeoqssoosqssoeeqosoeqsssseqsoeeeqsoeeeqsssosqssoosqsssoeqseseeqssoesqssoeoqssosoqsssoeqoseeqsssseqsoeosqsoeeoqsssseqsoeeeqosesqseeesqoeesqsssoeqssoooqssssoqsoesoqssooeqsssosqssoosqsoessqosoeqsssssqssoooqsssoeqsoseeqosoeqsssseqsoeeeqsoeeeqsssosqssoosqsssoeqseseeqssoesqssoeoqssosoqsssoeqoseeqsssssqsoeeoqsssseqssoosqsssoeqssoeoqssoosqssoeeqosesqseeesqoeesqsoeeoqsssosqsoessqsoesoqsoeeoqssoosqoeesqsssssqsoeeoqsssseqssoosqsssoeqssoeoqssoosqssoeeqseeesqoeesqsosssqseeesqoeesqsesesqsssosqsssooqsssseqsoesoqssosoqsoessqseoooqssoesqsssosqssooeqsssosqoeesqseeseqoeesqoseeqosesqoeesqseeseqseessqoeesqsoseoqoeesqssosoqsssosqsoessqoeesqssooeqsssseqssoeoqssoosqsoessqssoesqsssosqssooeqsssosqoeesqseeseqoeesqsssoeqssoooqssssoqsoesoqssooeqsssosqssoosqsoessqosoeqssssoqsoeeoqsssosqsssseqsoessqsssosqseseoqssosoqsssosqssooeqsssosqssoosqsoessqoseeqoeooqsssoeqssoeoqsoeoeqoeooqosesqseeesqoeesqssooeqsssseqssoeoqssoosqsoessqssoesqsssosqssooeqsssosqosoeqsoeseqsssosqsoessqseeosqsoessqsoessqsoeeoqssoeoqsssssqsoesoqsoessqsssosqoseeqoeooqssssoqssosoqsssseqsoeseqsoeseqoeooqosssqoeesqsoessqssoesqssoeoqsoeseqosoeqsoeeoqssssoqssosoqsssseqsoeseqsoeseqoseeqoeooqsoessqssoesqsssosqssooeqsssosqoeooqosesqoeesqosseqoeesqoeseqoeesqoeseqoeesqosseqoeesqsoessqssoesqssoeoqsoeseqosoeqsoeeoqssssoqssosoqsssseqsoeseqsoeseqoseeqoeooqsoessqssoesqsssosqssooeqsssosqooeeqoeooqosesqosesqseeesqoeesqssosoqsssosqsoessqoeesqsoessqssoesqsssosqssooeqsssosqoeesqseeseqoeesqsssoeqssoooqssssoqsoesoqssooeqsssosqssoosqsoessqosoeqssssoqsoeeoqsssosqsssseqsoessqsssosqseseoqssosoqsssosqssooeqsssosqssoosqsoessqoseeqoeooqsssoeqssoeoqsoeoeqoeooqosesqseeesqoeesqsoessqssoesqsssosqssooeqsssosqosoeqsoeseqsssosqsoessqseeosqsoessqsoessqsoeeoqssoeoqsssssqsoesoqsoessqsssosqoseeqoeooqssssoqssosoqsssseqsoeseqsoeseqoeooqosssqoeesqsoessqssoesqssoeoqsoeseqosoeqsoeeoqssssoqssosoqsssseqsoeseqsoeseqoseeqoeooqsssssqssoooqsssoeqsoseeqoeooqosesqosesqseeesqoeesqssssoqssoooqssoosqsoeseqsoessqoeesqssooeqsssseqssoeoqssoosqssssoqssoooqssoosqsoessqsssosqssoosqsoessqoeesqseeseqoeesqoeooqseeeoqsssoeqssoeoqsoeoeqoeesqssssoqssosoqsssseqsoeseqsoeseqseeseqoeseqoeooqosseqsoessqssoesqssoeoqsoeseqosoeqsoeeoqssssoqssosoqsssseqsoeseqsoeseqoseeqoeseqssooeqsssseqssoeoqssoosqsssesqssssoqssoooqssoosqsoessqsssosqssoosqsoessqsssesqsoeosqsoeeoqsssseqsoeeeqsoeeeqsssosqsoeeoqoeseqosesqosseqoeooqoeseqseessqsseosqoeesqseeeoqsssoeqssoeoqsoeoeqoeesqssssoqssosoqsssseqsoeseqsoeseqseeseqoeseqoeooqosseqsoessqssoesqssoeoqsoeseqosoeqsoeeoqssssoqssosoqsssseqsoeseqsoeseqoseeqoeseqsoeosqsoeeoqsssseqsoeeeqsoeeeqsssosqsoeeoqoeseqosesqosseqoeooqoeseqseessqsseosqoeesqseeeoqssoeoqssooeqssoeeqoeesqssssoqssosoqsssseqsoeseqsoeseqseeseqoeseqssoeoqssooeqssoeeqoeesqoeooqosseqsoessqssoesqssoeoqsoeseqosoeqsoeeoqssssoqssosoqsssseqsoeseqsoeseqoseeqoeseqssoeoqssssoqssoooqssoosqoeseqosesqosseqoeooqoeseqoeesqsoeseqsoeeoqssssoqseeseqoeseqssoesqsoessqsoessqsoeeeqsoeseqseeeeqososqososqssssoqssoesqsoeeeqsssseqsssoeqsssssqssosoqssoooqssssoqssossqosoeqssssoqssoooqssooeqososqsoeosqsoeeeqossoqssssoqssoooqssoosqsoessqsssosqssoosqsoessqososqsoesoqsoeeeqssosoqssoooqsssseqsssoeqsoeseqososqooesqosooqooesqooesqososqosooqooosqososqssoeoqssssoqssoooqssoosqossoqooeeqosoeqsoeeeqssoosqssoeeqoeseqoeesqsssseqssosoqsoessqseeseqoeseqseseeqsessoqseossqoeesqseeosqsssoeqsssssqssosoqssoooqssssoqssossqoeesqsesoeqssssoqssoooqssoosqoeseqososqseessqsseosqoeesqseeeoqososqsssoeqssoeoqsoeoeqseessqoeesqseeeoqsssoeqssoeoqsoeoeqoeesqssssoqssosoqsssseqsoeseqsoeseqseeseqoeseqoeooqosseqsoessqssoesqssoeoqsoeseqosoeqsoeeoqssssoqssosoqsssseqsoeseqsoeseqoseeqoeooqssooeqsssseqssoeoqssoosqsssesqssssoqssoooqssoosqsoessqsssosqssoosqsoessqoeooqosesqosseqoeooqoeseqseessqsseosqoeesqseeeoqssoesqooseqoeesqssssoqssosoqsssseqsoeseqsoeseqseeseqoeseqsssseqsssoeqsssssqssosoqssoooqssssoqssossqsssesqsoessqssoeoqsoessqssosoqsssosqoeseqseessqoeooqosseqsoessqssoesqssoeoqsoeseqosoeqsoeseqsssosqsoessqsoessqssoeoqssoosqssoeeqsoeseqseesoqosoeqsoessqssoeoqsoessqssosoqsssosqosseqoeooqseeeoqososqssoesqooseqseessqsseosqoeesqseeeoqsssoeqssoeoqsoeoeqoeesqssssoqssosoqsssseqsoeseqsoeseqseeseqoeseqsssseqsssoeqsssssqssosoqssoooqssssoqssossqsssesqsoeseqsoesoqsssssqsoessqssoeoqsoessqssosoqsssosqoeseqseessqoeooqosseqsoessqssoesqssoeoqsoeseqosoeqsoeseqsssosqsoessqsoessqssoeoqssoosqssoeeqsoeseqosoeqssssoqssoooqssoosqsoessqsssosqssoosqsoessqosseqoeooqseeeoqososqsssoeqssoeoqsoeoeqseessqsseosqoeesqseeeoqososqsssoeqssoeoqsoeoeqseessqsseosqoeesqseeeoqososqsssoeqssoeoqsoeoeqseessqoeooqseeesqoeesqsoessqssoesqsssosqssooeqsssosqosoeqssoeoqssoosqssoosqsssosqsoeeoqsessoqseoooqseoesqseoeeqoeesqosseqseeseqoeesqssooeqsssseqssoeoqssoosqssssoqssoooqssoosqsoessqsssosqssoosqsoessqseeesqoeesqssssoqssoooqssoosqsoeseqsoessqoeesqsssooqssoooqssoooqsoessqsssosqsoeeoqoeesqseeseqoeesqsssoeqssoooqssssoqsoesoqssooeqsssosqssoosqsoessqosoeqssssoqsoeeoqsssosqsssseqsoessqsssosqseseoqssosoqsssosqssooeqsssosqssoosqsoessqoseeqoeooqsssoeqssoeoqsoeoeqoeooqosesqseeesqoeesqsssooqssoooqssoooqsoessqsssosqsoeeoqosoeqsoeseqsssosqsoessqseeosqsoessqsoessqsoeeoqssoeoqsssssqsoesoqsoessqsssosqoseeqoeooqssssoqssosoqsssseqsoeseqsoeseqoeooqosssqoeesqsoessqssoesqssoeoqsoeseqosoeqsoeeoqssssoqssosoqsssseqsoeseqsoeseqoseeqoeooqsssseqssssoqsoessqssoeoqssoooqssoosqoeooqosesqosesqseeesqoeesqssosoqsssosqsoessqoeesqsssssqsoesoqsoessqsoessqssoooqssoosqooeeqoeesqseeseqoeesqssoosqsoesoqssosoqssosoqseeesqoeesqssoeoqsssooqoeesqoseeqsoessqssoesqssoeoqsoeseqosoeqsoeseqsssosqsoessqsoessqssoeoqssoosqssoeeqsoeseqseesoqosoeqsssssqsoessqssoosqooesqsssesqsoeseqssoesqssoooqsoeosqosesqoeesqsoseoqoeesqsssssqsoesoqsoessqsoessqssoooqssoosqooeeqoeesqseeseqoeesqsssoeqssoooqssssoqsoesoqssooeqsssosqssoosqsoessqosoeqssssoqsoeeoqsssosqsssseqsoessqsssosqseseoqssosoqsssosqssooeqsssosqssoosqsoessqoseeqoeooqsssseqoeooqosesqseeesqoeesqsssssqsoesoqsoessqsoessqssoooqssoosqooeeqosoeqsoeseqsssosqsoessqseeosqsoessqsoessqsoeeoqssoeoqsssssqsoesoqsoessqsssosqoseeqoeooqssssoqssosoqsssseqsoeseqsoeseqoeooqosssqoeesqsoessqssoesqssoeoqsoeseqosoeqsoeeoqssssoqssosoqsssseqsoeseqsoeseqoseeqoeooqsssseqssssoqsoessqssoeoqssoooqssoosqossoqsssssqsoessqssoosqossoqssoooqssossqoeooqosesqosesqseeesqoeesqsssssqsoesoqsoessqsoessqssoooqssoosqooeeqosoeqsoeseqsssosqsoessqseeosqsoessqsoessqsoeeoqssoeoqsssssqsoesoqsoessqsssosqoseeqoeooqssoeoqsssoeqoeooqosssqoeesqsoessqssoesqssoeoqsoeseqosoeqsoeeoqssssoqssosoqsssseqsoeseqsoeseqoseeqoeooqssssoqssosoqssoooqsoeseqsssosqsssesqsssssqsoessqssoosqsssesqsssseqsssoeqsssssqssosoqssoooqssssoqssossqoeooqosesqosesqseeesqoeesqsssssqsoesoqsoessqsoessqssoooqssoosqooeeqosoeqssoeoqssoosqssoosqsssosqsoeeoqseoooqsssosqsoeooqsoessqoeesqseeseqoeesqsoessqssoesqssoeoqsoeseqosoeqsoeseqsssosqsoessqsoessqssoeoqssoosqssoeeqsoeseqseesoqosoeqsssssqsoessqssoosqooesqsssesqsoessqsssosqsoeooqsoessqseeesqoeesqsssooqssoooqssoooqsoessqsssosqsoeeoqosoeqsssseqsoeeeqsoeeeqsssosqssoosqsssoeqseseeqssoesqssoeoqssosoqsssoeqoseeqsssssqsoesoqsoessqsoessqssoooqssoosqooeeqosesqseeesqoeesqsosssqoeesqssosoqsssosqsoessqoeesqsssssqsoesoqsoessqsoessqssoooqssoosqooesqoeesqseeseqoeesqssoosqsoesoqssosoqssosoqseeesqoeesqssoeoqsssooqoeesqoseeqsoessqssoesqssoeoqsoeseqosoeqsoeseqsssosqsoessqsoessqssoeoqssoosqssoeeqsoeseqseesoqosoeqsssssqsoessqssoosqooeeqsssesqsoeseqssoesqssoooqsoeosqosesqoeesqsoseoqoeesqsssssqsoesoqsoessqsoessqssoooqssoosqooesqoeesqseeseqoeesqsssoeqssoooqssssoqsoesoqssooeqsssosqssoosqsoessqosoeqssssoqsoeeoqsssosqsssseqsoessqsssosqseseoqssosoqsssosqssooeqsssosqssoosqsoessqoseeqoeooqsssseqoeooqosesqseeesqoeesqsssssqsoesoqsoessqsoessqssoooqssoosqooesqosoeqsoeseqsssosqsoessqseeosqsoessqsoessqsoeeoqssoeoqsssssqsoesoqsoessqsssosqoseeqoeooqssssoqssosoqsssseqsoeseqsoeseqoeooqosssqoeesqsoessqssoesqssoeoqsoeseqosoeqsoeeoqssssoqssosoqsssseqsoeseqsoeseqoseeqoeooqsssseqssssoqsoessqssoeoqssoooqssoosqossoqsssssqsoessqssoosqossoqssoooqssossqoeooqosesqosesqseeesqoeesqsssssqsoesoqsoessqsoessqssoooqssoosqooesqosoeqsoeseqsssosqsoessqseeosqsoessqsoessqsoeeoqssoeoqsssssqsoesoqsoessqsssosqoseeqoeooqssoeoqsssoeqoeooqosssqoeesqsoessqssoesqssoeoqsoeseqosoeqsoeeoqssssoqssosoqsssseqsoeseqsoeseqoseeqoeooqsoeeoqsssosqssosoqssoooqsssseqsssoeqsssssqsoessqssoosqoeooqosesqosesqseeesqoeesqsssssqsoesoqsoessqsoessqssoooqssoosqooesqosoeqssoeoqssoosqssoosqsssosqsoeeoqseoooqsssosqsoeooqsoessqoeesqseeseqoeesqsoessqssoesqssoeoqsoeseqosoeqsoeseqsssosqsoessqsoessqssoeoqssoosqssoeeqsoeseqseesoqosoeqsssssqsoessqssoosqooeeqsssesqsoessqsssosqsoeooqsoessqseeesqoeesqsssooqssoooqssoooqsoessqsssosqsoeeoqosoeqsssseqsoeeeqsoeeeqsssosqssoosqsssoeqseseeqssoesqssoeoqssosoqsssoeqoseeqsssssqsoesoqsoessqsoessqssoooqssoosqooesqosesqseeesqoeesqsosssqoeesqsoessqssoesqsssosqssooeqsssosqosoeqsssseqsoeeeqsoeeeqsssosqssoosqsssoeqseseeqssoesqssoeoqssosoqsssoeqoseeqsssooqssoooqssoooqsoessqsssosqsoeeoqosesqseeesqoeesqssooeqsssseqssoeoqssoosqsoessqssoesqsssosqssooeqsssosqosoeqsssseqsoeeeqsoeeeqsssosqssoosqsssoeqseseeqssoesqssoeoqssosoqsssoeqoseeqsoessqssoesqsssosqssooeqsssosqosesqseeesqoeesqsoessqssoesqssoeoqsoeseqosoeqsoessqssoesqsssosqssooeqsssosqseseoqssosoqsssosqoeesqseeseqoeesqsoseoqoeesqsoessqssoesqsssosqssooeqsssosqseeeeqoeesqssooeqsssseqssoeoqssoosqsoessqssoesqsssosqssooeqsssosqosssqoeesqssssoqssosoqssoooqsoeseqsssosqsssssqsoessqssoosqseeeeqoeesqsssssqsoesoqsoessqsoessqssoooqssoosqooeeqosssqoeesqsssssqsoesoqsoessqsoessqssoooqssoosqooeeqseeeeqoeesqsssssqsoesoqsoessqsoessqssoooqssoosqooeeqosssqoeesqsssssqsoesoqsoessqsoessqssoooqssoosqooesqseeeeqoeesqsssssqsoesoqsoessqsoessqssoooqssoosqooesqoeesqsosssqseeesqoeesqsoeeoqsssosqsoessqsoesoqsoeeoqssoosqoeesqssooeqsssseqssoeoqssoosqsoessqssoesqsssosqssooeqsssosqseeesqoeesqsosssqseeesqoeesqsoeseqsssosqsoessqsoesoqsoeeeqssoesqsoessqssooeqssosoqoeesqseeseqoeesqoseeqosesqoeesqseeseqseessqoeesqsoseoqoeesqssosoqsssosqsoessqoeesqssssoqssoooqssoosqsoessqsssseqssoeoqssoosqsssosqsoeeoqoeesqseeseqoeesqsssoeqssoooqssssoqsoesoqssooeqsssosqssoosqsoessqosoeqssssoqsoeeoqsssosqsssseqsoessqsssosqseseoqssosoqsssosqssooeqsssosqssoosqsoessqoseeqoeooqsssoeqssoeoqsoeoeqoeooqosesqseeesqoeesqssssoqssoooqssoosqsoessqsssseqssoeoqssoosqsssosqsoeeoqosoeqsoeseqsssosqsoessqseeosqsoessqsoessqsoeeoqssoeoqsssssqsoesoqsoessqsssosqoseeqoeooqssoeoqsssoeqoeooqosssqoeesqsoessqssoesqssoeoqsoeseqosoeqsoeeoqssssoqssosoqsssseqsoeseqsoeseqoseeqoeooqssooeqssoooqsssoeqsssseqssosoqoeooqosesqosesqseeesqoeesqssssoqssoooqssoosqsoessqsssseqssoeoqssoosqsssosqsoeeoqosoeqsoeseqsssosqsoessqseeosqsoessqsoessqsoeeoqssoeoqsssssqsoesoqsoessqsssosqoseeqoeooqssssoqssosoqsssseqsoeseqsoeseqoeooqosssqoeesqsoessqssoesqssoeoqsoeseqosoeqsoeeoqssssoqssosoqsssseqsoeseqsoeseqoseeqoeooqssooeqssoooqsssoeqsssseqssosoqoeooqosesqosesqseeesqoeesqssoeoqsssooqoeesqoseeqoeeoqsssoeqssoooqssssoqsoesoqssooeqsssosqssoosqsoessqosoeqsssssqssoooqsssoeqsoseeqosoeqssssoqssoooqssoosqsoessqsssseqssoeoqssoosqsoeseqoseeqssssoqssoooqssoosqsoessqsssseqssoeoqssoosqsssosqsoeeoqosesqosesqoeesqsoseoqoeesqssosoqsssosqsoessqoeesqssssoqssoooqssoosqsoessqsssosqssoosqsoessqoeesqseeseqoeesqsssoeqssoooqssssoqsoesoqssooeqsssosqssoosqsoessqosoeqssssoqsoeeoqsssosqsssseqsoessqsssosqseseoqssosoqsssosqssooeqsssosqssoosqsoessqoseeqoeooqsssoeqssoeoqsoeoeqoeooqosesqseeesqoeesqssssoqssoooqssoosqsoessqsssosqssoosqsoessqosoeqsoeseqsssosqsoessqseeosqsoessqsoessqsoeeoqssoeoqsssssqsoesoqsoessqsssosqoseeqoeesqoeooqssssoqssosoqsssseqsoeseqsoeseqoeooqosssqoeesqsoessqssoesqssoeoqsoeseqosoeqsoeeoqssssoqssosoqsssseqsoeseqsoeseqoseeqoeooqssssoqssoooqssoosqsoessqsssosqssoosqsoessqoeooqosesqoeesqosseqoeesqoeseqoeesqoeseqoeesqosseqoeesqsoessqssoesqssoeoqsoeseqosoeqsoeeoqssssoqssosoqsssseqsoeseqsoeseqoseeqoeooqsssooqsssseqsssoeqsssosqsesoeqssoosqsesesqssoooqsoeosqssoosqoeooqosesqoeesqosseqoeesqoeseqoeesqoeseqoeesqosseqoeesqsoessqssoesqssoeoqsoeseqosoeqsoeeoqssssoqssosoqsssseqsoeseqsoeseqoseeqsoessqssoesqssoeoqsoeseqosoeqsoeseqsssosqsoessqsoessqssoeoqssoosqssoeeqsoeseqseesoqosoeqsssseqssoosqssoeoqssooeqsssseqsoessqssoeoqssoooqssoosqosesqosesqseeesqoeesqssssoqssoooqssoosqsoessqsssosqssoosqsoessqosoeqsoeseqsssosqsoessqseeosqsoessqsoessqsoeeoqssoeoqsssssqsoesoqsoessqsssosqoseeqoeooqssoeoqsssoeqoeooqosssqoeesqsoessqssoesqssoeoqsoeseqosoeqsoeeoqssssoqssosoqsssseqsoeseqsoeseqoseeqoeooqssssoqssoooqssoosqsoessqsssosqssoosqsoessqoeooqosesqosesqseeesqoeesqssssoqssoooqssoosqsoessqsssseqssoeoqssoosqsssosqsoeeoqosoeqsssseqsoeeeqsoeeeqsssosqssoosqsssoeqseseeqssoesqssoeoqssosoqsssoeqoseeqssssoqssoooqssoosqsoessqsssosqssoosqsoessqosesqseeesqoeesqssosoqsssosqsoessqoeesqsssssqssoooqsssoeqsoseeqsssosqssosoqsssosqoeesqseeseqoeesqsssoeqssoooqssssoqsoesoqssooeqsssosqssoosqsoessqosoeqssssoqsoeeoqsssosqsssseqsoessqsssosqseseoqssosoqsssosqssooeqsssosqssoosqsoessqoseeqoeooqsssoeqssoeoqsoeoeqoeooqosesqseeesqoeesqsssssqssoooqsssoeqsoseeqsssosqssosoqsssosqosoeqsoeseqsssosqsoessqseeosqsoessqsoessqsoeeoqssoeoqsssssqsoesoqsoessqsssosqoseeqoeooqssssoqssosoqsssseqsoeseqsoeseqoeooqosssqoeesqsoessqssoesqssoeoqsoeseqosoeqsoeeoqssssoqssosoqsssseqsoeseqsoeseqoseeqoeooqsssssqssoooqsssoeqsoseeqoeooqosesqosesqseeesqoeesqsssssqssoooqsssoeqsoseeqsssosqssosoqsssosqosoeqsoeseqsssosqsoessqseeosqsoessqsoessqsoeeoqssoeoqsssssqsoesoqsoessqsssosqoseeqoeooqssoeoqsssoeqoeooqosssqoeesqsoessqssoesqssoeoqsoeseqosoeqsoeeoqssssoqssosoqsssseqsoeseqsoeseqoseeqoeooqsssssqssoooqsssoeqsoseeqoeooqosesqosesqseeesqoeesqssssoqssoooqssoosqsoessqsssosqssoosqsoessqosoeqsssseqsoeeeqsoeeeqsssosqssoosqsssoeqseseeqssoesqssoeoqssosoqsssoeqoseeqsssssqssoooqsssoeqsoseeqsssosqssosoqsssosqosesqseeesqoeesqssosoqsssosqsoessqoeesqsoessqssoesqsssosqssooeqsssosqssssoqssoooqsssoeqsssosqoeesqseeseqoeesqsoessqssoesqssoeoqsoeseqosoeqsesesqsssosqsssooqsssseqsoesoqssosoqsoessqseoooqssoesqsssosqssooeqsssosqoseeqosesqseeesqoeesqssoeoqsssooqoeesqoseeqsoessqssoesqsssosqssooeqsssosqssssoqssoooqsssoeqsssosqosesqoeesqsoseoqoeesqsssssqssoooqsssoeqsoseeqsssosqssosoqsssosqosoeqsssseqsoeeeqsoeeeqsssosqssoosqsssoeqseseeqssoesqssoeoqssosoqsssoeqoseeqsoessqssoesqsssosqssooeqsssosqssssoqssoooqsssoeqsssosqosesqseeesqoeesqsosssqoeesqsssoeqssoooqssssoqsoesoqssooeqsssosqssoosqsoessqosoeqsssssqssoooqsssoeqsoseeqosoeqsssseqsoeeeqsoeeeqsssosqssoosqsssoeqseseeqssoesqssoeoqssosoqsssoeqoseeqssssoqssoooqssoosqsoessqsssseqssoeoqssoosqsssosqsoeeoqosesqseeesqoeesqssssoqssoooqssoosqsoeseqsoessqoeesqsssssqsoeeoqsssseqssoosqsssoeqssoeoqssoosqssoeeqoeesqseeseqoeesqsoessqssoesqssoeoqsoeseqosoeqsssssqsoeeoqsssseqssoosqsssoeqssoeoqssoosqssoeeqoseeqosesqseeesqoeesqssoeoqsssooqoseeqoeesqsoessqssoesqssoeoqsoeseqosoeqsssoeqsssosqsssssqsoesoqssoeeqoeesqosesqsoseoqoeesqssssoqssoooqssoosqsoeseqssoooqssosoqsssosqosoeqsoeosqsssseqsoeeoqssoosqoseeqoeseqsseoeqseseeqsessoqseossqseeosqsesesqseeooqseoeeqseoseqseseeqsesooqsseooqoeesqseeosqsssoeqsssoeqsssosqsssoeqoeesqsoeeeqssoooqsoeeeqsoesoqsoeeeqoeesqssoesqsoessqssooeqssosoqoeesqssssoqssoooqsssoeqsssosqoeesqsoessqssoooqoeesqsoeosqsssosqsssssqsoeseqssoeoqsoessqsssosqosoeqoeseqosesqseeesqoeesqsosssqseeesqoeesqsoeeoqsssosqsoessqsoesoqsoeeoqssoosqoeesqsoseoqoeesqssssoqssoooqssoosqsoessqsssseqssoeoqssoosqsssosqsoeeoqseeeeqoeesqssssoqssoooqssoosqsoessqsssseqssoeoqssoosqsssosqsoeeoqosssqoeesqssssoqssoooqssoosqsoessqsssosqssoosqsoessqseeeeqoeesqssssoqssoooqssoosqsoessqsssosqssoosqsoessqosssqoeesqsssssqssoooqsssoeqsoseeqsssosqssosoqsssosqseeeeqoeesqsssssqssoooqsssoeqsoseeqsssosqssosoqsssosqosssqoeesqsssssqsoeeoqsssseqssoosqsssoeqssoeoqssoosqssoeeqseeeeqoeesqsssssqsoeeoqsssseqssoosqsssoeqssoeoqssoosqssoeeqoeesqsosssqoeesqsosssqoeesqsosssqseeesqoeesqsoeseqsssosqsoessqsoesoqsoeeeqssssoqsoeseqsoeseqoeesqseeseqoeesqoseeqosesqoeesqseeseqseessqoeesqsoseoqoeesqssosoqsssosqsoessqoeesqsoeseqsoessqsoseeqssosoqsssosqoeesqseeseqoeesqsssoeqssoooqssssoqsoesoqssooeqsssosqssoosqsoessqosoeqssssoqsoeeoqsssosqsssseqsoessqsssosqseseoqssosoqsssosqssooeqsssosqssoosqsoessqoseeqoeooqsoeseqsoessqsoseeqssosoqsssosqoeooqosesqseeesqoeesqssosoqsssosqsoessqoeesqssssoqsoeseqsoeseqssssoqssoooqsssoeqsssosqoeesqseeseqoeesqoeooqosoeqsseoeqsseoeqssooeqsssosqsoeseqsoeseqsssseqssoeeqsssosqsseooqsseooqsoseoqsseosqssoosqoeesqssooeqsssseqsoeeoqssoeeqssoeoqssoosqseeeeqoeesqosooqseeesqsseosqssoosqoeesqsoeeeqsssseqsssoeqsssoeqssoeoqssoosqssoeeqseeeeqoeesqosooqseeesqsseosqssoosqoeesqssssoqssoooqssosoqssoooqsoeeoqseeeeqoeesqoessqosooqosooqosooqseeesqsseosqssoosqoeesqsssooqssoooqssoosqsoessqossoqsoeseqssoeoqsosesqsssosqseeeeqoeesqooeeqooeoqsoeeeqsoeooqseeesqsseosqssoosqoeesqssosoqssoeoqssoosqsssosqossoqssoesqsssosqssoeoqssoeeqssoesqsoessqseeeeqoeesqooeeqosoeqoossqseeesqsseosqssoosqsosssqsseosqssoosqosoeqsseoeqsseoeqsssseqssssoqsoessqssoeoqssoooqssoosqsseooqsseooqsoseoqsseosqssoosqoeesqsoeeeqsssseqsssoeqsssoeqssoeoqssoosqssoeeqseeeeqoeesqooosqsoeeeqsoeooqseeesqsseosqssoosqoeesqsoessqsssosqsoeooqsoessqossoqsssseqssosoqssoeoqssoeeqssoosqseeeeqoeesqssssoqsssosqssoosqsoessqsssosqsoeeoqseeesqsseosqssoosqsosssqsseosqssoosqosoeqsseoeqsseoeqsssseqssssoqsoessqssoeoqssoooqssoosqossoqsssssqsoesoqsoessqsoessqssoooqssoosqossoqssoooqssossqsseooqsseooqosssqsseosqssoosqosoeqsseoeqsseoeqsssseqssssoqsoessqssoeoqssoooqssoosqossoqsssssqsoesoqsoessqsoessqssoooqssoosqossoqssssoqssosoqssoooqsoeseqsssosqsseooqsseooqsoseoqsseosqssoosqoeesqssssoqsoesoqsoeeoqsoeseqssoooqsoeeoqseeeeqoeesqsoeeeqssoooqssoeoqssoosqsoessqsssosqsoeeoqseeesqsseosqssoosqoeesqsoessqsssosqsoeooqsoessqossoqsssseqssosoqssoeoqssoeeqssoosqseeeeqoeesqssssoqsssosqssoosqsoessqsssosqsoeeoqseeesqsseosqssoosqoeesqssoooqsoesoqsoessqssosoqssoeoqssoosqsssosqseeeeqoeesqssoosqssoooqssoosqsssosqoeesqoeeoqssoeoqssooeqsoeeeqssoooqsoeeoqsoessqsssseqssoosqsoessqseeesqsseosqssoosqoeesqsssoeqssoeoqsoeseqsoeeeqssosoqsssseqsoseeqseeeeqoeesqssoeoqssoosqssosoqssoeoqssoosqsssosqossoqsssssqssosoqssoooqssssoqssossqseeesqsseosqssoosqoeesqossoqsoeosqsssosqsssssqssossqssoeoqsoessqossoqsoessqsssseqsoeeeqossoqssoesqssoeoqssoeeqssoesqssosoqssoeoqssoeeqssoesqsoessqossoqssssoqssoooqssosoqssoooqsoeeoqseeeeqoeesqsoeeoqssoeeqsssssqsssseqoseeqosooqosssqoeesqosooqosssqoeesqosooqosssqoeesqosooqosoeqooeeqooesqosesqseeesqsseosqssoosqoeesqossoqsoeosqsssosqsssssqssossqssoeoqsoessqossoqsoessqsoeeoqsssseqssoosqsoeseqssoeoqsoessqssoeoqssoooqssoosqseeeeqoeesqsssseqssosoqssosoqoeesqosooqosoeqooseqoossqsoeseqoeesqssssoqsoesoqsssssqssoeoqssssoqossoqsssssqsssosqsosesqssoeoqsssosqsoeeoqoseeqosooqosoeqooesqooeoqosssqoeesqooeeqosssqoeesqosooqosoeqooeoqooesqosssqoeesqooeeqosesqseeesqsseosqssoosqoeesqossoqssoooqossoqsoessqsoeeoqsssseqssoosqsoeseqssoeoqsoessqssoeoqssoooqssoosqseeeeqoeesqsssseqssosoqssosoqoeesqosooqosoeqooseqoossqsoeseqoeesqssssoqsoesoqsssssqssoeoqssssoqossoqsssssqsssosqsosesqssoeoqsssosqsoeeoqoseeqosooqosoeqooesqooeoqosssqoeesqooeeqosssqoeesqosooqosoeqooeoqooesqosssqoeesqooeeqosesqseeesqsseosqssoosqoeesqsoessqsoeeoqsssseqssoosqsoeseqssoeoqsoessqssoeoqssoooqssoosqseeeeqoeesqsssseqssosoqssosoqoeesqosooqosoeqooseqoossqsoeseqoeesqssssoqsoesoqsssssqssoeoqssssoqossoqsssssqsssosqsosesqssoeoqsssosqsoeeoqoseeqosooqosoeqooesqooeoqosssqoeesqooeeqosssqoeesqosooqosoeqooeoqooesqosssqoeesqooeeqosesqseeesqsseosqssoosqsosssqsseosqssoosqosoeqsseoeqsseoeqsssseqssssoqsoessqssoeoqssoooqssoosqossoqsssssqsoesoqsoessqsoessqssoooqssoosqossoqssoooqssossqsseooqsseooqsoseoqsseosqssoosqoeesqssssoqssoooqssosoqssoooqsoeeoqseeeeqoeesqoessqosooqosooqosooqseeesqsseosqssoosqoeesqsoeosqssoeoqsssoeqsoessqssoesqseeeeqoeesqooeeqosooqosooqoeoeqseeesqsseosqssoosqsosssqsseosqssoosqosoeqsseoeqsseoeqsssseqssssoqsoessqssoeoqssoooqssoosqossoqsssssqsoesoqsoessqsoessqssoooqssoosqossoqssssoqssosoqssoooqsoeseqsssosqsseooqsseooqsoseoqsseosqssoosqoeesqssssoqssoooqssosoqssoooqsoeeoqseeeeqoeesqoessqooeeqsssosqooosqssssoqsssssqsssosqseeesqsseosqssoosqsosssqsseosqssoosqosoeqsseoeqsseoeqssoeoqssssoqssoooqssoosqsseooqsseooqosoeqsoeseqsoeoeqssoeeqsoseoqsseosqssoosqoeesqsoeeeqsssseqsssoeqsssoeqssoeoqssoosqssoeeqossoqsoessqssoooqsoeeeqseeeeqoeesqooeeqsoeeoqsssosqssooeqseeesqsseosqssoosqsosssqsseosqssoosqssoeoqssooeqssoeeqosoeqsseoeqsseoeqssoeoqssssoqssoooqssoosqsseooqsseooqsoseoqsseosqssoosqoeesqsoeosqssoeoqsssoeqsoessqssoesqseeeeqoeesqooeeqosooqosooqsoeeeqsoeooqseeesqsseosqssoosqoeesqsoeeeqsssseqsssoeqsssoeqssoeoqssoosqssoeeqseeeeqoeesqosooqseeesqsseosqssoosqoeesqssooeqsssseqsoeeoqssoeeqssoeoqssoosqossoqsssssqssoooqsoessqsoessqssoooqssooeqseeeeqooeeqosooqsoeeeqsoeooqseeesqsseosqssoosqsosssqoeesqsseosqssoosqosoeqsseoeqsseoeqsssseqssssoqsoessqssoeoqssoooqssoosqsseooqsseooqoeesqsssseqsoseoqsseosqssoosqoeesqsssooqssoooqssoosqsoessqossoqsoeosqsssosqssoeoqssoeeqssoesqsoessqseeeeqsssssqssoooqssosoqsssoeqseeesqsseosqssoosqsosssqsseosqssoosqosoeqsseoeqsseoeqsoessqssoesqsssosqssooeqsssosqooesqsssesqssssoqssosoqssoooqsoeseqsssosqsssesqsssssqsoessqssoosqsseooqsseooqosssqsseosqssoosqosoeqsseoeqsseoeqsoessqssoesqsssosqssooeqsssosqooesqsssesqssssoqssosoqssoooqsoeseqsssosqsssesqsssssqsoessqssoosqsseooqsseooqseeeeqsssseqssssoqsoessqssoeoqsoeoeqsssosqosssqsseosqssoosqosoeqsseoeqsseoeqsoessqssoesqsssosqssooeqsssosqooesqsssesqssssoqssosoqssoooqsoeseqsssosqsssesqsssssqsoessqssoosqsseooqsseooqseeeeqsssooqssoooqssssoqsoesoqsoeseqsoseoqsseosqssoosqoeesqsssssqsssseqssssoqssossqssoeeqsoeeoqssoooqsoesoqssoosqsssoeqseeeeqoeesqoessqsssooqsssooqsssooqseeesqsseosqssoosqoeesqsssssqssoooqsoeeoqsssoeqsssosqsoeeoqossoqsoeeoqsssseqsssoeqssoeoqsoesoqsoeseqseeeeqoeesqoossqosooqoeoeqseeesqsseosqssoosqoeesqssoesqsssosqssoeoqssoeeqssoesqsoessqseeeeqoeesqooeoqoossqsoeeeqsoeooqseeesqsseosqssoosqoeesqsoeosqssoeoqsssoeqsoessqssoesqseeeeqoeesqooeoqoossqsoeeeqsoeooqseeesqsseosqssoosqoeesqsoeeeqsssseqsssoeqsssoeqssoeoqssoosqssoeeqseeeeqoeesqoooeqsoeeeqsoeooqseeesqsseosqssoosqoeesqsoeeeqssoooqsoeseqssoeoqsoessqssoeoqssoooqssoosqseeeeqoeesqsssseqsssssqsoeseqssoooqssosoqsoesoqsoessqsssosqseeesqsseosqssoosqoeesqsoeeoqssoeoqssoeeqssoesqsoessqseeeeqoeesqossoqooeeqooesqsoeeeqsoeooqseeesqsseosqssoosqoeesqsoessqssoooqsoeeeqseeeeqoeesqossoqooeeqooesqsoeeeqsoeooqseeesqsseosqssoosqoeesqssssoqsoesoqsoeeoqsoeseqssoooqsoeeoqseeeeqoeesqsoeeeqssoooqssoeoqssoosqsoessqsssosqsoeeoqseeesqsseosqssoosqoeesqssoooqsoesoqsoessqssosoqssoeoqssoosqsssosqseeeeqoeesqssoosqssoooqssoosqsssosqseeesqsseosqssoosqoeesqsssssqssoooqsoeeoqsssoeqsssosqsoeeoqseeeeqoeesqssoosqssoooqssoosqsssosqseeesqsseosqssoosqoeesqsssssqssoooqsoeooqossoqsoeseqssoesqsssseqsssoeqssoooqsoeosqseeeeqoeesqssoosqssoooqssoosqsssosqseeesqsseosqssoosqoeesqsssoeqssoeoqsoeseqsoeeeqssosoqsssseqsoseeqseeeeqoeesqsssooqssosoqsssosqsoeooqseeesqsseosqssoosqoeesqssoseqsoesoqsoeseqsoessqssoeoqsssooqsoseeqossoqssssoqssoooqssoosqsoessqsssosqssoosqsoessqseeeeqoeesqssssoqsssosqssoosqsoessqsssosqsoeeoqseeesqsseosqssoosqoeesqsssseqssosoqssoeoqssoeeqssoosqossoqssoeoqsoessqsssosqssooeqsoeseqseeeeqoeesqssssoqsssosqssoosqsoessqsssosqsoeeoqseeesqsseosqssoosqsosssqsseosqssoosqosoeqsseoeqsseoeqsoeosqsoeeoqsssseqsoeeeqsoeeeqsssosqsoeeoqsseooqsseooqsoseoqsseosqssoosqoeesqsoeeeqsssseqsssoeqsssoeqssoeoqssoosqssoeeqossoqsoessqssoooqsoeeeqseeeeqoeesqooeeqosooqsoeeeqsoeooqseeesqsseosqssoosqoeesqssooeqsssseqsoeeoqssoeeqssoeoqssoosqossoqsssssqssoooqsoessqsoessqssoooqssooeqseeeeqoeesqooeeqosooqsoeeeqsoeooqseeesqsseosqssoosqoeesqsssoeqssoeoqsoeseqsoeeeqssosoqsssseqsoseeqseeeeqoeesqsssooqssosoqsssosqsoeooqseeesqsseosqssoosqoeesqssoseqsoesoqsoeseqsoessqssoeoqsssooqsoseeqossoqssssoqssoooqssoosqsoessqsssosqssoosqsoessqseeeeqoeesqssssoqsssosqssoosqsoessqsssosqsoeeoqseeesqsseosqssoosqsosssqsseosqssoosqosoeqsseoeqsseoeqsssooqsssseqsssoeqsssosqsesoeqssoosqsesesqssoooqsoeosqssoosqsseooqsseooqsoseoqsseosqssoosqoeesqossoqsoeosqsssosqsssssqssossqssoeoqsoessqossoqsssseqssoosqssoeoqssooeqsssseqsoessqssoeoqssoooqssoosqossoqssoosqsssseqssooeqsssosqseeeeqoeesqsssooqsssseqsssoeqsssosqsesoeqssoosqsesesqssoooqsoeosqssoosqseeesqsseosqssoosqoeesqsssseqssoosqssoeoqssooeqsssseqsoessqssoeoqssoooqssoosqossoqssoosqsssseqssooeqsssosqseeeeqoeesqsssooqsssseqsssoeqsssosqsesoeqssoosqsesesqssoooqsoeosqssoosqseeesqsseosqssoosqoeesqossoqsoeosqsssosqsssssqssossqssoeoqsoessqossoqsssseqssoosqssoeoqssooeqsssseqsoessqssoeoqssoooqssoosqossoqsssoeqsoesoqsoeeoqsssseqsoessqssoeoqssoooqssoosqseeeeqoeesqosooqosoeqooeoqsoeseqseeesqsseosqssoosqoeesqsssseqssoosqssoeoqssooeqsssseqsoessqssoeoqssoooqssoosqossoqsssoeqsoesoqsoeeoqsssseqsoessqssoeoqssoooqssoosqseeeeqoeesqosooqosoeqooeoqsoeseqseeesqsseosqssoosqoeesqossoqsoeosqsssosqsssssqssossqssoeoqsoessqossoqsssseqssoosqssoeoqssooeqsssseqsoessqssoeoqssoooqssoosqossoqsssooqssoeoqssosoqssosoqossoqssooeqssoooqsssoeqsssosqseeeeqoeesqsssssqssoooqsoessqssoesqseeesqsseosqssoosqoeesqsssseqssoosqssoeoqssooeqsssseqsoessqssoeoqssoooqssoosqossoqsssooqssoeoqssosoqssosoqossoqssooeqssoooqsssoeqsssosqseeeeqoeesqsssssqssoooqsoessqssoesqseeesqsseosqssoosqsosssqsseosqssoosqseeoeqssossqsssosqsoseeqsssooqsoeeoqsssseqssooeqsssosqsoeseqoeesqsssooqsssseqsssoeqsssosqsesoeqssoosqsesesqssoooqsoeosqssoosqoeesqsoseoqsseosqssoosqoeesqosooqoeoeqoeesqsoseoqsseosqssoosqoeesqssoooqsoeeeqsssseqssssoqssoeoqsoessqsoseeqseeeeqoeesqosooqseeesqsseosqssoosqoeesqsoessqsoeeoqsssseqssoosqsoeseqsssooqssoooqsoeeoqssooeqseeeeqoeesqsoessqsoeeoqsssseqssoosqsoeseqssosoqsssseqsoessqsssosqssessqoseeqossoqooesqosooqsoeeeqsoeooqosesqseeesqsseosqssoosqoeesqsosssqsseosqssoosqoeesqooeeqosooqosooqoeoeqoeesqsoseoqsseosqssoosqoeesqssoooqsoeeeqsssseqssssoqssoeoqsoessqsoseeqseeeeqoeesqooeeqseeesqsseosqssoosqoeesqsoessqsoeeoqsssseqssoosqsoeseqsssooqssoooqsoeeoqssooeqseeeeqoeesqsoessqsoeeoqsssseqssoosqsoeseqssosoqsssseqsoessqsssosqssessqoseeqosooqosesqseeesqsseosqssoosqoeesqsosssqsseosqssoosqsosssqsseosqssoosqosoeqsseoeqsseoeqsoeeeqsoeeoqssoooqsseooqsseooqseeeeqssoosqssoooqsoessqoseeqsseosqssoosqosoeqsseoeqsseoeqsoeseqssoesqssoooqsoeosqsseooqsseooqosesqosssqsseosqssoosqosoeqsseoeqsseoeqssooeqssoooqsssoeqsssseqssosoqsseooqsseooqseeeeqssoosqssoooqsoessqoseeqsseosqssoosqosoeqsseoeqsseoeqsoeseqssoesqssoooqsoeosqsseooqsseooqosesqsoseoqsseosqssoosqoeesqsssoeqssoeoqsoeseqsoeeeqssosoqsssseqsoseeqseeeeqoeesqssoosqssoooqssoosqsssosqseeesqsseosqssoosqsosssqsseosqssoosqosoeqsseoeqsseoeqssooeqssoooqsssoeqsssseqssosoqsseooqsseooqoeesqsseosqssoosqosoeqsseoeqsseoeqsseoeqssssoqssoooqssoosqsoessqsssosqssoosqsoessqsseooqsseooqsseooqoeesqosoeqsseoeqsseoeqsseoeqsseoeqssoeoqssooeqsssseqssoeeqsssosqsssesqsoeosqsoeeoqsssseqsoeeeqsoeeeqsssosqsoeeoqsseooqsseooqsseooqsseooqsoseoqsseosqssoosqoeesqsoeeeqsssseqsssoeqsssoeqssoeoqssoosqssoeeqossoqsoessqssoooqsoeeeqseeeeqoeesqooeeqsoeeoqsssosqssooeqseeesqsseosqssoosqoeesqsoeeeqsssseqsssoeqsssoeqssoeoqssoosqssoeeqossoqsssssqssoooqsoessqsoessqssoooqssooeqseeeeqoeesqosooqseeesqsseosqssoosqsosssqsseosqssoosqosoeqsseoeqsseoeqssooeqssoooqsssoeqsssseqssosoqsseooqsseooqoeesqsseosqssoosqosoeqsseoeqsseoeqsseoeqssssoqssoooqssoosqsoessqsssosqssoosqsoessqsseooqsseooqsseooqoeesqosoeqsssseqsssoeqsssssqssosoqssoooqssssoqssossqsssesqsoessqssoeoqsoessqssosoqsssosqosssqsseosqssoosqosoeqssssoqssoesqsoeeeqsssseqsssoeqsssssqsoeeeqsoeeoqssoooqsssesqsoeosqsoeeoqsssseqsoeeeqsssesqsoessqssoeoqsoessqssosoqsssosqoeesqsoseoqsseosqssoosqoeesqssooeqsssseqsoeeoqssoeeqssoeoqssoosqseeeeqoeesqooeeqosoeqooeoqsoeeoqsssosqssooeqoeesqosooqseeesqsseosqssoosqsosssqsseosqssoosqosoeqsseoeqsseoeqssooeqssoooqsssoeqsssseqssosoqsseooqsseooqoeesqsseosqssoosqosoeqsseoeqsseoeqsseoeqssssoqssoooqssoosqsoessqsssosqssoosqsoessqsseooqsseooqsseooqoeesqosoeqsssseqsssoeqsssssqssosoqssoooqssssoqssossqsssesqsoeseqsoesoqsssssqsoessqssoeoqsoessqssosoqsssosqsoseoqsseosqssoosqoeesqsoeeeqsssseqsssoeqsssoeqssoeoqssoosqssoeeqseeeeqoeesqosooqoeesqooeeqsoeeoqsssosqssooeqseeesqsseosqssoosqoeesqsoeeeqsssseqsssoeqsssoeqssoeoqssoosqssoeeqossoqsssssqssoooqsoessqsoessqssoooqssooeqseeeeqoeesqooeeqsoeeoqsssosqssooeqseeesqsseosqssoosqsosssqsseosqssoosqsssssqssoooqsssoeqsoseeqoeesqoessqsseoeqsseoeqssooeqssoooqsssoeqsssseqssosoqsseooqsseooqosoeqsssseqssssoqsoessqssoeoqsoeoeqsssosqsoseoqsseosqssoosqoeesqsoeosqssoeoqsssoeqsoessqssoesqseeeeqoeesqoosoqosooqoeoeqseeesqsseosqssoosqoeesqssosoqsssosqsssooqsoessqseeeeqoeesqooesqosooqoeoeqseeesqsseosqssoosqoeesqsoessqssoooqsoeeeqseeeeqoeesqooeeqosooqoeoeqseeesqsseosqssoosqoeesqssoesqsssosqssoeoqssoeeqssoesqsoessqseeeeqoeesqooosqosooqsoeoeqssoesqseeesqsseosqssoosqsosssqsseosqssoosqoeesqseeoeqssooeqsssosqsssoeqssoeoqsssseqoeesqssoooqssoosqssosoqsoseeqoeesqsoeseqssssoqsoeeoqsssosqsssosqssoosqoeesqsssseqssoosqsssoeqoeesqoseeqssooeqsssseqsoeooqossoqsoeosqssoeoqsssoeqsoessqssoesqseeeeqooosqosooqosooqsoeeeqsoeooqosesqoeesqsoseoqsseosqssoosqoeesqsssssqssoooqsssoeqsoseeqoeesqoessqsseoeqsseoeqssooeqssoooqsssoeqsssseqssosoqsseooqsseooqosoeqsssseqssssoqsoessqssoeoqsoeoeqsssosqsoseoqsseosqssoosqoeesqsoeosqssoeoqsssoeqsoessqssoesqseeeeqoeesqooosqosooqoeoeqseeesqsseosqssoosqoeesqssosoqsssosqsssooqsoessqseeeeqoeesqooeeqosooqoeoeqseeesqsseosqssoosqoeesqsoessqssoooqsoeeeqseeeeqoeesqoossqoeoeqseeesqsseosqssoosqoeesqssoesqsssosqssoeoqssoeeqssoesqsoessqseeeeqoeesqooooqooooqsoeoeqssoesqseeesqsseosqssoosqoeesqsosssqsseosqssoosqsosssqsseosqssoosqoeesqseeoeqssooeqsssosqsssoeqssoeoqsssseqoeesqssoooqssoosqssosoqsoseeqoeesqsoeseqssssoqsoeeoqsssosqsssosqssoosqoeesqsssseqssoosqsssoeqoeesqoseeqssooeqsssseqsoeooqossoqsoeosqssoeoqsssoeqsoessqssoesqseeeeqoossqoossqosooqsoeeeqsoeooqosesqoeesqsoseoqsseosqssoosqoeesqsssssqssoooqsssoeqsoseeqoeesqoessqosoeqsseoeqsseoeqssooeqssoooqsssoeqsssseqssosoqsseooqsseooqosoeqsssseqssssoqsoessqssoeoqsoeoeqsssosqsoseoqsseosqssoosqoeesqsoeosqssoeoqsssoeqsoessqssoesqseeeeqoeesqooeeqosooqosooqoeoeqseeesqsseosqssoosqoeesqssosoqsssosqsssooqsoessqseeeeqoeesqosooqoeoeqseeesqsseosqssoosqoeesqsoessqssoooqsoeeeqseeeeqoeesqosooqoeoeqseeesqsseosqssoosqoeesqssoesqsssosqssoeoqssoeeqssoesqsoessqseeeeqoeesqooooqooooqsoeoeqssoesqseeesqsseosqssoosqoeesqsosssqsseosqssoosqoeesqoessqsseoeqsseoeqssoeoqssoosqsoeseqsoessqsoeeoqsoesoqssssoqsoessqssoeoqssoooqssoosqsssesqssssoqssosoqssoooqsoeseqsssosqsssesqsssssqsoessqssoosqsseooqsseooqsoseoqsseosqssoosqoeesqsoessqssoooqsoeeeqseeeeqoeesqooesqoeoeqseeesqsseosqssoosqoeesqsoeeoqssoeoqssoeeqssoesqsoessqseeeeqoeesqooesqoeoeqseeesqsseosqssoosqoeesqsosssqsseosqssoosqsosssqsseosqssoosqosoeqsseoeqsseoeqsssseqsssoeqsssssqssosoqssoooqssssoqssossqsssesqsssssqsoessqssoosqsseooqsseooqosssqsseosqssoosqosoeqsseoeqsseoeqsssseqsssoeqsssssqssosoqssoooqssssoqssossqsssesqsssssqsoessqssoosqsssesqsoeseqsssosqssssoqssoooqssoosqsssoeqsssseqsoeeoqsoseeqsseooqsseooqsoseoqsseosqssoosqoeesqsssssqssoooqsoeeoqsssoeqsssosqsoeeoqseeeeqoeesqssoosqssoooqssoosqsssosqseeesqsseosqssoosqoeesqsssssqssoooqsoeeoqsssoeqsssosqsoeeoqossoqsoeeoqsssseqsssoeqssoeoqsoesoqsoeseqseeeeqoeesqoossqsoeeeqsoeooqseeesqsseosqssoosqoeesqsoeeeqsssseqsssoeqsssoeqssoeoqssoosqssoeeqseeeeqoeesqooooqsoeeeqsoeooqoeesqooesqosooqsoeeeqsoeooqoeesqoeeoqssoeoqssooeqsoeeeqssoooqsoeeoqsoessqsssseqssoosqsoessqseeesqsseosqssoosqoeesqsssooqssoooqssoosqsoessqossoqsoeseqssoeoqsosesqsssosqseeeeqoeesqooeeqooesqsoeeeqsoeooqseeesqsseosqssoosqoeesqssssoqssoooqssosoqssoooqsoeeoqseeeeqoeesqsoeosqssoesqssoeoqsoessqsssosqoeesqoeeoqssoeoqssooeqsoeeeqssoooqsoeeoqsoessqsssseqssoosqsoessqseeesqsseosqssoosqoeesqssooeqsssseqsoeeoqssoeeqssoeoqssoosqossoqsoessqssoooqsoeeeqseeeeqoeesqosooqosoeqoossqsoeeoqsssosqssooeqseeesqsseosqssoosqoeesqsoessqsoeeoqsssseqssoosqsoeseqssoeoqsoessqssoeoqssoooqssoosqseeeeqoeesqosooqosoeqooeoqsoeseqseeesqsseosqssoosqoeesqsssssqssoooqsoeeoqsssoeqsssosqsoeeoqseeeeqoeesqooesqsoeeeqsoeooqoeesqsoeseqssoooqssosoqssoeoqsssoeqseeesqsseosqssoosqsosssqsseosqssoosqosoeqsseoeqsseoeqsssseqsssoeqsssssqssosoqssoooqssssoqssossqsssesqsssssqsoessqssoosqsseooqsseooqseeeeqssoesqssoooqsoeoeqsssosqsoeeoqosssqsseosqssoosqosoeqsseoeqsseoeqsssseqsssoeqsssssqssosoqssoooqssssoqssossqsssesqsssssqsoessqssoosqsssesqsoeseqsssosqssssoqssoooqssoosqsssoeqsssseqsoeeoqsoseeqsseooqsseooqseeeeqssoesqssoooqsoeoeqsssosqsoeeoqsoseoqsseosqssoosqoeesqsssssqsssseqssssoqssossqssoeeqsoeeoqssoooqsoesoqssoosqsssoeqseeeeqoeesqssoosqssoooqssoosqsssosqseeesqsseosqssoosqoeesqsssssqssoooqsoeooqossoqsoeseqssoesqsssseqsssoeqssoooqsoeosqseeeeqoeesqssoosqssoooqssoosqsssosqseeesqsseosqssoosqsosssqsseosqssoosqosoeqsseoeqsseoeqsssseqsssoeqsssssqssosoqssoooqssssoqssossqsssesqsssssqsoessqssoosqsseooqsseooqseeeeqssoesqssoooqsoeoeqsssosqsoeeoqsoseoqsseosqssoosqoeesqssssoqssoooqssosoqssoooqsoeeoqseeeeqoeesqoessqsssooqsssooqsssooqoeesqoeeoqssoeoqssooeqsoeeeqssoooqsoeeoqsoessqsssseqssoosqsoessqseeesqsseosqssoosqsosssqsseosqssoosqosoeqsseoeqsseoeqsssseqsssoeqsssssqssosoqssoooqssssoqssossqsssesqsssssqsoessqssoosqsssesqsoeseqsssosqssssoqssoooqssoosqsssoeqsssseqsoeeoqsoseeqsseooqsseooqseeeeqssoesqssoooqsoeoeqsssosqsoeeoqsoseoqsseosqssoosqoeesqssssoqssoooqssosoqssoooqsoeeoqseeeeqoeesqoessqooosqooosqooosqoeesqoeeoqssoeoqssooeqsoeeeqssoooqsoeeoqsoessqsssseqssoosqsoessqseeesqsseosqssoosqsosssqsseosqssoosqosoeqsseoeqsseoeqsssseqsssoeqsssssqssosoqssoooqssssoqssossqsssesqsssssqsoessqssoosqsseooqsseooqsoseoqsseosqssoosqoeesqsssssqsssseqssssoqssossqssoeeqsoeeoqssoooqsoesoqssoosqsssoeqossoqssssoqssoooqssosoqssoooqsoeeoqseeeeqoeesqoessqsssooqsssooqsssooqseeesqsseosqssoosqoeesqsssssqssoooqsoeooqossoqsoeseqssoesqsssseqsssoeqssoooqsoeosqseeeeqoeesqosooqsoeeeqsoeooqoeesqoosoqsoeeeqsoeooqoeesqooeeqooosqsoeeeqsoeooqoeesqossoqoossqsoeeeqsoeooqoeesqoessqsssooqsssooqsssooqseeesqsseosqssoosqoeesqsssssqssoooqsoeeoqsssoeqsssosqsoeeoqossoqssssoqssoooqssosoqssoooqsoeeoqseeeeqoeesqoessqsssooqsssooqsssooqseeesqsseosqssoosqsosssqsseosqssoosqosoeqsseoeqsseoeqsssseqsssoeqsssssqssosoqssoooqssssoqssossqsssesqsssssqsoessqssoosqsssesqsoeseqsssosqssssoqssoooqssoosqsssoeqsssseqsoeeoqsoseeqsseooqsseooqsoseoqsseosqssoosqoeesqsssssqsssseqssssoqssossqssoeeqsoeeoqssoooqsoesoqssoosqsssoeqossoqssssoqssoooqssosoqssoooqsoeeoqseeeeqoeesqoessqooosqsssseqooosqsssseqooosqsssseqseeesqsseosqssoosqoeesqsssssqssoooqsoeooqossoqsoeseqssoesqsssseqsssoeqssoooqsoeosqseeeeqoeesqosooqsoeeeqsoeooqoeesqoosoqsoeeeqsoeooqoeesqooeeqooosqsoeeeqsoeooqoeesqossoqoossqsoeeeqsoeooqoeesqoessqooosqsssseqooosqsssseqooosqsssseqseeesqsseosqssoosqoeesqsssssqssoooqsoeeoqsssoeqsssosqsoeeoqossoqssssoqssoooqssosoqssoooqsoeeoqseeeeqoeesqoessqooosqsssseqooosqsssseqooosqsssseqseeesqsseosqssoosqsosssqsseosqssoosqsssssqssoooqsssoeqsoseeqoeesqosoeqsseoeqsseoeqssooeqssoooqsssoeqsssseqssosoqsseooqsseooqsoseoqsseosqssoosqoeesqsoeeeqssoooqsoeseqssoeoqsoessqssoeoqssoooqssoosqseeeeqoeesqsssooqssoeoqsoeooqsssosqsssoeqseeesqsseosqssoosqoeesqsosesqossoqssoeoqssoosqsssoeqsssosqsoeooqseeeeqoeesqooooqooooqooooqooooqooooqooooqooooqooooqooooqooooqseeesqsseosqssoosqoeesqssosoqsssosqsssooqsoessqseeeeqoeesqosooqseeesqsseosqssoosqoeesqsoessqssoooqsoeeeqseeeeqoeesqosooqseeesqsseosqssoosqoeesqsoeosqssoeoqsssoeqsoessqssoesqseeeeqoeesqooeeqosooqosooqoeoeqseeesqsseosqssoosqoeesqssoesqsssosqssoeoqssoeeqssoesqsoessqseeeeqoeesqooeeqosooqosooqoeoeqseeesqsseosqssoosqoeesqssoooqsoeoeqsssosqsoeeoqsssooqssosoqssoooqsoeosqseeeeqoeesqsssseqsoesoqsoessqssoooqseeesqsseosqssoosqoeesqsssssqsssseqssssoqssossqssoeeqsoeeoqssoooqsoesoqssoosqsssoeqossoqssssoqssoooqssosoqssoooqsoeeoqseeeeqoeesqoessqosooqosooqosooqseeesqsseosqssoosqoeesqsssssqsssseqssssoqssossqssoeeqsoeeoqssoooqsoesoqssoosqsssoeqossoqssssoqssoooqssosoqssoooqsoeeoqseeeeqoeesqsoeeoqssoeeqsssssqsssseqoseeqosooqosssqoeesqosooqosssqoeesqosooqosssqoeesqosooqosoeqoooeqosesqseeesqsseosqssoosqsosssqsseosqssoosqosoeqsseoeqsseoeqssooeqssoooqsssoeqsssseqssosoqsseooqsseooqoeesqosoeqsseoeqsseoeqsoeseqssoesqssoooqsoeosqsseooqsseooqsoseoqsseosqssoosqoeesqsssoeqssoeoqsoeseqsoeeeqssosoqsssseqsoseeqseeeeqoeesqsssssqssosoqssoooqssssoqssossqseeesqsseosqssoosqsosssqsseosqssoosqosoeqsseoeqsseoeqssooeqssoooqsssoeqsssseqssosoqsseooqsseooqoeesqsseosqssoosqosoeqsseoeqsseoeqsseoeqssssoqssoooqssoosqsoessqsssosqssoosqsoessqsseooqsseooqsseooqsoseoqsseosqssoosqoeesqsssssqsssseqssssoqssossqssoeeqsoeeoqssoooqsoesoqssoosqsssoeqossoqssssoqssoooqssosoqssoooqsoeeoqseeeeqoeesqoessqsssooqsssooqsssooqseeesqsseosqssoosqoeesqssooeqsssseqsoeeoqssoeeqssoeoqssoosqseeeeqoeesqsssseqsoesoqsoessqssoooqseeesqsseosqssoosqoeesqsoeeeqsssseqsssoeqsssoeqssoeoqssoosqssoeeqseeeeqoeesqooesqosooqsoeeeqsoeooqseeesqsseosqssoosqoeesqsssssqssoooqsoeeoqsssoeqsssosqsoeeoqseeeeqoeesqssoosqssoooqssoosqsssosqseeesqsseosqssoosqoeesqsoeosqssoeoqsssoeqsoessqssoesqseeeeqoeesqsoseoqsoseoqsoeosqssoeoqsssoeqsoessqssoesqsosssqsosssqoeoeqseeesqsseosqssoosqoeesqsssssqssoooqsoeeoqsssoeqsssosqsoeeoqossoqsoeeoqsssseqsssoeqssoeoqsoesoqsoeseqseeeeqoeesqsoseoqsoseoqsssssqssoooqsoeeoqsssoeqsssosqsoeeoqsoeeoqsssseqsssoeqssoeoqsoesoqsoeseqsosssqsosssqoeoeqseeesqsseosqssoosqoeesqsoeeeqssoooqsoeseqssoeoqsoessqssoeoqssoooqssoosqseeeeqoeesqsoeeoqsssosqssosoqsssseqsoessqssoeoqsoeoeqsssosqseeesqsseosqssoosqsosssqsseosqssoosqosoeqsseoeqsseoeqsoessqssoesqsssosqssooeqsssosqsseooqsseooqosoeqsoessqssoesqsssosqssooeqsssosqooeoqsoseoqsseosqssoosqoeesqsoessqsssosqsoeooqsoessqossoqsssseqssosoqssoeoqssoeeqssoosqseeeeqoeesqssssoqsssosqssoosqsoessqsssosqsoeeoqseeesqsseosqssoosqsosssqsseosqssoosqosoeqsseoeqsseoeqsoessqssoesqsssosqssooeqsssosqsseooqsseooqoeesqoseoqsoseoqsseosqssoosqoeesqssssoqssoooqssosoqssoooqsoeeoqseeeeqoeesqoessqosooqosooqosooqseeesqsseosqssoosqoeesqsoessqsssosqsoeooqsoessqossoqsssseqssosoqssoeoqssoeeqssoosqseeeeqoeesqssssoqsssosqssoosqsoessqsssosqsoeeoqseeesqsseosqssoosqoeesqsoessqsssosqsoeooqsoessqossoqsssoeqsssosqssssoqssoooqsoeeoqsssseqsoessqssoeoqssoooqssoosqseeeeqoeesqssoosqssoooqssoosqsssosqseeesqsseosqssoosqsosssqsseosqssoosqosoeqsseoeqsseoeqsoessqssoesqsssosqssooeqsssosqsseooqsseooqoeesqsssseqsoseoqsseosqssoosqoeesqssssoqsoesoqsoeeoqsoeseqssoooqsoeeoqseeeeqoeesqsoeeeqssoooqssoeoqssoosqsoessqsssosqsoeeoqseeesqsseosqssoosqsosssqsseosqssoosqosoeqsseoeqsseoeqsoessqssoesqsssosqssooeqsssosqsseooqsseooqoeesqsssseqseeeeqsssooqssoeoqsoeeoqsoeseqsoessqossoqssssoqssoesqssoeoqssosoqsssoeqsoseoqsseosqssoosqoeesqssooeqsssseqsoeeoqssoeeqssoeoqssoosqossoqsoeeoqssoeoqssoeeqssoesqsoessqseeeeqooeeqsoeeoqsssosqssooeqseeesqsseosqssoosqsosssqsseosqssoosqosoeqsseoeqsseoeqsoessqssoesqsssosqssooeqsssosqsseooqsseooqoeesqsssseqsoseoqsseosqssoosqoeesqsoessqsssosqsoeooqsoessqossoqsssoeqsssosqssssoqssoooqsoeeoqsssseqsoessqssoeoqssoooqssoosqseeeeqoeesqssoosqssoooqssoosqsssosqseeesqsseosqssoosqsosssqsseosqssoosqosoeqsseoeqsseoeqsoessqssoesqsssosqssooeqsssosqsseooqsseooqosoeqsoessqssoesqsssosqssooeqsssosqooesqoeesqsssseqseeeeqsssooqssoeoqsoeeoqsoeseqsoessqossoqssssoqssoesqssoeoqssosoqsssoeqsoseoqsseosqssoosqoeesqssooeqsssseqsoeeoqssoeeqssoeoqssoosqossoqsssssqssoooqsoessqsoessqssoooqssooeqseeeeqoeesqosooqosoeqoossqsoeeoqsssosqssooeqoeesqoeeoqssoeoqssooeqsoeeeqssoooqsoeeoqsoessqsssseqssoosqsoessqseeesqsseosqssoosqsosssqsseosqssoosqoeesqseeoeqssooeqsssosqsssoeqssoeoqsssseqoeesqssoooqssoosqssosoqsoseeqoeesqsoeseqssssoqsoeeoqsssosqsssosqssoosqoeesqsssseqssoosqsssoeqoeesqoseeqssooeqsssseqsoeooqossoqsoeosqssoeoqsssoeqsoessqssoesqseeeeqooeeqosooqosooqosooqsoeeeqsoeooqosesqoeesqsoseoqsseosqssoosqosoeqsseoeqsseoeqssooeqssoooqsssoeqsssseqssosoqsseooqsseooqoeesqsseosqssoosqosoeqsseoeqsseoeqsseoeqssssoqssoooqssoosqsoessqsssosqssoosqsoessqsseooqsseooqsseooqsoseoqsseosqssoosqoeesqsoeosqssoeoqsssoeqsoessqssoesqseeeeqoeesqssssoqsssseqssosoqssssoqoseeqsoseoqsoseoqsoeosqssoeoqsssoeqsoessqssoesqsosssqsosssqoeoeqoeesqosseqoeesqooeeqoossqoeoeqosesqseeesqsseosqssoosqoeesqsosssqsseosqssoosqsosssqsseosqssoosqoeesqseeoeqssooeqsssosqsssoeqssoeoqsssseqoeesqssoooqssoosqssosoqsoseeqoeesqsoeseqssssoqsoeeoqsssosqsssosqssoosqoeesqsssseqssoosqsssoeqoeesqoseeqssooeqsssseqsoeooqossoqsoeosqssoeoqsssoeqsoessqssoesqseeeeqooosqosooqosooqsoeeeqsoeooqosesqoeesqsoseoqsseosqssoosqosoeqsseoeqsseoeqssooeqssoooqsssoeqsssseqssosoqsseooqsseooqoeesqsseosqssoosqosoeqsseoeqsseoeqsseoeqssssoqssoooqssoosqsoessqsssosqssoosqsoessqsseooqsseooqsseooqsoseoqsseosqssoosqoeesqsoeosqssoeoqsssoeqsoessqssoesqseeeeqoeesqssssoqsssseqssosoqssssoqoseeqsoseoqsoseoqsoeosqssoeoqsssoeqsoessqssoesqsosssqsosssqoeoeqoeesqosseqoeesqooesqoossqoeoeqosesqseeesqsseosqssoosqoeesqsosssqsseosqssoosqsosssqsseosqssoosqoeesqseeoeqssooeqsssosqsssoeqssoeoqsssseqoeesqssoooqssoosqssosoqsoseeqoeesqsoeseqssssoqsoeeoqsssosqsssosqssoosqoeesqsssseqssoosqsssoeqoeesqoseeqssooeqsssseqsoeooqossoqsoeosqssoeoqsssoeqsoessqssoesqseeeeqoooeqosooqosooqsoeeeqsoeooqosesqoeesqsoseoqsseosqssoosqosoeqsseoeqsseoeqssooeqssoooqsssoeqsssseqssosoqsseooqsseooqoeesqsseosqssoosqosoeqsseoeqsseoeqsseoeqssssoqssoooqssoosqsoessqsssosqssoosqsoessqsseooqsseooqsseooqsoseoqsseosqssoosqoeesqsoeosqssoeoqsssoeqsoessqssoesqseeeeqoeesqssssoqsssseqssosoqssssoqoseeqsoseoqsoseoqsoeosqssoeoqsssoeqsoessqssoesqsosssqsosssqoeoeqoeesqosseqoeesqooeoqoossqoeoeqosesqseeesqsseosqssoosqoeesqsosssqsseosqssoosqsosssqsseosqssoosqoeesqseeoeqssooeqsssosqsssoeqssoeoqsssseqoeesqssoooqssoosqssosoqsoseeqoeesqsoeseqssssoqsoeeoqsssosqsssosqssoosqoeesqsssseqssoosqsssoeqoeesqoseeqssooeqsssseqsoeooqossoqsoeosqssoeoqsssoeqsoessqssoesqseeeeqoossqosooqosooqsoeeeqsoeooqosesqoeesqsoseoqsseosqssoosqosoeqsseoeqsseoeqssooeqssoooqsssoeqsssseqssosoqsseooqsseooqoeesqsseosqssoosqosoeqsseoeqsseoeqsseoeqssssoqssoooqssoosqsoessqsssosqssoosqsoessqsseooqsseooqsseooqsoseoqsseosqssoosqoeesqsoeosqssoeoqsssoeqsoessqssoesqseeeeqoeesqooooqoossqoeoeqseeesqsseosqssoosqoeesqsosssqsseosqssoosqsosssqsseosqssoosqosoeqsseoeqsseoeqssssoqssoesqsoeeeqsssesqsssssqsoeeoqsssseqssoosqsssoeqssoeoqssoosqssoeeqsseooqsseooqsoseoqsseosqssoosqoeesqsssoeqssoeoqsoeseqsoeeeqssosoqsssseqsoseeqseeeeqoeesqssoeoqssoosqssosoqssoeoqssoosqsssosqossoqsssssqssosoqssoooqssssoqssossqseeesqsseosqssoosqoeesqssoesqsssosqssoeoqssoeeqssoesqsoessqseeeeqoeesqooseqosooqsoeeeqsoeooqseeesqsseosqssoosqoeesqsoeeeqsssseqsssoeqsssoeqssoeoqssoosqssoeeqseeeeqoeesqooeeqosooqsoeeeqsoeooqoeesqooesqosooqsoeeeqsoeooqseeesqsseosqssoosqoeesqsoessqsssosqsoeooqsoessqossoqsssseqssosoqssoeoqssoeeqssoosqseeeeqoeesqssssoqsssosqssoosqsoessqsssosqsoeeoqseeesqsseosqssoosqoeesqsssssqsssseqssssoqssossqssoeeqsoeeoqssoooqsoesoqssoosqsssoeqossoqssssoqssoooqssosoqssoooqsoeeoqseeeeqoeesqsoeosqssoesqssoeoqsoessqsssosqseeesqsseosqssoosqoeesqsssssqssoooqsoeeoqsssoeqsssosqsoeeoqossoqsoeeoqsssseqsssoeqssoeoqsoesoqsoeseqseeeeqoeesqooesqosooqsoeeeqsoeooqseeesqsseosqssoosqoeesqsssssqssoooqsoeooqossoqsoeseqssoeoqsosesqssoeoqssoosqssoeeqseeeeqoeesqsssssqssoooqsoeeoqsssoeqsssosqsoeeoqossoqsssssqssoooqsoeooqseeesqsseosqssoosqoeesqsoeeeqssoooqsoeseqssoeoqsoessqssoeoqssoooqssoosqseeeeqoeesqsssooqssoeoqsoeooqsssosqsssoeqseeesqsseosqssoosqoeesqsssssqssoooqsoessqsoessqssoooqssooeqseeeeqoeesqooesqoeoeqseeesqsseosqssoosqoeesqsosesqossoqssoeoqssoosqsssoeqsssosqsoeooqseeeeqoeesqooooqooooqooooqooooqooooqooooqooooqooooqooooqooooqseeesqsseosqssoosqoeesqsoeeoqssoeoqssoeeqssoesqsoessqseeeeqoeesqooesqoeoeqseeesqsseosqssoosqoeesqsssoeqssoeoqsoeseqsoeeeqssosoqsssseqsoseeqseeeeqssoosqssoooqssoosqsssosqseeesqsseosqssoosqsosssqsseosqssoosqosoeqsseoeqsseoeqsoeeeqssoooqsoeosqsssosqsoeeoqsssosqsssoeqsssesqsssssqsoseeqsseooqsseooqsoseoqsseosqssoosqoeesqsssoeqssoeoqsoeseqsoeeeqssosoqsssseqsoseeqseeeeqoeesqssoeoqssoosqssosoqssoeoqssoosqsssosqossoqsssssqssosoqssoooqssssoqssossqseeesqsseosqssoosqoeesqssoesqsssosqssoeoqssoeeqssoesqsoessqseeeeqoeesqooesqosooqsoeeeqsoeooqseeesqsseosqssoosqoeesqssooeqsssseqsoeeoqssoeeqssoeoqssoosqossoqsoeeoqssoeoqssoeeqssoesqsoessqseeeeqoeesqoossqsoeeeqsoeooqseeesqsseosqssoosqoeesqsssooqssoooqssoosqsoessqossoqsoeseqssoeoqsosesqsssosqseeeeqoeesqooeeqooesqsoeeeqsoeooqseeesqsseosqssoosqoeesqssssoqssoooqssosoqssoooqsoeeoqseeeeqoeesqoessqooseqooesqooseqsesseqoooeqooosqseeesqsseosqssoosqoeesqsoessqsssosqsoeooqsoessqossoqsoessqsoeeoqsssseqssoosqsoeseqsssooqssoooqsoeeoqssooeqseeeeqoeesqsoesoqsoeeeqsoeeeqsssosqsoeeoqssssoqsssseqsoeseqsssosqseeesqsseosqssoosqoeesqssosoqssoeoqssoosqsssosqossoqssoesqsssosqssoeoqssoeeqssoesqsoessqseeeeqoeesqooesqosooqsoeeeqsoeooqseeesqsseosqssoosqoeesqsoeoeqsssosqsoeeoqsoessqssoeoqssssoqsssseqssosoqossoqsssseqssosoqssoeoqssoeeqssoosqseeeeqoeesqsoessqssoooqsoeeeqseeesqsseosqssoosqsosssqsseosqssoosqosoeqsseoeqsseoeqssssoqssoesqsoeeeqsssesqsssssqsoeeoqsssseqsssoeqssoeoqssoosqssoeeqsssesqsoeseqsoeoeqssoeeqsseooqsseooqsoseoqsseosqssoosqoeesqsssoeqssoeoqsoeseqsoeeeqssosoqsssseqsoseeqseeeeqoeesqssoeoqssoosqssosoqssoeoqssoosqsssosqossoqsssssqssosoqssoooqssssoqssossqseeesqsseosqssoosqoeesqssoesqsssosqssoeoqssoeeqssoesqsoessqseeeeqoeesqooesqosooqsoeeeqsoeooqseeesqsseosqssoosqoeesqsoeoeqsssosqsoeeoqsoessqssoeoqssssoqsssseqssosoqossoqsssseqssosoqssoeoqssoeeqssoosqseeeeqoeesqsoessqssoooqsoeeeqseeesqsseosqssoosqsosssqsseosqssoosqosoeqsseoeqsseoeqssssoqssoesqsoeeeqsssesqsssssqsoeeoqsssseqsssoeqssoeoqssoosqssoeeqsssesqsoeseqsoeoeqssoeeqsseooqsseooqoeesqssoeoqssooeqssoeeqsoseoqsseosqssoosqoeesqsssoeqssoeoqsoeseqsoeeeqssosoqsssseqsoseeqseeeeqoeesqsssssqssosoqssoooqssssoqssossqseeesqsseosqssoosqoeesqssoesqsssosqssoeoqssoeeqssoesqsoessqseeeeqoeesqooeeqosooqosooqoeoeqseeesqsseosqssoosqoeesqsoeosqssoeoqsssoeqsoessqssoesqseeeeqoeesqsssseqsoesoqsoessqssoooqseeesqsseosqssoosqsosssqsseosqssoosqosoeqsseoeqsseoeqssssoqssoesqsoeeeqsssesqsssssqsoeeoqsssseqssoosqsssoeqssoeoqssoosqssoeeqsssesqsoeseqssoesqssoooqsoeosqsseooqsseooqsoseoqsseosqssoosqoeesqsssoeqssoeoqsoeseqsoeeeqssosoqsssseqsoseeqseeeeqoeesqsssssqssosoqssoooqssssoqssossqseeesqsseosqssoosqsosssqoeooqseeesqoeesqseeosqsssoeqsssssqssosoqssoooqssssoqssossqseooeqsssosqssoeeqssoeoqsoeooqsesseqssoeoqssoosqsssoeqsssosqsoeeoqosoeqssssoqssosoqsssseqsoeseqsoeseqosoeqssooeqsssseqsoeeeqoseeqoseeqsoeeeqosesqoeesqseeseqseessqoeesqsoseoqoeesqssssoqsoeseqsoeseqssssoqssoooqsssoeqsssosqoeesqseeseqoeesqssssoqsoeseqsoeseqssssoqssoooqsssoeqsssosqosoeqsoeeoqsssosqsoeeeqssosoqsssseqssssoqsssosqoseeqsoeeeqosssqoeesqoseeqssooeqsssseqsoessqssssoqssoesqsssosqsssoeqosesqoeesqseeseqseessqoeesqsoseoqoeesqssooeqsssseqsoessqssssoqssoesqsssosqsssoeqoeesqseeseqoeesqssooeqsssseqsoessqssssoqssoesqsssosqsssoeqosoeqsoeeoqsssosqsoeeeqssosoqsssseqssssoqsssosqoseeqseeosqsssoeqsssssqssosoqssoooqssssoqssossqseooeqsssosqssoeeqssoeoqsoeooqsesseqssoeoqssoosqsssoeqsssosqsoeeoqosoeqsoeseqsoeesqsoesoqsssseqsoeeoqsssosqsssssqsoeeoqsssseqssssoqssossqsssosqsoessqosssqoeooqoeooqosesqseeesqoeesqsoeeoqsssosqsoessqsoesoqsoeeoqssoosqoeesqsoessqssoesqssoeoqsoeseqosoeqsoeeoqssssoqssosoqsssseqsoeseqsoeseqoseeqssooeqsssseqsoessqssssoqssoesqsssosqsssoeqosesqseeesqoeesqsosssqosesqseeesqoeesqsosssqosesqseeesqoeesqssssoqsoeseqsoeseqssssoqssoooqsssoeqsssosqoeesqseeseqoeesqssssoqsoeseqsoeseqssssoqssoooqsssoeqsssosqosoeqsoeeoqsssosqsoeeeqssosoqsssseqssssoqsssosqoseeqseeosqsssoeqsssssqssosoqssoooqssssoqssossqseooeqsssosqssoeeqssoeoqsoeooqsesseqssoeoqssoosqsssoeqsssosqsoeeoqosoeqsoeseqsssosqsoessqsoessqssoeoqssoosqssoeeqsoeseqosssqoeesqoseeqssooeqsssseqsoessqssssoqssoesqsssosqsssoeqosesqoeesqseeseqseessqoeesqsoseoqoeesqssooeqsssseqsoessqssssoqssoesqsssosqsssoeqoeesqseeseqoeesqssooeqsssseqsoessqssssoqssoesqsssosqsssoeqosoeqsoeeoqsssosqsoeeeqssosoqsssseqssssoqsssosqoseeqseeosqsssoeqsssssqssosoqssoooqssssoqssossqseooeqsssosqssoeeqssoeoqsoeooqsesseqssoeoqssoosqsssoeqsssosqsoeeoqosoeqssssoqsoesoqsoeeoqssosoqsssssqsoeeoqsssseqssssoqssossqsssosqsoessqsoeseqosssqoeesqoeseqoeseqosesqseeesqoeesqssoeoqsssooqoseeqoeesqsoessqssoesqssoeoqsoeseqosoeqsoeseqsssosqsoessqsoessqssoeoqssoosqssoeeqsoeseqosoeqssoesqsssseqsoeseqseoseqsoeosqssoosqseossqsoeeoqssoooqsoeeeqsssosqsoeeoqsoessqsoseeqoseeqssooeqsssseqsoessqssssoqssoesqsssosqsssoeqosesqoeesqosesqsoseoqoeesqsoeeoqsssosqsoessqsoesoqsoeeoqssoosqoeesqsoessqssoesqssoeoqsoeseqosoeqsoeseqsssosqsoessqsoessqssoeoqssoosqssoeeqsoeseqsseoeqssooeqsssseqsoessqssssoqssoesqsssosqsssoeqsseooqseeesqoeesqsosssqseeesqoeesqsoeeoqsssosqsoessqsoesoqsoeeoqssoosqoeesqoeooqoeooqseeesqoeesqsosssqosesqseeesqoeesqssssoqsoeseqsoeseqssssoqssoooqsssoeqsssosqoeesqseeseqoeesqssssoqsoeseqsoeseqssssoqssoooqsssoeqsssosqosoeqsoeeoqsssosqsoeeeqssosoqsssseqssssoqsssosqoseeqseeosqsssoeqsssssqssosoqssoooqssssoqssossqseooeqsssosqssoeeqssoeoqsoeooqsesseqssoeoqssoosqsssoeqsssosqsoeeoqosoeqssosoqssoeoqssoosqsssosqsssssqsoeeoqsssosqsssseqssossqosssqoeesqoeseqoeesqoeseqosesqseeesqoeesqssssoqsoeseqsoeseqssssoqssoooqsssoeqsssosqoeesqseeseqoeesqssssoqsoeseqsoeseqssssoqssoooqsssoeqsssosqosoeqsoeeoqsssosqsoeeeqssosoqsssseqssssoqsssosqoseeqseeosqsssoeqsssssqssosoqssoooqssssoqssossqseooeqsssosqssoeeqssoeoqsoeooqsesseqssoeoqssoosqsssoeqsssosqsoeeoqosoeqsoeosqssoesqssoeoqsoessqsssosqsoeseqsoeeeqsssseqssssoqsssosqosssqoeesqoeseqoeesqoeseqosesqseeesqoeesqssoeoqsssooqoseeqoeesqsoessqssoesqssoeoqsoeseqosoeqsoeseqsssosqsoessqsoessqssoeoqssoosqssoeeqsoeseqseesoqosoeqsoessqssoooqsoeeeqoeesqoeosqoeosqoeesqsoessqssoesqssoeoqsoeseqosoeqsoeseqsssosqsoessqsoessqssoeoqssoosqssoeeqsoeseqosoeqsoessqssoooqsoeeeqoeesqseessqoeesqosooqoeesqosesqsoseoqoeesqssssoqsoeseqsoeseqssssoqssoooqsssoeqsssosqoeesqosseqseeseqoeesqoeooqoeesqosoeqoeooqoeesqosseqoeesqsoessqssoesqssoeoqsoeseqosoeqsoeeoqssssoqssosoqsssseqsoeseqsoeseqoseeqoeooqssooeqssoooqsssoeqsssseqssosoqoeooqosesqoeesqosseqoeesqoeooqsoseoqsoeeeqsssseqsssoeqsssoeqssoeoqssoosqssoeeqossoqsoessqssoooqsoeeeqseeeeqoeooqosseqsoessqssoesqssoeoqsoeseqosoeqsoeseqsssosqsoessqsoessqssoeoqssoosqssoeeqsoeseqosoeqsoessqssoooqsoeeeqosseqoeooqoeoeqsosssqoeooqseeesqoeesqsosssqsssosqssosoqsoeseqsssosqsoseoqoeesqssssoqsoeseqsoeseqssssoqssoooqsssoeqsssosqoeesqosseqseeseqoeesqoeooqoeesqosoeqoeooqoeesqosseqoeesqsoessqssoesqssoeoqsoeseqosoeqsoeeoqssssoqssosoqsssseqsoeseqsoeseqoseeqoeooqssooeqssoooqsssoeqsssseqssosoqoeooqosesqoeesqosseqoeesqoeooqsoseoqsssoeqssoeoqsoeseqsoeeeqssosoqsssseqsoseeqseeeeqsssooqssosoqsssosqsoeooqseeesqssoseqsoesoqsoeseqsoessqssoeoqsssooqsoseeqossoqssssoqssoooqssoosqsoessqsssosqssoosqsoessqseeeeqssssoqsssosqssoosqsoessqsssosqsoeeoqseeesqsssseqssosoqssoeoqssoeeqssoosqossoqssoeoqsoessqsssosqssooeqsoeseqseeeeqssssoqsssosqssoosqsoessqsssosqsoeeoqsosssqoeooqseeesqoeesqsosssqoeesqsoeseqsoessqsoseeqssosoqsssosqosoeqssoeoqssoosqssoosqsssosqsoeeoqsessoqseoooqseoesqseoeeqoeesqseeseqoeesqssssoqsoeseqsoeseqssssoqssoooqsssoeqsssosqseeesqoeesqsssoeqssoooqssssoqsoesoqssooeqsssosqssoosqsoessqosoeqsssssqssoooqsssoeqsoseeqosoeqsssseqsoeeeqsoeeeqsssosqssoosqsssoeqseseeqssoesqssoeoqssosoqsssoeqoseeqsoeseqsoessqsoseeqssosoqsssosqosesqseeesqoeesqssoeoqsssooqoseeqoeesqsoessqssoesqssoeoqsoeseqosoeqsssoeqsssosqsssssqsoesoqssoeeqoeesqosesqsoseoqoeesqssssoqssoooqssoosqsoeseqssoooqssosoqsssosqosoeqsoeosqsssseqsoeeoqssoosqoseeqoeseqsseoeqseseeqsessoqseossqseeosqsesesqseeooqseoeeqseoseqseseeqsesooqsseooqoeesqseeosqsssoeqsssoeqsssosqsssoeqoeesqssssoqsoeseqsoeseqoeesqssssoqssoooqsssoeqsssosqoeesqsoessqssoooqoeesqsoeosqsssosqsssssqsoeseqssoeoqsoessqsssosqosoeqoeseqosesqseeesqoeesqsosssqseeesqoeesqsosssqseeesqseoeqsosssqseeesqseoeqssssoqssosoqsssseqsoeseqsoeseqoeesqseseeqsessoqseossqseeosqsssoeqsssssqssosoqssoooqssssoqssossqoeesqsssosqsoeooqsoessqsssosqssoosqsssoeqsoeseqoeesqseeosqsssoeqsssssqssosoqssoooqssssoqssossqsssesqsessoqseoooqseoesqseoeeqseoooqsssosqssooeqsoeeeqssosoqsssseqsoessqsssosqoeesqsoseoqoeesqsssosqssoosqsssseqsssssqssosoqsssosqoeesqseeseqoeesqsssooqsssseqssosoqsoeseqsssosqseeesqoeesqssssoqsoeseqsoeseqssssoqssoooqsssoeqsssosqoeesqseeseqoeesqssoosqsoesoqssosoqssosoqseeesqoeesqsoessqssoesqsssosqssooeqsssosqoeesqseeseqoeesqssoosqsoesoqssosoqssosoqseeesqoeesqoessqsoeseqssoesqssoooqsoeosqoeesqseeseqoeesqoseeqosesqoeesqseeseqseessqoeesqsoseoqoeesqseeosqsssoeqseeooqssosoqssoooqssssoqssossqsssesqsessoqsssosqssosoqsoeeeqsssosqsoeeoqosoeqsssseqsssoeqsssoeqseseeqssosoqsssseqsoeseqsoeseqoseeqsoessqssoesqssoeoqsoeseqosoeqsoessqssoesqsssosqssooeqsssosqosoeqsssssqsoeeoqsssseqssoosqsssoeqssoeoqssoosqssoeeqosssqoeesqsoessqssoesqssoeoqsoeseqosoeqsoeeoqssssoqssosoqsssseqsoeseqsoeseqoseeqoeooqssssoqssoesqsoeeeqsssesqsssssqsoeeoqsssseqssoosqsssoeqssoeoqssoosqssoeeqsssesqsoeseqssoesqssoooqsoeosqoeooqosesqosesqseeesqoeesqseeosqsssoeqseeooqssosoqssoooqssssoqssossqsssesqsessoqsssosqssosoqsoeeeqsssosqsoeeoqosoeqsssseqsssoeqsssoeqseseeqssosoqsssseqsoeseqsoeseqoseeqsoessqssoesqssoeoqsoeseqosoeqsoessqssoesqsssosqssooeqsssosqosoeqssssoqssoooqssoosqsoessqsssseqssoeoqssoosqsssosqsoeeoqosssqoeesqsoessqssoesqssoeoqsoeseqosoeqsoeeoqssssoqssosoqsssseqsoeseqsoeseqoseeqoeooqsoeseqssoesqssoooqsoeosqoeooqosesqosesqseeesqoeesqseeosqsssoeqseeooqssosoqssoooqssssoqssossqsssesqsessoqsssosqssosoqsoeeeqsssosqsoeeoqosoeqsssseqsssoeqsssoeqseseeqssosoqsssseqsoeseqsoeseqoseeqsssoeqssoooqssssoqsoesoqssooeqsssosqssoosqsoessqosoeqsssssqssoooqsssoeqsoseeqosssqoeesqsoessqssoesqssoeoqsoeseqosoeqsoeeoqssssoqssosoqsssseqsoeseqsoeseqoseeqoeooqsssssqssoooqsssoeqsoseeqsssesqsssseqssssoqsoessqssoeoqsoeoeqsssosqoeooqosesqosesqseeesqoeesqsosssqseeesqoeesqoessqssoesqssoeoqsssoeqsssosqoeesqseeseqoeesqoseeqosesqoeesqseeseqseessqoeesqsoseoqoeesqseeosqsssoeqseeooqssosoqssoooqssssoqssossqsssesqsessoqsssosqssosoqsoeeeqsssosqsoeeoqosoeqsoeeoqsssosqssooeqssoooqsoeoeqsssosqseseeqssosoqsssseqsoeseqsoeseqoseeqsoessqssoesqssoeoqsoeseqosoeqsoessqssoesqsssosqssooeqsssosqosoeqsssssqsoeeoqsssseqssoosqsssoeqssoeoqssoosqssoeeqosssqoeesqsoessqssoesqssoeoqsoeseqosoeqsoeeoqssssoqssosoqsssseqsoeseqsoeseqoseeqoeooqssssoqssoesqsoeeeqsssesqsssssqsoeeoqsssseqssoosqsssoeqssoeoqssoosqssoeeqsssesqsoeseqssoesqssoooqsoeosqoeooqosesqosesqseeesqoeesqseeosqsssoeqseeooqssosoqssoooqssssoqssossqsssesqsessoqsssosqssosoqsoeeeqsssosqsoeeoqosoeqsoeeoqsssosqssooeqssoooqsoeoeqsssosqseseeqssosoqsssseqsoeseqsoeseqoseeqsoessqssoesqssoeoqsoeseqosoeqsoessqssoesqsssosqssooeqsssosqosoeqssssoqssoooqssoosqsoessqsssseqssoeoqssoosqsssosqsoeeoqosssqoeesqsoessqssoesqssoeoqsoeseqosoeqsoeeoqssssoqssosoqsssseqsoeseqsoeseqoseeqoeooqsoeseqssoesqssoooqsoeosqoeooqosesqosesqseeesqoeesqseeosqsssoeqseeooqssosoqssoooqssssoqssossqsssesqsessoqsssosqssosoqsoeeeqsssosqsoeeoqosoeqsoeeoqsssosqssooeqssoooqsoeoeqsssosqseseeqssosoqsssseqsoeseqsoeseqoseeqsssoeqssoooqssssoqsoesoqssooeqsssosqssoosqsoessqosoeqsssssqssoooqsssoeqsoseeqosssqoeesqsoessqssoesqssoeoqsoeseqosoeqsoeeoqssssoqssosoqsssseqsoeseqsoeseqoseeqoeooqsssssqssoooqsssoeqsoseeqsssesqsssseqssssoqsoessqssoeoqsoeoeqsssosqoeooqosesqosesqseeesqoeesqsosssqseeesqoeesqsoeseqsoessqsssseqsoeeoqsoessqsseeoqssoeoqsoessqssoesqseoosqsssosqsoeeoqsoeoeqsssosqsoeeoqoeesqseeseqoeesqssssoqsssseqssosoqssosoqseeooqsssseqssssoqssossqsesseqsoesoqssoosqssssoqoeesqseeseqseessqoeesqsoseoqoeesqssosoqsssosqsoessqoeesqssoesqsssosqsssseqsssoeqoeesqseeseqoeesqsssoeqssoooqssssoqsoesoqssooeqsssosqssoosqsoessqosoeqssoeeqsssosqsoessqseseoqssosoqsssosqssooeqsssosqssoosqsoessqsoeseqseeooqsoseeqseoooqsssseqssoeeqseoeoqsssseqssooeqsssosqoseeqoeooqssoesqsssosqsssseqsssoeqoeooqosesqsseoeqosooqsseooqseeesqoeesqssosoqsssosqsoessqoeesqsoeseqssssoqsoeeoqssoeoqsoeeeqsoessqoeesqseeseqoeesqsssoeqssoooqssssoqsoesoqssooeqsssosqssoosqsoessqosoeqssssoqsoeeoqsssosqsssseqsoessqsssosqseseoqssosoqsssosqssooeqsssosqssoosqsoessqoseeqoeooqsoeseqssssoqsoeeoqssoeoqsoeeeqsoessqoeooqosesqseeesqoeesqssosoqsssosqsoessqoeesqsssoeqssoooqssoosqsssosqoeesqseeseqoeesqsssooqsssseqssosoqsoeseqsssosqseeesqoeesqssoeoqsssooqoseeqoeesqoeeoqoeesqseeosqsssoeqseeooqssosoqssoooqssssoqssossqsssesqsessoqsssosqssosoqsoeeeqsssosqsoeeoqosoeqssoeoqsoeseqsssesqssssoqssoooqssoosqssoosqsssosqssssoqsoessqsssosqsssoeqoseeqosesqoeesqosesqsoseoqoeesqssssoqsssseqssosoqssosoqseeooqsssseqssssoqssossqsesseqsoesoqssoosqssssoqoseeqoeesqsssooqsssseqssosoqsoeseqsssosqoeesqosesqseeesqoeesqsoeeoqsssosqsoessqsoesoqsoeeoqssoosqoeesqsssooqsssseqssosoqsoeseqsssosqseeesqoeesqsosssqoeesqssssoqssoooqssoosqsoeseqsoessqoeesqsoeeoqsssosqsoeesqsseeeqseooeqseoeeqoeesqseeseqoeesqoeseqssoesqsoessqsoessqsoeeeqsoeseqseeeeqososqososqsoeeeqsssseqssoeeqsssosqsssseqsssoeqooesqosoeqssoeeqssoooqssoooqssoeeqssosoqsssosqsoeseqsoseeqssoosqsssoeqssoeoqssssoqsssseqsoessqssoeoqssoooqssoosqosoeqssssoqssoooqssooeqososqsoeeeqsssseqssoeeqsssosqsssseqsssoeqososqssoseqsoeseqososqsssseqsssoeqsoeseqsssssqsoseeqssoeeqssoooqssoooqssoeeqssosoqsssosqosoeqssoseqsoeseqoeseqseeesqoeesqsoeseqssssoqsoeeoqssoeoqsoeeeqsoessqosoeqsoeseqsssosqsoessqseeosqsoessqsoessqsoeeoqssoeoqsssssqsoesoqsoessqsssosqoseeqoeesqoeseqsoeseqsoeeoqssssoqoeseqosssqoeesqsoeeoqsssosqsoeesqsseeeqseooeqseoeeqoeesqosesqseeesqoeesqsoeseqssssoqsoeeoqssoeoqsoeeeqsoessqosoeqsoeseqsssosqsoessqseeosqsoessqsoessqsoeeoqssoeoqsssssqsoesoqsoessqsssosqoseeqoeesqoeseqsoessqsoseeqsoeeeqsssosqoeseqosssqoeesqoeseqsoessqsssosqsoeooqsoessqososqssoseqsssseqsoeoeqsssseqsoeseqssssoqsoeeoqssoeoqsoeeeqsoessqoeseqoeesqosesqseeesqoeesqsoeseqssssoqsoeeoqssoeoqsoeeeqsoessqosoeqsoeseqsssosqsoessqseeosqsoessqsoessqsoeeoqssoeoqsssssqsoesoqsoessqsssosqoseeqoeesqoeseqssssoqssoesqsssseqsoeeoqsoeseqsssosqsoessqoeseqosssqoeesqoeseqsoesoqsoessqsssooqossoqooosqoeseqoeesqosesqseeesqoeesqsoeseqssssoqsoeeoqssoeoqsoeeeqsoessqosoeqssoooqssoosqssosoqssoooqsssseqsssoeqoeesqseeseqoeesqsoeseqssssoqsoeeoqssoeoqsoeeeqsoessqosoeqssoooqssoosqsoeeoqsssosqsssseqsssoeqsoeseqsoessqsssseqsoessqsssosqssssoqssoesqsssseqssoosqssoeeqsssosqoeesqseeseqoeesqsssooqsoesoqssoosqssssoqsoessqssoeoqssoooqssoosqoseeqosesqoeesqsoseoqoeesqssoeoqsssooqoeesqoseeqoeesqoeeoqoeesqsssoeqssoooqssoosqsssosqoeesqoeosqoeosqoeesqoseeqoeesqoeeoqoeesqsoessqssoesqssoeoqsoeseqosoeqsoeeoqsssosqsssseqsssoeqsoseeqseoosqsoessqsssseqsoessqsssosqoeesqsosseqsosseqoeesqsoessqssoesqssoeoqsoeseqosoeqsoeeoqsssosqsssseqsssoeqsoseeqseoosqsoessqsssseqsoessqsssosqoeesqseeseqseeseqseeseqoeesqoeooqssosoqssoooqsssseqsssoeqsssosqsssoeqoeooqoeesqsosseqsosseqoeesqsoessqssoesqssoeoqsoeseqosoeqsoeeoqsssosqsssseqsssoeqsoseeqseoosqsoessqsssseqsoessqsssosqoeesqseeseqseeseqseeseqoeesqoeooqssssoqssoooqssooeqsoeeeqssosoqsssosqsoessqsssosqoeooqosesqoeesqosesqoeesqsoseoqoeesqsssoeqssoooqssoosqsssosqoeesqseeseqoeesqsoessqsoeeoqsoesoqsssosqseeesqoeesqsoeseqssssoqsoeeoqssoeoqsoeeeqsoessqosoeqssoooqssoosqssosoqssoooqsssseqsssoeqoeesqseeseqoeesqsoeseqssssoqsoeeoqssoeoqsoeeeqsoessqosoeqssoooqssoosqsoeeoqsssosqsssseqsssoeqsoseeqsoeseqsoessqsssseqsoessqsssosqssssoqssoesqsssseqssoosqssoeeqsssosqoeesqseeseqoeesqssoosqsoesoqssosoqssosoqseeesqoeesqssoeoqsssooqoeesqoseeqoeesqoeooqsoesoqssoosqsssoeqsssosqsssooqssoeoqssoosqsssosqsssoeqoeooqoeesqseeseqseeseqseeseqoeesqsoessqsoseeqsoeeeqsssosqssoooqsssooqoeesqsoeosqssoeoqssoosqsssoeqssoooqsoeosqosoeqsssseqsssoeqsoeseqsssssqsoseeqssoeeqssoooqssoooqssoeeqssosoqsssosqoeesqosesqoeesqsoseoqoeesqssssoqsssseqssosoqssosoqseeooqsssseqssssoqssossqsesseqsoesoqssoosqssssoqoseeqoeesqsoessqsoeeoqsoesoqsssosqosssqoeesqooesqoeesqosesqseeesqoeesqsosssqoeesqsssosqssosoqsoeseqsssosqoeesqsoseoqoeesqssssoqsssseqssosoqssosoqseeooqsssseqssssoqssossqsesseqsoesoqssoosqssssoqoseeqoeesqsssooqsssseqssosoqsoeseqsssosqoeesqosesqseeesqoeesqsosssqoeesqsoeseqssssoqsoeeoqssoeoqsoeeeqsoessqosoeqsoeeeqsssseqsoeeoqsssosqssoosqsoessqseoeoqssoooqsssoeqsssosqosoeqsoeeoqsssosqssooeqssoooqsoeoeqsssosqseseeqssoesqssoeoqssosoqsssoeqoseeqoeesqsoeseqssssoqsoeeoqssoeoqsoeeeqsoessqoeesqosesqseeesqoeesqsosssqoeesqsosssqseeesqoeesqsoeseqssssoqsoeeoqssoeoqsoeeeqsoessqosoeqssoooqssoosqsssosqsoeeoqsoeeoqssoooqsoeeoqoeesqseeseqoeesqsssooqsoesoqssoosqssssoqsoessqssoeoqssoooqssoosqoseeqosesqoeesqsoseoqoeesqssssoqsssseqssosoqssosoqseeooqsssseqssssoqssossqsesseqsoesoqssoosqssssoqoseeqoeesqsoessqsoeeoqsoesoqsssosqosssqoeesqooesqoeesqosesqseeesqoeesqsosssqseeesqoeesqssosoqsssosqsoessqoeesqssssoqsssseqssosoqssosoqsssssqsssseqssssoqssossqsssosqsssoeqoeesqseeseqoeesqsssooqsssseqssosoqsoeseqsssosqseeesqoeesqssssoqssoooqssoosqsoeseqsoessqoeesqsoeeoqsssosqsoeesqsoesoqsssosqsoeseqsoessqoeesqseeseqoeesqssoosqsssosqsoeosqoeesqsseseqseoesqseoeeqsessoqsoessqsoessqsoeeeqseooeqsssosqsoeesqsoesoqsssosqsoeseqsoessqoseeqosesqseeesqoeesqsoeeoqsssosqsoeesqsoesoqsssosqsoeseqsoessqosoeqssoooqsoeeeqsssosqssoosqoseeqoeesqoeooqsesssqseseoqseoooqoeooqosssqoeesqsoeeoqsssosqsoeesqsseeeqseooeqseoeeqosssqoeesqsoessqsoeeoqsoesoqsssosqoeesqosesqseeesqoeesqsoeeoqsssosqsoeesqsoesoqsssosqsoeseqsoessqosoeqssoooqssoosqsoeeoqsssosqsssseqsssoeqsoseeqsoeseqsoessqsssseqsoessqsssosqssssoqssoesqsssseqssoosqssoeeqsssosqoeesqseeseqoeesqsssooqsoesoqssoosqssssoqsoessqssoeoqssoooqssoosqoseeqosesqsoseoqoeesqssoeoqsssooqoeesqoseeqsoessqssoesqssoeoqsoeseqosoeqsoeseqsoessqsssseqsoessqsoesoqsoeseqoeesqseeseqseeseqseeseqoeesqosooqoeesqsosseqsosseqoeesqoseeqsoessqssoesqssoeoqsoeseqosoeqsoeseqsoessqsssseqsoessqsoesoqsoeseqoeesqseessqseeseqoeesqooesqosooqosooqoeesqoeosqoeosqoeesqsoessqssoesqssoeoqsoeseqosoeqsoeseqsoessqsssseqsoessqsoesoqsoeseqoeesqseeeoqoeesqooseqosooqosooqosesqosesqoeesqsoseoqoeesqssoeoqsssooqoseeqoeesqsoessqssoesqssoeoqsoeseqosoeqsoeeoqsssosqsoeseqsoeeeqssoooqssoosqsoeseqsssosqseoooqsssosqsoeooqsoessqosoeqsoessqssoooqseoeeqssoooqsoeosqsssosqsoeeoqseseeqsssseqsoeseqsssosqoseeqosesqosoeqssoeoqssoosqsssoeqsssosqsoeooqseoseqsssooqoseeqoeseqsoesoqsssssqssosoqssoooqssssoqssossqoeseqosesqoeesqseessqoeesqossoqooeeqoeesqsosseqsosseqoeesqsoessqssoesqssoeoqsoeseqosoeqsoeeoqsssosqsoeseqsoeeeqssoooqssoosqsoeseqsssosqseoooqsssosqsoeooqsoessqosoeqsoessqssoooqseoeeqssoooqsoeosqsssosqsoeeoqseseeqsssseqsoeseqsssosqoseeqosesqosoeqssoeoqssoosqsssoeqsssosqsoeooqseoseqsssooqoseeqoeseqssoesqsssosqssoeoqssoeeqssoesqsoessqseeeeqooeeqsoeeeqsoeooqoeseqosesqoeesqseessqoeesqossoqooeeqoeesqosesqsoseoqoeesqssoeoqsssooqoseeqoeesqssssoqsssseqssosoqssosoqsssssqsssseqssssoqssossqsssosqsssoeqoeesqosesqsoseoqoeesqssssoqsssseqssosoqssosoqseeooqsssseqssssoqssossqsesseqsoesoqssoosqssssoqoseeqsoessqsoeeoqsoesoqsssosqosssqoeesqooesqosesqseeesqoeesqsosssqoeesqssssoqsssseqssosoqssosoqsssssqsssseqssssoqssossqsssosqsssoeqoeesqseeseqoeesqsoessqsoeeoqsoesoqsssosqseeesqoeesqsosssqoeesqsosssqoeesqssoeoqsssooqoeesqoseeqoeesqoeeoqoeesqssssoqsssseqssosoqssosoqsssssqsssseqssssoqssossqsssosqsssoeqoeesqosesqoeesqsoseoqoeesqssssoqsssseqssosoqssosoqseeooqsssseqssssoqssossqsesseqsoesoqssoosqssssoqoseeqoeesqsoeeoqsssosqsoeesqsoesoqsssosqsoeseqsoessqosoeqsoeeoqsssosqsoeseqsoeeeqssoooqssoosqsoeseqsssosqsseeeqseooeqseoeeqoeesqoeeoqseeseqseeseqoeesqsoeeoqsssosqsoeesqsseeeqseooeqseoeeqosssqoeesqsoeeoqsssosqsoeesqsoesoqsssosqsoeseqsoessqosoeqsoeeoqsssosqsssseqsssoeqsoseeqseoosqsoessqsssseqsoessqsssosqoeesqosesqseeesqoeesqssssoqsssseqssosoqssosoqsssssqsssseqssssoqssossqsssosqsssoeqoeesqseeseqoeesqsoessqsoeeoqsoesoqsssosqseeesqoeesqsosssqoeesqsosssqseeesqoeesqsoeeoqsssosqsoeesqsoesoqsssosqsoeseqsoessqosoeqsoeseqsssosqssoosqsssoeqoseeqosesqseeesqoeesqssoesqsssosqsssseqsssoeqosoeqssoeoqssoosqsoeseqsssosqsoeeoqsoessqseeooqsssosqsssooqssoooqsoeeoqsssosqoseeqoeesqsoeseqssssoqsoeeoqssoeoqsoeeeqsoessqosssqoeesqssoesqsssosqsssseqsssoeqosoeqsssooqssoeoqsoeeoqsoeseqsoessqseseeqssoesqssoeoqssosoqsssoeqoeesqosesqseeesqoeesqsosssqseeesqoeesqsoeeeqsoeeoqsssosqsoeoeqseseeqssoooqsoesoqssoosqsoessqoeesqseeseqoeesqosooqseeesqoeesqssssoqssoesqsssosqssssoqssossqseseeqssosoqsssseqsoeseqsoeseqseooeqsssosqsoeesqsoesoqsssosqsoeseqsoessqoeesqseeseqoeesqoseeqssssoqsssseqssosoqssosoqsssssqsssseqssssoqssossqosesqoeesqseeseqseessqoeesqsoseoqoeesqssosoqsssosqsoessqoeesqsssosqssoosqsssseqsssssqssosoqsssosqoeesqseeseqoeesqsssooqsssseqssosoqsoeseqsssosqseeesqoeesqsoessqsoeeoqsoseeqsoseoqoeesqssosoqsssosqsoessqoeesqsssoeqssoeoqsoeoeqseseoqssosoqsssosqoeesqseeseqoeesqsssoeqssoooqssssoqsoesoqssooeqsssosqssoosqsoessqosoeqssssoqsoeeoqsssosqsssseqsoessqsssosqseseoqssosoqsssosqssooeqsssosqssoosqsoessqoseeqoeseqsssoeqssoeoqsoeoeqoeseqosesqseeesqoeesqsssoeqssoeoqsoeoeqseseoqssosoqsssosqosoeqssssoqssosoqsssseqsoeseqsoeseqseoeoqsssseqssooeqsssosqoeesqseeseqoeesqoeseqsssseqsssoeqsoeseqsssssqsoseeqssoeeqssoooqssoooqssoeeqssosoqsssosqoeesqseeosqsssoeqossoqseseeqssoooqssoosqsoessqsssseqssoeoqssoosqsssosqsoeeoqoeesqsoeseqssoeoqsssoeqsssosqsssssqsssseqsoeeoqossoqsssseqsssoeqoeesqsssseqsssoeqossoqsoeseqssosoqssoooqsoessqoeesqsssseqsssoeqoeesqsssseqsssoeqsoeseqoeesqsssoeqssoooqsoesoqsssssqssosoqsssosqssssoqssosoqssoeoqssssoqssossqoeesqsssseqsssoeqossoqsoeeeqssosoqsssseqssssoqsssosqssooeqsssosqssoosqsoessqoeesqsssseqsssoeqossoqsoeeeqssosoqsssseqssssoqsssosqssoesqssoooqssosoqsssoeqsssosqsoeeoqoeesqsssseqsssoeqsssssqsssseqsssoeqssoeeqsssosqoeesqseeooqsssseqssoosqssoosqsssosqsoeeoqseeosqsssoeqoeesqsssseqsssoeqsoeseqsssssqssoooqsoeooqoeesqoeseqoeesqosseqoeesqsoessqssoesqssoeoqsoeseqosoeqssssoqssosoqsssseqsoeseqsoeseqsssosqsoeseqseeesqoeesqsssoeqssoeoqsoeoeqseseoqssosoqsssosqosoeqsoeseqsoessqsoseeqssosoqsssosqoeesqseeseqoeesqoeseqsoeosqssoeoqsssoeqsoessqssoesqseeeeqoeesqooeeqsoeeeqsoeooqoeesqoeeoqssoeoqssooeqsoeeeqssoooqsoeeoqsoessqsssseqssoosqsoessqseeesqoeesqssoesqsssosqssoeoqssoeeqssoesqsoessqseeeeqoeesqooeeqsoeeeqsoeooqoeesqoeeoqssoeoqssooeqsoeeeqssoooqsoeeoqsoessqsssseqssoosqsoessqseeesqoeesqsoeeeqssoooqsoeseqssoeoqsoessqssoeoqssoooqssoosqseeeeqoeesqsssseqsssssqsoeseqssoooqssosoqsoesoqsoessqsssosqoeesqoeeoqssoeoqssooeqsoeeeqssoooqsoeeoqsoessqsssseqssoosqsoessqseeesqoeesqssosoqsssosqsssooqsoessqseeeeqoeesqossoqooeeqosooqosooqosooqosooqsoeeeqsoeooqoeesqoeeoqssoeoqssooeqsoeeeqssoooqsoeeoqsoessqsssseqssoosqsoessqseeesqoeesqsoessqssoooqsoeeeqseeeeqoeesqossoqooeeqosooqosooqosooqsoeeeqsoeooqoeesqoeeoqssoeoqssooeqsoeeeqssoooqsoeeoqsoessqsssseqssoosqsoessqseeesqoeseqseeesqoeesqsssoeqssoeoqsoeoeqseseoqssosoqsssosqosoeqsoeseqsssosqsoessqseeosqsoessqsoessqsoeeoqssoeoqsssssqsoesoqsoessqsssosqoseeqoeseqsssoeqsssseqsoessqsssseqossoqsssseqsssoeqossoqssooeqsssseqssoosqsssseqssoeeqsssosqsoeeoqossoqssoeoqsssoeqoeseqosssqoeesqoeseqooeeqoeseqosesqseeesqoeesqsssoeqssoeoqsoeoeqseseoqssosoqsssosqosoeqsoeseqsssosqsoessqseeosqsoessqsoessqsoeeoqssoeoqsssssqsoesoqsoessqsssosqoseeqoeseqsssoeqsssseqsoessqsssseqossoqsssseqsssoeqossoqssooeqssoooqsssoeqsoesoqssosoqsssosqoeseqosssqoeesqoeseqooeeqoeseqosesqseeesqoeesqsssoeqssoeoqsoeoeqseseoqssosoqsssosqosoeqsoeseqsssosqsoessqseeosqsoessqsoessqsoeeoqssoeoqsssssqsoesoqsoessqsssosqoseeqoeseqsssoeqsssseqsoessqsssseqossoqsssseqsssoeqossoqsoeosqssoeoqsssoeqsoessqssoesqoeseqosssqoeesqoeseqooeeqosooqosooqoeseqosesqseeesqoeesqsssoeqssoeoqsoeoeqseseoqssosoqsssosqosoeqsoeseqsssosqsoessqseeosqsoessqsoessqsoeeoqssoeoqsssssqsoesoqsoessqsssosqoseeqoeseqsssoeqsssseqsoessqsssseqossoqsssseqsssoeqsssssqssosoqssoooqssssoqssossqssossqsssosqsoseeqoeseqosssqoeesqoeseqooesqosooqosooqoeseqosesqseeesqoeesqsssoeqssoeoqsoeoeqseseoqssosoqsssosqosoeqsoeseqsssosqsoessqseeosqsoessqsoessqsoeeoqssoeoqsssssqsoesoqsoessqsssosqoseeqoeseqsssoeqsssseqsoessqsssseqossoqsssseqsssoeqsoeoeqsssseqsssoeqsoeseqsoessqsoeeoqsssseqssssoqssossqssoeoqsssoeqoeseqosssqoeesqoeseqooeeqoeseqosesqseeesqoeesqsssoeqssoeoqsoeoeqseseoqssosoqsssosqosoeqssoeoqsssoeqoeesqseeseqoeesqsoessqssoesqssoeoqsoeseqosoeqsoeeoqssssoqssosoqsssseqsoeseqsoeseqoseeqoeseqsssooqssoeoqssosoqsoessqsssosqsoeeoqsssesqsssseqsssoeqsoeseqsssesqsssssqsoseeqsssesqssssoqssosoqsssseqsoeseqsoeseqssoosqsssseqssooeqsssosqoeseqosesqseeesqoeesqsssoeqssoeoqsoeoeqseseoqssosoqsssosqosoeqssoeoqssoosqssoosqsssosqsoeeoqsessoqseoooqseoesqseoeeqoeesqseeseqoeesqoeooqseeeoqsssoeqssoeoqsoeoeqoeesqsoeseqsoessqsoseeqssosoqsssosqseeseqoeseqsosesqossoqssoeoqssoosqsssoeqsssosqsoeooqseeeeqossoqooeeqseeesqoeesqssoesqsssosqssoeoqssoeeqssoesqsoessqseeeeqosooqseeesqoeesqsoeosqssoeoqsssoeqsoessqssoesqseeeeqooeeqsoeeeqsoeooqseeesqoeesqsoeoeqssoeoqsoeseqssoeoqsssssqssoeoqssosoqssoeoqsoessqsoseeqseeeeqoeesqssoesqssoeoqsssoeqsssoeqsssosqssoosqseeesqoeesqsssssqssoooqsoessqsoessqssoooqssooeqseeeeqoeesqossoqooeeqsoeeeqsoeooqseeesqoeesqssosoqsssosqsssooqsoessqseeeeqoeesqosooqseeesqoeseqseessqseeeoqososqsssoeqssoeoqsoeoeqseessqoeooqseeesqoeesqsoessqsoeeoqsoseeqoeesqsoseoqoeesqssoeoqsssooqoeesqoseeqoeeoqsssoeqssoooqssssoqsoesoqssooeqsssosqssoosqsoessqosoeqsssssqssoooqsssoeqsoseeqosoeqssssoqssoooqssoosqsoessqsssseqssoeoqssoosqsoeseqoseeqsssoeqssoooqssssoqsoesoqssooeqsssosqssoosqsoessqosoeqssoeeqsssosqsoessqseseoqssosoqsssosqssooeqsssosqssoosqsoessqseeooqsoseeqsesoeqsssoeqoseeqsoessqssoesqssoeoqsoeseqosoeqsoeeoqssssoqssosoqsssseqsoeseqsoeseqoseeqoeseqsssooqssoeoqssosoqsoessqsssosqsoeeoqsssesqsssseqsssoeqsoeseqsssesqsssssqsoseeqsssesqssssoqssosoqsssseqsoeseqsoeseqssoosqsssseqssooeqsssosqoeseqosesqosesqosesqosesqoeesqsoseoqoeesqsssoeqssoooqssssoqsoesoqssooeqsssosqssoosqsoessqosoeqsssssqssoooqsssoeqsoseeqosoeqsssseqsoeeeqsoeeeqsssosqssoosqsssoeqseseeqssoesqssoeoqssosoqsssoeqoseeqsssoeqssoeoqsoeoeqseseoqssosoqsssosqosesqseeesqoeesqssssoqssoooqssoosqsoeseqsoessqoeesqsssseqsssoeqseeooqssoooqsoeooqseseoqssosoqsssosqoeesqseeseqoeesqsssoeqssoooqssssoqsoesoqssooeqsssosqssoosqsoessqosoeqsoeesqsoesoqsssosqsoeeoqsoseeqseoosqsssosqssosoqsssosqssssoqsoessqssoooqsoeeoqoseeqoeseqosoeqseeosqsssoeqossoqseseeqssoooqssoosqsoessqsssseqssoeoqssoosqsssosqsoeeoqoeseqosesqseeesqoeesqsssosqssoosqsssseqsssssqssosoqsssosqoeesqseeseqoeesqoeeoqsssseqsssoeqseeooqssoooqsoeooqseseoqssosoqsssosqoeesqsosseqsosseqoeesqsssseqsssoeqseeooqssoooqsoeooqseseoqssosoqsssosqosoeqssoooqsssooqsssooqsoeseqsssosqsoessqsessoqsssosqssoeoqssoeeqssoesqsoessqoeesqseeseqseeseqoeesqosooqseeesqoeesqsosssqoeesqsssosqssosoqsoeseqsssosqoeesqsoseoqoeesqssosoqsssosqsoessqoeesqsssseqsssoeqseeooqssoooqsoeooqseseoqssosoqsssosqsesoeqsssoeqoeesqseeseqoeesqsssoeqssoooqssssoqsoesoqssooeqsssosqssoosqsoessqosoeqssoeeqsssosqsoessqseseoqssosoqsssosqssooeqsssosqssoosqsoessqseeooqsoseeqsesoeqsssoeqoseeqsoessqssoesqssoeoqsoeseqosoeqsoeeoqssssoqssosoqsssseqsoeseqsoeseqoseeqoeseqsssooqssoeoqssosoqsoessqsssosqsoeeoqsssesqsssseqsssoeqsoeseqsssesqsssssqsoseeqsssesqssssoqssosoqsssseqsoeseqsoeseqssoosqsssseqssooeqsssosqoeseqosesqosesqseeesqoeesqseeosqsssoeqseeooqssosoqssoooqssssoqssossqsssesqsessoqsssosqssosoqsoeeeqsssosqsoeeoqosoeqsoeeoqsssosqssooeqssoooqsoeoeqsssosqseseeqssosoqsssseqsoeseqsoeseqoseeqsssseqsssoeqseeooqssoooqsoeooqseseoqssosoqsssosqsesoeqsssoeqosssqoeesqoeooqsssseqsssoeqsoeseqsssesqoeooqoeesqosseqoeesqsoeeeqsoeeoqsssosqsoeoeqseseeqssoooqsoesoqssoosqsoessqosesqseeesqoeesqseeosqsssoeqseeooqssosoqssoooqssssoqssossqsssesqsessoqsssosqssosoqsoeeeqsssosqsoeeoqosoeqsoeeoqsssosqssooeqssoooqsoeoeqsssosqseseeqssosoqsssseqsoeseqsoeseqoseeqsssseqsssoeqseeooqssoooqsoeooqseseoqssosoqsssosqsesoeqsssoeqosssqoeesqoeooqsssseqsssoeqsoeseqsssesqoeooqoeesqosseqoeesqsoeeeqsoeeoqsssosqsoeoeqseseeqssoooqsoesoqssoosqsoessqosesqseeesqoeesqsoeeeqsoeeoqsssosqsoeoeqseseeqssoooqsoesoqssoosqsoessqosseqosseqseeesqoeesqseeosqsssoeqseeooqssosoqssoooqssssoqssossqsssesqsessoqsssosqssosoqsoeeeqsssosqsoeeoqosoeqsssseqsssoeqsssoeqseseeqssosoqsssseqsoeseqsoeseqoseeqsssseqsssoeqseeooqssoooqsoeooqseseoqssosoqsssosqsesoeqsssoeqosssqoeesqoeooqsssseqsssoeqsoeseqsssesqoeooqoeesqosseqoeesqsoeeeqsoeeoqsssosqsoeoeqseseeqssoooqsoesoqssoosqsoessqosesqseeesqoeesqsosssqoeesqsosssqoeesqssssoqsssseqsoessqssssoqssoesqoeesqoseeqsssosqsoeeoqsoeeoqssoooqsoeeoqosesqoeesqsoseoqoeesqsssoeqssoeoqsoeoeqseseoqssosoqsssosqseesoqosoeqsoeeeqsssseqsoeeoqsssosqssoosqsoessqseoeoqssoooqsssoeqsssosqseesoqosoeqsoeeoqsssosqssooeqssoooqsoeoeqsssosqseseeqssoesqssoeoqssosoqsssoeqoseeqsssoeqssoeoqsoeoeqseseoqssosoqsssosqosesqseeesqoeesqsosssqoeesqsosssqssssoqsssseqsoessqssssoqssoesqoseeqsssosqosesqsoseoqoeesqsosssqoeesqsoeeoqsssosqsoessqsoesoqsoeeoqssoosqoeesqssssoqsssseqssosoqssosoqsssssqsssseqssssoqssossqoseeqsssosqssoosqsssseqsssssqssosoqsssosqosesqseeesqoeesqsosssqseeesqoeesqsssooqsssseqssoeoqsoeeoqseeosqsssoeqsssssqssosoqssoooqssssoqssossqoeesqseeseqoeesqoseeqosesqoeesqseeseqseessqoeesqsoseoqoeesqssosoqsssosqsoessqoeesqsoeseqsoessqssoosqsssoeqsosesqseoosqsoessqsoseeqssosoqsssosqoeesqseeseqoeesqsssoeqssoooqssssoqsoesoqssooeqsssosqssoosqsoessqosoeqssoeeqsssosqsoessqseseoqssosoqsssosqssooeqsssosqssoosqsoessqseeooqsoseeqsesoeqsssoeqoseeqoeooqsoeseqsoessqssoosqsssoeqsosesqossoqsoeseqsoessqsoseeqssosoqsssosqoeooqosesqseeesqoeesqsoeeoqsssosqsoessqsoesoqsoeeoqssoosqoeesqssoosqsoesoqssosoqssosoqoeesqoeeoqseeseqseeseqoeesqsoeseqsoessqssoosqsssoeqsosesqseoosqsoessqsoseeqssosoqsssosqseeesqoeesqsosssqseeesqoeesqssoeoqssoosqssoeoqsoessqssoeoqsssseqssosoqssoeoqsosesqsssosqoeesqseeseqoeesqoseeqosesqoeesqseeseqseessqoeesqsoseoqoeesqssoeoqsssooqoseeqoeesqsoessqssoesqssoeoqsoeseqosoeqsssooqsssseqssoeoqsoeeoqseeosqsssoeqsssssqssosoqssoooqssssoqssossqoseeqosesqoeesqosesqsoseoqoeesqsoessqssoesqssoeoqsoeseqosoeqsssosqssoosqsssseqsssssqssosoqsssosqoeesqseeseqoeesqsoessqsoeeoqsoesoqsssosqseeesqoeesqsoessqssoesqssoeoqsoeseqosoeqoessqsoeseqssoesqssoooqsoeosqoseeqosesqseeesqoeesqsosssqsssosqssosoqsoeseqsssosqsoseoqoeesqsoessqssoesqssoeoqsoeseqosoeqsoeseqsoessqsssseqsoeeoqsoessqsseeoqssoeoqsoessqssoesqseoosqsssosqsoeeoqsoeoeqsssosqsoeeoqoseeqoseeqsssosqssoosqsssseqsssssqssosoqsssosqosesqoeesqseeseqseessqoeesqsoseoqoeesqsoessqssoesqssoeoqsoeseqosoeqsssosqssoosqsssseqsssssqssosoqsssosqoeesqseeseqoeesqsssosqssoosqsssseqsssssqssosoqsssosqseeesqoeesqssoeoqsssooqoseeqoeesqsssosqssoosqsssseqsssssqssosoqsssosqoeesqosesqsoseoqoeesqsoessqssoesqssoeoqsoeseqosoeqoessqsoeseqssoesqssoooqsoeosqoseeqosesqseeesqoeesqsosssqsssosqssosoqsoeseqsssosqsoseoqoeesqsoessqssoesqssoeoqsoeseqosoeqssssoqssoesqsssosqssssoqssossqseseeqssosoqsssseqsoeseqsoeseqseooeqsssosqsoeesqsoesoqsssosqsoeseqsoessqoseeqoseeqsssosqssoosqsssseqsssssqssosoqsssosqosesqoeesqseeseqseessqoeesqsoseoqoeesqsoessqssoesqssoeoqsoeseqosoeqsssosqssoosqsssseqsssssqssosoqsssosqoeesqseeseqoeesqsssosqssoosqsssseqsssssqssosoqsssosqseeesqoeesqssoeoqsssooqoseeqoeesqsssosqssoosqsssseqsssssqssosoqsssosqoeesqosesqsoseoqoeesqsoessqssoesqssoeoqsoeseqosoeqoessqsoeseqssoesqssoooqsoeosqoseeqosesqseeesqoeesqsosssqoeesqsosssqosesqseeesqoeesqsosssqoeesqsosssqosesqoeesqsosssqoeesqsosssqseeesqoeesqssssoqssoooqssoosqsoeseqsoessqsoeeoqsoesoqssssoqsoessqssoooqsoeeoqoseeqsoeseqsssosqsoessqsoessqssoeoqssoosqssoeeqsoeseqoeesqseeseqoeesqsoseoqsosssqosesqoeesqsoseoqoeesqsoeseqsoesoqsoeeeqsssosqsoeeoqoseeqsoeseqsssosqsoessqsoessqssoeoqssoosqssoeeqsoeseqosesqseeesqoeesqsoessqssoesqssoeoqsoeseqosoeqssssoqsoeseqsoeseqssssoqssoooqsssoeqsssosqoeesqseeseqoeesqsoessqssoesqssoeoqsoeseqosoeqsoeseqsssosqsoessqsoesoqsoeeeqssssoqsoeseqsoeseqoseeqsoessqssoesqssoeoqsoeseqosoeqsssoeqsssosqsssooqsssseqsoesoqssosoqsoessqsoeseqosesqseeesqoeesqsoessqssoesqssoeoqsoeseqosoeqsoessqssoesqsssosqssooeqsssosqoeesqseeseqoeesqsoessqssoesqssoeoqsoeseqosoeqsoeseqsssosqsoessqsoesoqsoeeeqssoesqsoessqssooeqssosoqoseeqsoessqssoesqssoeoqsoeseqosoeqsssoeqsssosqsssooqsssseqsoesoqssosoqsoessqsoeseqosesqseeesqoeesqsssoeqssoooqssssoqsoesoqssooeqsssosqssoosqsoessqosoeqsssseqsssoeqsssoeqseseoqsoeoeqsssosqssoosqsoessqseoeeqssoeoqsoeseqsoessqsssosqssoosqsssosqsoeeoqoseeqoeesqoeooqsesesqseoseqseoesqseseeqssoooqssoosqsoessqsssosqssoosqsoessqseoeeqssoooqsssseqsssoeqsssosqsssoeqoeooqosssqoeesqsoessqssoesqssoeoqsoeseqosoeqssoeoqssoosqssoeoqsoessqssoeoqsssseqssosoqssoeoqsosesqsssosqosssqoeesqsssooqsssseqssosoqsoeseqsssosqosesqseeesqoeesqssssoqssoooqssoosqsoeseqsoessqoeesqsoeeoqsssosqssosoqssoooqsssseqsssoeqsssssqsoessqssoosqoeesqseeseqoeesqsssoeqssoooqssssoqsoesoqssooeqsssosqssoosqsoessqosoeqssoeeqsssosqsoessqseseoqssosoqsssosqssooeqsssosqssoosqsoessqseeooqsoseeqsesoeqsssoeqoseeqsoessqssoesqssoeoqsoeseqosoeqsoeeoqssssoqssosoqsssseqsoeseqsoeseqoseeqoeooqsoeeoqsssosqssosoqssoooqsssseqsssoeqsssssqsoessqssoosqoeooqosesqosesqseeesqoeesqsoeosqssoeoqssoosqsssoeqssoooqsoeosqosoeqssoooqssoosqssssoqssosoqssoeoqssssoqssossqoeesqseeseqoeesqsssosqsoeoeqsssosqssoosqsoessqoeesqseeseqseessqoeesqsoseoqoeesqssoeoqsssooqoseeqoeesqsoessqssoesqssoeoqsoeseqosoeqsoessqssoesqsssosqssooeqsssosqseseoqssosoqsssosqseesoqosoeqssssoqssosoqssoooqsoeseqsssosqsssssqsoessqssoosqoeesqoeosqoeosqoeesqsssosqsoeoeqsssosqssoosqsoessqosoeqsoessqsssseqsoeeoqssoeeqsssosqsoessqosoeqssoeoqsoeseqseseoqsoeesqsoesoqsssseqssosoqseoeoqssoooqsssoeqsssosqoseeqsoessqssoesqssoeoqsoeseqosoeqsoessqssoesqsssosqssooeqsssosqseseoqssosoqsssosqseesoqosoeqssssoqssosoqssoooqsoeseqsssosqsssssqsoessqssoosqosesqoeesqosesqsoseoqoeesqsssosqsoeoeqsssosqssoosqsoessqosoeqsoeeeqsoeeoqsssosqsoeoeqsssosqssoosqsoessqsesesqsssosqsssooqsssseqsoesoqssosoqsoessqoseeqosesqseeesqoeesqsoessqssoesqssoeoqsoeseqosoeqoessqssoesqssoeoqsssoeqsssosqoseeqosesqseeesqoeesqsosssqsssosqssosoqsoeseqsssosqoeesqssoeoqsssooqoeesqoseeqsoeeoqsssosqssosoqssoooqsssseqsssoeqsssssqsoessqssoosqoeesqoeosqoeosqoeesqsssosqsoeoeqsssosqssoosqsoessqosoeqsoessqsssseqsoeeoqssoeeqsssosqsoessqosoeqssoeoqsoeseqseseoqsoeesqsoesoqsssseqssosoqseoeoqssoooqsssoeqsssosqoseeqsoeeoqsssosqssosoqssoooqsssseqsssoeqsssssqsoessqssoosqosesqosesqoeesqsoseoqoeesqsssosqsoeoeqsssosqssoosqsoessqosoeqsoeeeqsoeeoqsssosqsoeoeqsssosqssoosqsoessqsesesqsssosqsssooqsssseqsoesoqssosoqsoessqoseeqosesqseeesqoeesqsoeosqssoeoqssoosqsssoeqssoooqsoeosqosoeqssosoqssoooqssssoqsssseqsoessqssoeoqssoooqssoosqosoeqssoesqsoeeoqsssosqsssooqoeesqseeseqoeesqsoeosqssoeoqssoosqsssoeqssoooqsoeosqosoeqssosoqssoooqssssoqsssseqsoessqssoeoqssoooqssoosqosoeqssoesqsoeeoqsssosqsssooqseeesqoeesqsosssqoeesqsosssqoeesqsosssqseeesqseoeqsosssqseoeqssoosqsssosqsoeosqoeesqseseeqsessoqseossqseeosqsssoeqsssssqssosoqssoooqssssoqssossqoseeqosesqseeesq",73,"esoqtBmXh",23,3,31))                  
+//]]></script>
+</body>
+</html>
